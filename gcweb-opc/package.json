@@ -1,0 +1,43 @@
+{
+  "_args": [
+    [
+      "github:opc-cpvp/themes-cdn#v4.0.26-gcweb-opc",
+      "/home/travis/build/opc-cpvp/cdts-gcweb-opc"
+    ]
+  ],
+  "_from": "github:opc-cpvp/themes-cdn#v4.0.26-gcweb-opc",
+  "_id": "gcweb-opc@github:opc-cpvp/themes-cdn#503cec3c7851c34b033ef37d257de81cbcab360d",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/gcweb-opc",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "github:opc-cpvp/themes-cdn#v4.0.26-gcweb-opc",
+    "rawSpec": "github:opc-cpvp/themes-cdn#v4.0.26-gcweb-opc",
+    "saveSpec": "github:opc-cpvp/themes-cdn#v4.0.26-gcweb-opc",
+    "fetchSpec": null,
+    "gitCommittish": "v4.0.26-gcweb-opc"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "github:opc-cpvp/themes-cdn#503cec3c7851c34b033ef37d257de81cbcab360d",
+  "_spec": "github:opc-cpvp/themes-cdn#v4.0.26-gcweb-opc",
+  "_where": "/home/travis/build/opc-cpvp/cdts-gcweb-opc",
+  "author": {
+    "name": "opc-buildbot"
+  },
+  "bugs": {
+    "url": "https://github.com/opc-cpvp/gcweb-opc/issues"
+  },
+  "description": "gcweb-opc theme",
+  "homepage": "https://github.com/opc-cpvp/themes-cdn#readme",
+  "license": "MIT",
+  "name": "gcweb-opc",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opc-cpvp/themes-cdn.git"
+  },
+  "version": "4.0.26"
+}
