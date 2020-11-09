@@ -1,7 +1,7 @@
 /*!
  * Centrally Deployed Templates Solution (CDTS) / Solution de gabarits à déploiement centralisé (SGDC)
  * github.com/opc-cpvp/cdts-sgdc/blob/master/LICENSE
- * v4.0.26 - 2020-06-03
+ * v4.0.26 - 2020-11-09
  *
  */// This file was automatically generated from wet-fr.soy.
 // Please don't edit this file by hand.
@@ -47,7 +47,7 @@ wet.builder.environment = function(opt_data, opt_ignored) {
 
 wet.builder.refTop = function(opt_data, opt_ignored) {
   opt_data = opt_data || {};
-  var output = '\t\t<!--[if gte IE 9 | !IE ]><!--><link href=\'' + wet.builder.environment(opt_data) + 'gcweb-opc/assets/favicon.ico\' rel="icon" type="image/x-icon" /><link rel="stylesheet" href=\'' + wet.builder.environment(opt_data) + 'gcweb-opc/css/theme.min.css\' /><link rel="stylesheet" href=\'' + wet.builder.environment(opt_data) + 'cdts/css/cdtsfixes.css\'>' + ((opt_data.isApplication == true) ? '<link rel="stylesheet" href=\'' + wet.builder.environment(opt_data) + 'cdts/css/cdtsapps.css\'>' : '') + '<!--<![endif]--><!--[if lt IE 9]><link href=\'' + wet.builder.environment(opt_data) + 'gcweb-opc/assets/favicon.ico\' rel="shortcut icon" /><link rel="stylesheet" href=\'' + wet.builder.environment(opt_data) + 'gcweb-opc/css/ie8-theme.min.css\' /><script src=\'' + wet.builder.environment(opt_data) + 'wet-boew/js/jquery/1.11.1/jquery.min.js\'><\/script><script src=\'' + wet.builder.environment(opt_data) + 'wet-boew/js/ie8-wet-boew.min.js\'><\/script><![endif]--><!--[if lte IE 9]><![endif]--><link rel="stylesheet" href=\'' + wet.builder.environment(opt_data) + 'gcweb-opc/css/opc-style.css\' /><link rel="stylesheet" href=\'' + wet.builder.environment(opt_data) + 'gcweb-opc/cms-css/feedback.css\' />';
+  var output = '\t\t<!--[if gte IE 9 | !IE ]><!--><link href=\'' + wet.builder.environment(opt_data) + 'gcweb-opc/assets/favicon.ico\' rel="icon" type="image/x-icon" /><link rel="stylesheet" href=\'' + wet.builder.environment(opt_data) + 'gcweb-opc/css/theme.min.css\' /><link rel="stylesheet" href=\'' + wet.builder.environment(opt_data) + 'cdts/css/cdtsfixes.css\'>' + ((opt_data.isApplication == true) ? '<link rel="stylesheet" href=\'' + wet.builder.environment(opt_data) + 'cdts/css/cdtsapps.css\'>' : '') + '<!--<![endif]--><!--[if lt IE 9]><link href=\'' + wet.builder.environment(opt_data) + 'gcweb-opc/assets/favicon.ico\' rel="shortcut icon" /><link rel="stylesheet" href=\'' + wet.builder.environment(opt_data) + 'gcweb-opc/css/ie8-theme.min.css\' /><script src=\'' + wet.builder.environment(opt_data) + 'wet-boew/js/jquery/1.11.1/jquery.min.js\'><\/script><script src=\'' + wet.builder.environment(opt_data) + 'wet-boew/js/ie8-wet-boew.min.js\'><\/script><![endif]--><!--[if lte IE 9]><![endif]--><link rel="stylesheet" href=\'' + wet.builder.environment(opt_data) + 'gcweb-opc/css/opc-style.css\' /><link rel="stylesheet" href=\'' + wet.builder.environment(opt_data) + 'components/feedback.css\' />';
   if (opt_data.webAnalytics != null) {
     output += '<script type="text/javascript">var _paq = (function (paq) {var removeTrailingSlash = function(site) {return site.replace(/\\/$/, \'\');};';
     var aaList53 = opt_data.webAnalytics;
@@ -116,21 +116,23 @@ wet.builder.preFooter = function(opt_data, opt_ignored) {
   var output = '\t\t' + ((opt_data.showPostContent != false) ? '' : '');
   if (opt_data.pagedetails != false) {
     output += '<div class="pagedetails' + ((opt_data.isContainer != null) ? ' container' : '') + '">';
-    if (opt_data.showFeedback != false || opt_data.showShare != false) {
-      output += '<div class="row mrgn-tp-sm">' + ((opt_data.showFeedback != false) ? (opt_data.showFeedback != null && opt_data.showFeedback != true) ? '<div class="col-sm-6 col-md-5 col-lg-5"><a href="' + soy.$$escapeHtml(opt_data.showFeedback) + '" class="btn btn-default btn-center">Signaler un problème sur cette page</a></div>' : '<div class="col-sm-6 col-md-5 col-lg-5" id="reportAProblem"><details class="brdr-0" aria-labelledby="problemSection"><summary class="btn btn-default" id="problemSection">Signaler un problème sur cette page</summary><div class="well row"><div><div id="wb-auto-3"><strong class="error" id="validationSummary2" role="alert" aria-atomic="true"><span class="label label-danger"><span class="prefix">Erreur&nbsp;1:&nbsp;</span>Aucune sélection n’a été faite. Vous devez choisir au moins une réponse.</span></strong><form action="https://priv.gc.ca/fr/pour-les-individus/" enctype="multipart/form-data" id="reportAProblemForm" method="post"><input id="ProblemContentId" name="ProblemContentId" type="hidden" value="" /><input name="__RequestVerificationToken" type="hidden" value="" /><fieldset id="reportAProblemInputs"><legend class="required"><span class="field-name">Veuillez cocher toutes les réponses pertinentes </span><span class="redspan"><strong>(obligatoire)</strong> </span>:</legend><div class="checkbox"><label for="PageHasBrokenLink"><input id="PageHasBrokenLink" name="PageHasBrokenLink" type="checkbox" value="true" /><input name="PageHasBrokenLink" type="hidden" value="false" /> Il y a des hyperliens brisés.</label></div><div class="checkbox"><label for="PageHasSpellingOrGrammarMistakes"><input id="PageHasSpellingOrGrammarMistakes" name="PageHasSpellingOrGrammarMistakes" type="checkbox" value="true" /><input name="PageHasSpellingOrGrammarMistakes" type="hidden" value="false" /> Il y a des erreurs d’orthographe ou de grammaire.</label></div><div class="checkbox"><label for="InfoIsOutdated2"><input id="InfoIsOutdated2" name="InfoIsOutdated2" type="checkbox" value="true" /><input name="InfoIsOutdated2" type="hidden" value="false" /> L’information est erronée ou n’est plus à jour.</label></div><div class="checkbox"><label for="OtherReason3"><input id="OtherReason3" name="OtherReason3" type="checkbox" value="true" /><input name="OtherReason3" type="hidden" value="false" /> Autre</label><div class="form-group" id="otherReasonComments3"><label for="Comments3">Veuillez préciser (maximum de 750 caractères) :</label><textarea name="Comments" class="form-control" id="Comments3" maxlength="750" rows="2" cols="20"></textarea></div></div></fieldset><div id="noteAndSubmit2"><div class="alert alert-info"><h2 class="h5">Note</h2><ul><li><small><strong>Vous ne recevrez pas de réponse.</strong> Pour toute question, veuillez <a href="https://priv.gc.ca/fr/communiquer-avec-le-commissariat/">communiquer avec le Commissariat à la protection de la vie privée</a>.</small></li><li><small><strong>N’inscrivez aucun renseignement personnel,</strong> comme votre nom, numéro d\'assurance sociale (NAS), votre adresse au domicile ou au travail, ou encore les numéros de cas ou de dossiers.</small></li><li><small><strong>Pour plus d’information au sujet de cette fonctionnalité</strong>, veuillez consulter nos <a href="https://priv.gc.ca/fr/protection-de-la-vie-privee-et-transparence-au-commissariat/conditions-d-utilisation/">conditions d’utilisation</a>.</small></li></ul></div><div><input type="submit" class="btn btn-primary" value="Soumettre" aria-controls="wb-auto-3" id="btnSubmitProblem" /></div></div><input name=\'ufprt\' type=\'hidden\' value=\'\' /></form></div><div id="reportAProblemSubmissionResults"></div></div></div></details></div>' : '');
-      if (opt_data.showShare != false) {
-        if (opt_data.showShare != null) {
-          output += '<div class="wb-share col-sm-4 col-md-3 col-sm-offset-' + ((opt_data.showFeedback != false) ? '2' : '8') + ' col-md-offset-' + ((opt_data.showFeedback != false) ? '4' : '9') + ((opt_data.showFeedback != false) ? ' col-lg-offset-4' : '') + '" data-wb-share=\'{"filter": [';
+    if (opt_data.showFeedback != null || opt_data.showShare != null) {
+      output += '<div class="row mrgn-tp-sm">' + ((opt_data.showFeedback != null && opt_data.showFeedback != false) ? '<div class="col-sm-6 col-md-5 col-lg-5">' + ((opt_data.showFeedback != true) ? '<feedback-element locale="fr" feedback-type="problem" feedback-api="' + soy.$$escapeHtml(opt_data.showFeedback) + '"></feedback-element>' : '<feedback-element locale="fr" feedback-type="problem"></feedback-element>') + '</div>' : '');
+      if (opt_data.showShare != null && opt_data.showShare != false) {
+        output += '<div class="col-sm-6 col-md-4 col-lg-5 col-md-offset-' + ((opt_data.showFeedback != null && opt_data.showFeedback != false) ? '3' : '8') + ' col-lg-offset-' + ((opt_data.showFeedback != null && opt_data.showFeedback != false) ? '2' : '7') + '">';
+        if (opt_data.showShare != true) {
+          output += '<feedback-element locale="fr" feedback-type="helpful" feedback-api="';
           var itemList204 = opt_data.showShare;
           var itemListLen204 = itemList204.length;
           for (var itemIndex204 = 0; itemIndex204 < itemListLen204; itemIndex204++) {
             var itemData204 = itemList204[itemIndex204];
-            output += '"' + soy.$$escapeHtml(itemData204) + '"' + ((! (itemIndex204 == itemListLen204 - 1)) ? ', ' : '');
+            output += (itemIndex204 == itemListLen204 - 1) ? soy.$$escapeHtml(itemData204) : '';
           }
-          output += '], "lnkClass": "btn btn-default btn-block"}\'></div>';
+          output += '"></feedback-element>';
         } else {
-          output += '<div class="wb-share col-sm-4 col-md-3 col-sm-offset-' + ((opt_data.showFeedback != false) ? '2' : '8') + ' col-md-offset-' + ((opt_data.showFeedback != false) ? '4' : '9') + ((opt_data.showFeedback != false) ? ' col-lg-offset-4' : '') + '" data-wb-share=\'{"lnkClass": "btn btn-default btn-block"}\'></div>';
+          output += '<feedback-element locale="fr" feedback-type="helpful"></feedback-element>';
         }
+        output += '</div>';
       }
       output += '</div>';
     }
@@ -142,26 +144,26 @@ wet.builder.preFooter = function(opt_data, opt_ignored) {
 
 wet.builder.secmenu = function(opt_data, opt_ignored) {
   var output = '\t\t\t<h2 id="wb-sec-h" class="wb-inv">Menu de la section</h2>';
-  var sectionList250 = opt_data.sections;
-  var sectionListLen250 = sectionList250.length;
-  for (var sectionIndex250 = 0; sectionIndex250 < sectionListLen250; sectionIndex250++) {
-    var sectionData250 = sectionList250[sectionIndex250];
-    output += '<section class="list-group menu list-unstyled"><h3>' + ((sectionData250.sectionLink != null) ? '<a href="' + soy.$$escapeHtml(sectionData250.sectionLink) + '"' + ((sectionData250.newWindow == true) ? ' target="_blank"  rel="noopener"' : '') + '>' : '') + soy.$$escapeHtml(sectionData250.sectionName) + ((sectionData250.newWindow == true) ? '<span class="wb-inv"> Ce lien ouvrira dans une nouvelle fenêtre</span>' : '') + ((sectionData250.sectionLink != null) ? '</a>' : '') + '</h3><ul class="list-group menu list-unstyled">';
-    var linkList269 = sectionData250.menuLinks;
-    var linkListLen269 = linkList269.length;
-    for (var linkIndex269 = 0; linkIndex269 < linkListLen269; linkIndex269++) {
-      var linkData269 = linkList269[linkIndex269];
-      if (linkData269.subLinks != null) {
-        output += '<li><a href="' + soy.$$escapeHtml(linkData269.href) + '" class="list-group-item"' + ((linkData269.newWindow == true) ? ' target="_blank"  rel="noopener"' : '') + '>' + soy.$$escapeHtml(linkData269.text) + ((linkData269.newWindow == true) ? '<span class="wb-inv"> Ce lien ouvrira dans une nouvelle fenêtre</span>' : '') + '</a><ul class="list-group menu list-unstyled">';
-        var sublinkList284 = linkData269.subLinks;
-        var sublinkListLen284 = sublinkList284.length;
-        for (var sublinkIndex284 = 0; sublinkIndex284 < sublinkListLen284; sublinkIndex284++) {
-          var sublinkData284 = sublinkList284[sublinkIndex284];
-          output += '<li><a href="' + soy.$$escapeHtml(sublinkData284.subhref) + '" class="list-group-item"' + ((sublinkData284.newWindow == true) ? ' target="_blank"  rel="noopener"' : '') + '>' + soy.$$escapeHtml(sublinkData284.subtext) + ((sublinkData284.newWindow == true) ? '<span class="wb-inv"> Ce lien ouvrira dans une nouvelle fenêtre</span>' : '') + '</a></li>';
+  var sectionList233 = opt_data.sections;
+  var sectionListLen233 = sectionList233.length;
+  for (var sectionIndex233 = 0; sectionIndex233 < sectionListLen233; sectionIndex233++) {
+    var sectionData233 = sectionList233[sectionIndex233];
+    output += '<section class="list-group menu list-unstyled"><h3>' + ((sectionData233.sectionLink != null) ? '<a href="' + soy.$$escapeHtml(sectionData233.sectionLink) + '"' + ((sectionData233.newWindow == true) ? ' target="_blank"  rel="noopener"' : '') + '>' : '') + soy.$$escapeHtml(sectionData233.sectionName) + ((sectionData233.newWindow == true) ? '<span class="wb-inv"> Ce lien ouvrira dans une nouvelle fenêtre</span>' : '') + ((sectionData233.sectionLink != null) ? '</a>' : '') + '</h3><ul class="list-group menu list-unstyled">';
+    var linkList252 = sectionData233.menuLinks;
+    var linkListLen252 = linkList252.length;
+    for (var linkIndex252 = 0; linkIndex252 < linkListLen252; linkIndex252++) {
+      var linkData252 = linkList252[linkIndex252];
+      if (linkData252.subLinks != null) {
+        output += '<li><a href="' + soy.$$escapeHtml(linkData252.href) + '" class="list-group-item"' + ((linkData252.newWindow == true) ? ' target="_blank"  rel="noopener"' : '') + '>' + soy.$$escapeHtml(linkData252.text) + ((linkData252.newWindow == true) ? '<span class="wb-inv"> Ce lien ouvrira dans une nouvelle fenêtre</span>' : '') + '</a><ul class="list-group menu list-unstyled">';
+        var sublinkList267 = linkData252.subLinks;
+        var sublinkListLen267 = sublinkList267.length;
+        for (var sublinkIndex267 = 0; sublinkIndex267 < sublinkListLen267; sublinkIndex267++) {
+          var sublinkData267 = sublinkList267[sublinkIndex267];
+          output += '<li><a href="' + soy.$$escapeHtml(sublinkData267.subhref) + '" class="list-group-item"' + ((sublinkData267.newWindow == true) ? ' target="_blank"  rel="noopener"' : '') + '>' + soy.$$escapeHtml(sublinkData267.subtext) + ((sublinkData267.newWindow == true) ? '<span class="wb-inv"> Ce lien ouvrira dans une nouvelle fenêtre</span>' : '') + '</a></li>';
         }
         output += '</ul></li>';
       } else {
-        output += '<li><a href="' + soy.$$escapeHtml(linkData269.href) + '" class="list-group-item"' + ((linkData269.newWindow == true) ? ' target="_blank"  rel="noopener"' : '') + '>' + soy.$$escapeHtml(linkData269.text) + ((linkData269.newWindow == true) ? '<span class="wb-inv"> Ce lien ouvrira dans une nouvelle fenêtre</span>' : '') + '</a></li>';
+        output += '<li><a href="' + soy.$$escapeHtml(linkData252.href) + '" class="list-group-item"' + ((linkData252.newWindow == true) ? ' target="_blank"  rel="noopener"' : '') + '>' + soy.$$escapeHtml(linkData252.text) + ((linkData252.newWindow == true) ? '<span class="wb-inv"> Ce lien ouvrira dans une nouvelle fenêtre</span>' : '') + '</a></li>';
       }
     }
     output += '</ul></section>';
@@ -177,11 +179,11 @@ wet.builder.footer = function(opt_data, opt_ignored) {
     output += '<nav class="container visible-sm visible-md visible-lg wb-navcurr" aria-labelledby="footer-links"><h2 class="wb-inv" id="footer-links">À propos du site</h2><div class="row"><div class="col-md-3"><section aria-labelledby="about-opc-section"><h3 id="about-opc-section">À propos du Commissariat</h3><p>Le commissaire à la protection de la vie privée du Canada est un agent du Parlement qui a pour mission de protéger et de promouvoir le droit à la vie privée.</p><ul class="list-unstyled"><li><a href="https://priv.gc.ca/fr/a-propos-du-commissariat/qui-nous-sommes/">Qui nous sommes</a></li><li><a href="https://priv.gc.ca/fr/a-propos-du-commissariat/ce-que-nous-faisons/">Ce que nous faisons</a></li><li><a href="https://priv.gc.ca/fr/a-propos-du-commissariat/rapports-operationnels-du-commissariat/">Rapports sur les activités du Commissariat</a></li><li><a href="https://priv.gc.ca/fr/a-propos-du-commissariat//publications/">Publications</a></li><li><a href="https://priv.gc.ca/fr/a-propos-du-commissariat/travailler-au-commissariat">Travailler au Commissariat</a></li></ul></section></div><div class="col-md-3"><section aria-labelledby="opc-news-section"><h3 id="opc-news-section">Nouvelles du Commissariat</h3><p>Soyez informés des annonces et des activités du Commissariat à la protection de la vie privée du Canada de même que des événements auxquels il participe.</p><ul class="list-unstyled"><li><a href="https://priv.gc.ca/fr/nouvelles-du-commissariat/nouvelles-et-annonces">Nouvelles et annonces</a></li><li><a href="https://priv.gc.ca/fr/nouvelles-du-commissariat/evenements-lies-a-la-protection-de-la-vie-privee/">Événements liés à la protection de la vie privée</a></li><li><a href="https://priv.gc.ca/fr/nouvelles-du-commissariat/allocutions/">Allocutions</a></li></ul></section></div><div class="col-md-3"><section aria-labelledby="respect-section"><h3 id="respect-section">Votre vie privée</h3><p><strong>Nous respectons votre vie privée.</strong></p><p>Lisez notre <a href="https://priv.gc.ca/fr/protection-de-la-vie-privee-et-transparence-au-commissariat/pp/">Politique sur la protection des renseignements personnels</a> et nos <a href="https://priv.gc.ca/fr/protection-de-la-vie-privee-et-transparence-au-commissariat/conditions-d-utilisation/">Conditions d’utilisation</a> pour en savoir plus sur la protection de vos renseignements personnels et votre droit à la vie privée lorsque vous naviguez sur le site Web <a href="https://priv.gc.ca/">priv.gc.ca</a> ou que vous communiquez avec le Commissariat à la protection de la vie privée du Canada.</p></section><section aria-labelledby="transparency-section"><h3 id="transparency-section">Transparence</h3><ul class="list-unstyled"><li><a href="https://priv.gc.ca/fr/protection-de-la-vie-privee-et-transparence-au-commissariat/divulgation-proactive/">Divulgation proactive</a></li></ul></section></div><div class="col-md-3"><section aria-labelledby="contact-us-section"><h3 id="contact-us-section">Pour communiquer avec nous</h3><p>Vous voulez nous poser une question, nous faire part d’une préoccupation ou déposer une plainte contre une organisation? Nous pouvons vous aider.</p>';
     if (opt_data.contactLinks != null) {
       output += '<ul class="list-unstyled colcount-sm-2 colcount-md-3">';
-      var linkList323 = opt_data.contactLinks;
-      var linkListLen323 = linkList323.length;
-      for (var linkIndex323 = 0; linkIndex323 < linkListLen323; linkIndex323++) {
-        var linkData323 = linkList323[linkIndex323];
-        output += (linkIndex323 == 0) ? '<li><a href="' + soy.$$escapeHtml(linkData323.href) + '">Contactez-nous</a></li>' : '';
+      var linkList306 = opt_data.contactLinks;
+      var linkListLen306 = linkList306.length;
+      for (var linkIndex306 = 0; linkIndex306 < linkListLen306; linkIndex306++) {
+        var linkData306 = linkList306[linkIndex306];
+        output += (linkIndex306 == 0) ? '<li><a href="' + soy.$$escapeHtml(linkData306.href) + '">Contactez-nous</a></li>' : '';
       }
       output += '</ul>';
     } else {
@@ -191,31 +193,31 @@ wet.builder.footer = function(opt_data, opt_ignored) {
   } else {
     output += '<div id="transactFooter" class="landscape"></div><nav class="container visible-sm visible-md visible-lg wb-navcurr ftr-urlt-lnk"><h2 class="wb-inv">À propos du site</h2><ul>';
     if (opt_data.contactLinks != null) {
-      var linkList338 = opt_data.contactLinks;
-      var linkListLen338 = linkList338.length;
-      for (var linkIndex338 = 0; linkIndex338 < linkListLen338; linkIndex338++) {
-        var linkData338 = linkList338[linkIndex338];
-        output += (linkIndex338 == 0) ? '<li><a ' + ((linkData338.href) ? ' href="' + soy.$$escapeHtml(linkData338.href) + '"' : ' href="https://priv.gc.ca/fr/communiquer-avec-le-commissariat/"') + ((linkData338.newWindow) ? ' target="_blank"  rel="noopener"' : '') + '>Coordonnées' + ((linkData338.newWindow == true) ? '<span class="wb-inv"> Ce lien ouvrira dans une nouvelle fenêtre</span>' : '') + '</a></li>' : '';
+      var linkList321 = opt_data.contactLinks;
+      var linkListLen321 = linkList321.length;
+      for (var linkIndex321 = 0; linkIndex321 < linkListLen321; linkIndex321++) {
+        var linkData321 = linkList321[linkIndex321];
+        output += (linkIndex321 == 0) ? '<li><a ' + ((linkData321.href) ? ' href="' + soy.$$escapeHtml(linkData321.href) + '"' : ' href="https://priv.gc.ca/fr/communiquer-avec-le-commissariat/"') + ((linkData321.newWindow) ? ' target="_blank"  rel="noopener"' : '') + '>Coordonnées' + ((linkData321.newWindow == true) ? '<span class="wb-inv"> Ce lien ouvrira dans une nouvelle fenêtre</span>' : '') + '</a></li>' : '';
       }
     } else {
       output += '<li><a href="https://priv.gc.ca/fr/communiquer-avec-le-commissariat/">Coordonnées</a></li>';
     }
     if (opt_data.termsLink != null) {
-      var linkList362 = opt_data.termsLink;
-      var linkListLen362 = linkList362.length;
-      for (var linkIndex362 = 0; linkIndex362 < linkListLen362; linkIndex362++) {
-        var linkData362 = linkList362[linkIndex362];
-        output += (linkIndex362 == 0) ? '<li><a ' + ((linkData362.href) ? ' href="' + soy.$$escapeHtml(linkData362.href) + '"' : ' href="https://priv.gc.ca/fr/protection-de-la-vie-privee-et-transparence-au-commissariat/conditions-d-utilisation/"') + ((linkData362.newWindow) ? ' target="_blank"  rel="noopener"' : '') + '>Avis' + ((linkData362.newWindow == true) ? '<span class="wb-inv"> Ce lien ouvrira dans une nouvelle fenêtre</span>' : '') + '</a></li>' : '';
+      var linkList345 = opt_data.termsLink;
+      var linkListLen345 = linkList345.length;
+      for (var linkIndex345 = 0; linkIndex345 < linkListLen345; linkIndex345++) {
+        var linkData345 = linkList345[linkIndex345];
+        output += (linkIndex345 == 0) ? '<li><a ' + ((linkData345.href) ? ' href="' + soy.$$escapeHtml(linkData345.href) + '"' : ' href="https://priv.gc.ca/fr/protection-de-la-vie-privee-et-transparence-au-commissariat/conditions-d-utilisation/"') + ((linkData345.newWindow) ? ' target="_blank"  rel="noopener"' : '') + '>Avis' + ((linkData345.newWindow == true) ? '<span class="wb-inv"> Ce lien ouvrira dans une nouvelle fenêtre</span>' : '') + '</a></li>' : '';
       }
     } else {
       output += '<li><a href="https://priv.gc.ca/fr/protection-de-la-vie-privee-et-transparence-au-commissariat/conditions-d-utilisation/">Avis</a></li>';
     }
     if (opt_data.privacyLink != null) {
-      var linkList386 = opt_data.privacyLink;
-      var linkListLen386 = linkList386.length;
-      for (var linkIndex386 = 0; linkIndex386 < linkListLen386; linkIndex386++) {
-        var linkData386 = linkList386[linkIndex386];
-        output += (linkIndex386 == 0) ? '<li><a ' + ((linkData386.href) ? ' href="' + soy.$$escapeHtml(linkData386.href) + '"' : ' href="https://priv.gc.ca/fr/protection-de-la-vie-privee-et-transparence-au-commissariat/pp/"') + ((linkData386.newWindow) ? ' target="_blank"  rel="noopener"' : '') + '>Confidentialité' + ((linkData386.newWindow == true) ? '<span class="wb-inv"> Ce lien ouvrira dans une nouvelle fenêtre</span>' : '') + '</a></li>' : '';
+      var linkList369 = opt_data.privacyLink;
+      var linkListLen369 = linkList369.length;
+      for (var linkIndex369 = 0; linkIndex369 < linkListLen369; linkIndex369++) {
+        var linkData369 = linkList369[linkIndex369];
+        output += (linkIndex369 == 0) ? '<li><a ' + ((linkData369.href) ? ' href="' + soy.$$escapeHtml(linkData369.href) + '"' : ' href="https://priv.gc.ca/fr/protection-de-la-vie-privee-et-transparence-au-commissariat/pp/"') + ((linkData369.newWindow) ? ' target="_blank"  rel="noopener"' : '') + '>Confidentialité' + ((linkData369.newWindow == true) ? '<span class="wb-inv"> Ce lien ouvrira dans une nouvelle fenêtre</span>' : '') + '</a></li>' : '';
       }
     } else {
       output += '<li><a href="https://priv.gc.ca/fr/protection-de-la-vie-privee-et-transparence-au-commissariat/pp/">Confidentialité</a></li>';
@@ -229,7 +231,7 @@ wet.builder.footer = function(opt_data, opt_ignored) {
 
 wet.builder.refFooter = function(opt_data, opt_ignored) {
   opt_data = opt_data || {};
-  return '\t\t<!--[if gte IE 9 | !IE ]><!--><script src="' + ((opt_data.jqueryEnv == 'external') ? 'https://ajax.googleapis.com/ajax/libs/' : wet.builder.environment(opt_data) + 'wet-boew/js/') + 'jquery/2.1.4/jquery.min.js"><\/script><script src=\'' + wet.builder.environment(opt_data) + 'wet-boew/js/wet-boew.min.js\'><\/script><!--<![endif]--><!--[if lt IE 9]><script src=\'' + wet.builder.environment(opt_data) + 'wet-boew/js/ie8-wet-boew2.min.js\'><\/script><![endif]--><script src=\'' + wet.builder.environment(opt_data) + 'gcweb-opc/js/theme.min.js\'><\/script><script src=\'' + wet.builder.environment(opt_data) + 'gcweb-opc/cms-scripts/feedback.js\'><\/script>' + ((opt_data.exitScript == true) ? '<script src=\'' + wet.builder.environment(opt_data) + 'cdts/js/exitScript.js\'><\/script><script data-id="exitScript" data-token="' + soy.$$escapeHtml(opt_data.exitURL) + '" data-token-domains="' + soy.$$escapeHtml(opt_data.exitDomains) + '" data-token-modal="' + soy.$$escapeHtml(opt_data.displayModal) + '">clickA();<\/script><a id="sExitModalLink" class="wb-lbx lbx-modal wb-inv" title="" href="#sExitModal" tabindex="-1">Avis de sortie sécurisée</a><section id="sExitModal" class="mfp-hide modal-dialog modal-content overlay-def"><header class="modal-header"><h2 class="modal-title">Avertissement</h2></header><div class="modal-body"><p>' + ((opt_data.exitMsg != null && opt_data.exitMsg.length > 0) ? soy.$$escapeHtml(opt_data.exitMsg) : 'Vous êtes sur le point de quitter un site sécurisé. Voulez-vous continuer?') + '</p><ul class="list-inline text-center"><li><a class="btn btn-primary popup-modal-dismiss pull-left" id="eCancel" href="javascript:void(0)" type="button">' + ((opt_data.cancelMsg != null && opt_data.cancelMsg.length > 0) ? soy.$$escapeHtml(opt_data.cancelMsg) : 'Annuler') + '</a></li><li><a class="btn btn-default popup-modal pull-right" id="eOK" href="javascript:void(0)" type="button">' + ((opt_data.yesMsg != null && opt_data.yesMsg.length > 0) ? soy.$$escapeHtml(opt_data.yesMsg) : 'Oui') + '</a></li></ul></div></section>' : '') + ((opt_data.isApplication == true) ? '<script src=\'' + wet.builder.environment(opt_data) + 'cdts/js/cdtscustom.js\'><\/script>' : '') + ((opt_data.webAnalytics != null) ? '' : '');
+  return '\t\t<!--[if gte IE 9 | !IE ]><!--><script src="' + ((opt_data.jqueryEnv == 'external') ? 'https://ajax.googleapis.com/ajax/libs/' : wet.builder.environment(opt_data) + 'wet-boew/js/') + 'jquery/2.1.4/jquery.min.js"><\/script><script src=\'' + wet.builder.environment(opt_data) + 'wet-boew/js/wet-boew.min.js\'><\/script><!--<![endif]--><!--[if lt IE 9]><script src=\'' + wet.builder.environment(opt_data) + 'wet-boew/js/ie8-wet-boew2.min.js\'><\/script><![endif]--><script src=\'' + wet.builder.environment(opt_data) + 'gcweb-opc/js/theme.min.js\'><\/script><script src=\'' + wet.builder.environment(opt_data) + 'components/feedback.js\'><\/script>' + ((opt_data.exitScript == true) ? '<script src=\'' + wet.builder.environment(opt_data) + 'cdts/js/exitScript.js\'><\/script><script data-id="exitScript" data-token="' + soy.$$escapeHtml(opt_data.exitURL) + '" data-token-domains="' + soy.$$escapeHtml(opt_data.exitDomains) + '" data-token-modal="' + soy.$$escapeHtml(opt_data.displayModal) + '">clickA();<\/script><a id="sExitModalLink" class="wb-lbx lbx-modal wb-inv" title="" href="#sExitModal" tabindex="-1">Avis de sortie sécurisée</a><section id="sExitModal" class="mfp-hide modal-dialog modal-content overlay-def"><header class="modal-header"><h2 class="modal-title">Avertissement</h2></header><div class="modal-body"><p>' + ((opt_data.exitMsg != null && opt_data.exitMsg.length > 0) ? soy.$$escapeHtml(opt_data.exitMsg) : 'Vous êtes sur le point de quitter un site sécurisé. Voulez-vous continuer?') + '</p><ul class="list-inline text-center"><li><a class="btn btn-primary popup-modal-dismiss pull-left" id="eCancel" href="javascript:void(0)" type="button">' + ((opt_data.cancelMsg != null && opt_data.cancelMsg.length > 0) ? soy.$$escapeHtml(opt_data.cancelMsg) : 'Annuler') + '</a></li><li><a class="btn btn-default popup-modal pull-right" id="eOK" href="javascript:void(0)" type="button">' + ((opt_data.yesMsg != null && opt_data.yesMsg.length > 0) ? soy.$$escapeHtml(opt_data.yesMsg) : 'Oui') + '</a></li></ul></div></section>' : '') + ((opt_data.isApplication == true) ? '<script src=\'' + wet.builder.environment(opt_data) + 'cdts/js/cdtscustom.js\'><\/script>' : '') + ((opt_data.webAnalytics != null) ? '' : '');
 };
 
 // This file was automatically generated from appPage-fr.soy.
