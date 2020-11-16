@@ -1,10 +1,10 @@
 /*
- * Web Experience Toolkit (WET) / Boîte à outils de l"expérience Web (BOEW)
- * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- */
+* Web Experience Toolkit (WET) / Boîte à outils de l"expérience Web (BOEW)
+* wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
+*/
 /*
 ----- Afrikaans dictionary (il8n) ---
- */
+*/
 ( function( wb ) {
 "use strict";
 
@@ -54,7 +54,7 @@ wb.i18nDict = {
 	"prv-l": "Vorige (links pyltjie sleutel)",
 	first: "Eerste",
 	last: "Laaste",
-	page: "Page",
+	page: "Jump to: Page",
 	"srch-menus": "Soek en spyskaarte",
 	email: "Stuur 'n e-pos aan",
 	"menu-close": "Maak die menu",
@@ -107,6 +107,7 @@ wb.i18nDict = {
 	"frm-nosubmit": "Die vorm kon nie voorgel꡷ord nie, want ",
 	"errs-fnd": " foute is gevind nie.",
 	"err-fnd": " fout gevind word.",
+	"err-correct": "(Correct and resubmit)",
 
 	/* Date picker */
 	"date-hide": "Steek kalender",
@@ -156,6 +157,7 @@ wb.i18nDict = {
 	/* Charts widget */
 	"tbl-txt": "Tabel",
 	"tbl-dtls": "Chart. Besonderhede in die volgende tabel.",
+	"chrt-cmbslc": "Combined slice",
 
 	/* Session timeout */
 	"st-to-msg-bgn": "Jou sessie sal outomaties verval in #min# min #sec# sek aan.",
@@ -196,9 +198,10 @@ wb.i18nDict = {
 	"geo-allyttl": "Instruksies: Kaart navigasie",
 	"geo-tgllyr": "Skakel die vertoning van die laag",
 	"geo-hdnlyr": "Hierdie laag is tans weggesteek.",
-	"geo-bmapurl": "@geo-bmapurl@",
+	"geo-bmap-url": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT3978/MapServer/WMTS/",
+	"geo-bmap-matrix-set": "default028mm",
 	"geo-bmapttl": "BaseMaps_CBMT3978",
-	"geo-bmapurltxt": "@geo-bmapurltxt@",
+	"geo-bmapurltxt": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_TXT_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
 	"geo-attrlnk": "//geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
 	"geo-attrttl": "GeoGratis - Kanada basis kaart (Engels of Frans)",
 	"geo-sel": "Kies",
@@ -211,6 +214,7 @@ wb.i18nDict = {
 	"geo-aoi-south": "Suid",
 	"geo-aoi-west": "Weste",
 	"geo-aoi-instructions": "Baken 'n gebied op die kaart of die onderstaande inligting in en kliek dan op die \"Teken\"-knoppie.",
+	"geo-aoi-title": "Draw box on map or enter coordinates",
 	"geo-aoi-btndraw": "Teken",
 	"geo-aoi-btnclear": "Verwyder",
 	"geo-geoloc-btn": "Zoom in jou huidige posisie",

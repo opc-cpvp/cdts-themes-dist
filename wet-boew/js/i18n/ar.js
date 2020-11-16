@@ -1,10 +1,10 @@
 /*
- * Web Experience Toolkit (WET) / Boîte à outils de l"expérience Web (BOEW)
- * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- */
+* Web Experience Toolkit (WET) / Boîte à outils de l"expérience Web (BOEW)
+* wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
+*/
 /*
 ----- Arabic dictionary (il8n) ---
- */
+*/
 ( function( wb ) {
 "use strict";
 
@@ -54,7 +54,7 @@ wb.i18nDict = {
 	"prv-l": "مفتاح السهم الأيسر - سابق",
 	first: "الأول",
 	last: "آخر",
-	page: "Page",
+	page: "Jump to: Page",
 	"srch-menus": "البحث والقوائم",
 	email: "البريد الإلكتروني",
 	"menu-close": "إغلاق القائمة",
@@ -107,6 +107,7 @@ wb.i18nDict = {
 	"frm-nosubmit": "لا يمكن أن تقدم على شكل ل ",
 	"errs-fnd": " تم العثور على أخطاء.",
 	"err-fnd": " تم العثور على خطأ.",
+	"err-correct": "(Correct and resubmit)",
 
 	/* Date picker */
 	"date-hide": "إخفاء التقويم",
@@ -156,6 +157,7 @@ wb.i18nDict = {
 	/* Charts widget */
 	"tbl-txt": "جدول",
 	"tbl-dtls": "الرسم البياني. التفاصيل في الجدول التالي.",
+	"chrt-cmbslc": "Combined slice",
 
 	/* Session timeout */
 	"st-to-msg-bgn": "سوف تنتهي جلسة العمل الخاصة بك تلقائيا في على  #min# دقيقة #sec# ثانية.",
@@ -196,9 +198,10 @@ wb.i18nDict = {
 	"geo-allyttl": "تعليمات: خريطة الملاحة",
 	"geo-tgllyr": "تبديل عرض طبقة",
 	"geo-hdnlyr": "حاليا يتم إخفاء هذه الطبقة.",
-	"geo-bmapurl": "@geo-bmapurl@",
+	"geo-bmap-url": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT3978/MapServer/WMTS/",
+	"geo-bmap-matrix-set": "default028mm",
 	"geo-bmapttl": "BaseMaps_CBMT3978",
-	"geo-bmapurltxt": "@geo-bmapurltxt@",
+	"geo-bmapurltxt": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_TXT_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
 	"geo-attrlnk": "//geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
 	"geo-attrttl": "GeoGratis - كندا قاعدة الخريطة (الإنجليزية أو الفرنسية فقط)",
 	"geo-sel": "حدد",
@@ -211,6 +214,7 @@ wb.i18nDict = {
 	"geo-aoi-south": "جنوب",
 	"geo-aoi-west": "غرب",
 	"geo-aoi-instructions": "مربع رسم على الخريطة أو أدخل إحداثيات أدناه وانقر على زر \"إضافة\".",
+	"geo-aoi-title": "Draw box on map or enter coordinates",
 	"geo-aoi-btndraw": "رسم",
 	"geo-aoi-btnclear": "نزع",
 	"geo-geoloc-btn": "التكبير لموقعك الحالي",
@@ -238,6 +242,16 @@ wb.i18nDict = {
 } )( wb );
 
 wb.doc.one( "formLanguages.wb", function() {
+(function( factory ) {
+	if ( typeof define === "function" && define.amd ) {
+		define( ["jquery", "../jquery.validate"], factory );
+	} else if (typeof module === "object" && module.exports) {
+		module.exports = factory( require( "jquery" ) );
+	} else {
+		factory( jQuery );
+	}
+}(function( $ ) {
+
 /*
  * Translated default messages for the jQuery validation plugin.
  * Locale: AR (Arabic; العربية)
@@ -258,9 +272,10 @@ $.extend( $.validator.messages, {
 	minlength: $.validator.format( "الحد الأدنى لعدد الحروف هو {0}" ),
 	rangelength: $.validator.format( "عدد الحروف يجب أن يكون بين {0} و {1}" ),
 	range: $.validator.format( "رجاء إدخال عدد قيمته بين {0} و {1}" ),
-	max: $.validator.format( "رجاء إدخال عدد أقل من أو يساوي (0}" ),
-	min: $.validator.format( "رجاء إدخال عدد أكبر من أو يساوي (0}" )
+	max: $.validator.format( "رجاء إدخال عدد أقل من أو يساوي {0}" ),
+	min: $.validator.format( "رجاء إدخال عدد أكبر من أو يساوي {0}" )
 } );
-
+return $;
+}));
 
 });

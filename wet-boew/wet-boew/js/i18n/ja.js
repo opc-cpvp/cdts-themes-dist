@@ -1,10 +1,10 @@
 /*
- * Web Experience Toolkit (WET) / Boîte à outils de l"expérience Web (BOEW)
- * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- */
+* Web Experience Toolkit (WET) / Boîte à outils de l"expérience Web (BOEW)
+* wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
+*/
 /*
 ----- Japanese dictionary (il8n) ---
- */
+*/
 ( function( wb ) {
 "use strict";
 
@@ -54,7 +54,7 @@ wb.i18nDict = {
 	"prv-l": "前へ（左矢印キー）",
 	first: "最初",
 	last: "最後",
-	page: "Page",
+	page: "Jump to: Page",
 	"srch-menus": "検索とメニュー",
 	email: "メール",
 	"menu-close": "メニューを閉じる",
@@ -107,6 +107,7 @@ wb.i18nDict = {
 	"frm-nosubmit": "フォームを送信できませんでした。原因：",
 	"errs-fnd": "複数のエラーが見つかりました。",
 	"err-fnd": "エラーが見つかりました。",
+	"err-correct": "(Correct and resubmit)",
 
 	/* Date picker */
 	"date-hide": "カレンダーを非表示",
@@ -156,6 +157,7 @@ wb.i18nDict = {
 	/* Charts widget */
 	"tbl-txt": "表",
 	"tbl-dtls": "チャート図。詳細については次の表を参照。",
+	"chrt-cmbslc": "Combined slice",
 
 	/* Session timeout */
 	"st-to-msg-bgn": "セッションは、 #min# 分 #sec# 秒で自動的に期限切れになります。",
@@ -196,9 +198,10 @@ wb.i18nDict = {
 	"geo-allyttl": "地図ナビゲーションの使い方",
 	"geo-tgllyr": "レイヤーの表示・非表示の切り替え",
 	"geo-hdnlyr": "このレイヤーは表示されていません。",
-	"geo-bmapurl": "@geo-bmapurl@",
+	"geo-bmap-url": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT3978/MapServer/WMTS/",
+	"geo-bmap-matrix-set": "default028mm",
 	"geo-bmapttl": "BaseMaps_CBMT3978",
-	"geo-bmapurltxt": "@geo-bmapurltxt@",
+	"geo-bmapurltxt": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_TXT_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
 	"geo-attrlnk": "//geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
 	"geo-attrttl": "GeoGratis-カナダベースマップ（英語またはフランス語のみ",
 	"geo-sel": "選択",
@@ -211,6 +214,7 @@ wb.i18nDict = {
 	"geo-aoi-south": "南",
 	"geo-aoi-west": "西",
 	"geo-aoi-instructions": "Disegnare scatola sulla mappa o inserire le coordinate di sotto e fare clic sul pulsante \"Aggiungi\".",
+	"geo-aoi-title": "Draw box on map or enter coordinates",
 	"geo-aoi-btndraw": "描く",
 	"geo-aoi-btnclear": "削除する",
 	"geo-geoloc-btn": "現在の場所にズーム",
@@ -238,6 +242,16 @@ wb.i18nDict = {
 } )( wb );
 
 wb.doc.one( "formLanguages.wb", function() {
+(function( factory ) {
+	if ( typeof define === "function" && define.amd ) {
+		define( ["jquery", "../jquery.validate"], factory );
+	} else if (typeof module === "object" && module.exports) {
+		module.exports = factory( require( "jquery" ) );
+	} else {
+		factory( jQuery );
+	}
+}(function( $ ) {
+
 /*
  * Translated default messages for the jQuery validation plugin.
  * Locale: JA (Japanese; 日本語)
@@ -258,9 +272,11 @@ $.extend( $.validator.messages, {
 	minlength: $.validator.format( "{0} 文字以上で入力してください。" ),
 	rangelength: $.validator.format( "{0} 文字から {1} 文字までの値を入力してください。" ),
 	range: $.validator.format( "{0} から {1} までの値を入力してください。" ),
+	step: $.validator.format( "{0} の倍数を入力してください。" ),
 	max: $.validator.format( "{0} 以下の値を入力してください。" ),
 	min: $.validator.format( "{0} 以上の値を入力してください。" )
 } );
-
+return $;
+}));
 
 });

@@ -1,10 +1,10 @@
 /*
- * Web Experience Toolkit (WET) / Boîte à outils de l"expérience Web (BOEW)
- * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- */
+* Web Experience Toolkit (WET) / Boîte à outils de l"expérience Web (BOEW)
+* wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
+*/
 /*
 ----- Inuktitut dictionary (il8n) ---
- */
+*/
 ( function( wb ) {
 "use strict";
 
@@ -107,6 +107,7 @@ wb.i18nDict = {
 	"frm-nosubmit": "ᑖᓐᓇ ᑎᑎᖅᑲᖅ ᐅᑎᖅᑎᒐᒃᓴᐅᙱᑦᑐᖅ ᐅᓇ ᐱᔾᔪᑕᐅᓪᓗᓂ",
 	"errs-fnd": "ᑕᒻᒪᖅᓯᒪᔪᓂᑦ ᖃᐅᔨᔪᖅ",
 	"err-fnd": "ᑕᒻᒪᖅᓯᒪᔪᒥᑦ ᖃᐅᔨᔪᖅ",
+	"err-correct": "(Correct and resubmit)",
 
 	/* Date picker */
 	"date-hide": "ᐅᓪᓗᖅᓯᐅᑎ ᓴᖅᑭᔮᕈᓐᓂᖅᑎᓪᓕ",
@@ -156,6 +157,7 @@ wb.i18nDict = {
 	/* Charts widget */
 	"tbl-txt": "ᑭᐳ",
 	"tbl-dtls": "ᓴᓇᒐᖅ. ᑭᐳᒥ ᓇᓗᓇᐃᖅᑕᐅᓯᒪᔪᑦ.",
+	"chrt-cmbslc": "Combined slice",
 
 	/* Session timeout */
 	"st-to-msg-bgn": "ᐱᓕᕆᐊᑦ ᐃᒻᒥᓂ ᓄᖅᖃᕐᓂᐊᖅᑐᖅ ᐃᒪᓐᓇᑎᒋ #ᒥᓂᑦᓯᓂ# ᒥᓂᑦᓯᓂ #ᑎᑦᑕᓂ# ᑎᑦᑕᓂ.",
@@ -196,9 +198,10 @@ wb.i18nDict = {
 	"geo-allyttl": "ᑐᑭᓕᐊᕈᑎᑦ: ᓄᓇᙳᐊᓕᕆᓂᖅ",
 	"geo-tgllyr": "ᓴᖅᑭᔮᕐᓂᖓ ᓇᓕᐊᓐᓅᕋᐅᑎᓗᒍ",
 	"geo-hdnlyr": "ᑕᒪᓐᓇ ᒫᓐᓇᐅᔪᖅ ᐃᔨᖅᓯᒪᔪᖅ.",
-	"geo-bmapurl": "@geo-bmapurl@",
+	"geo-bmap-url": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT3978/MapServer/WMTS/",
+	"geo-bmap-matrix-set": "default028mm",
 	"geo-bmapttl": "BaseMaps_CBMT3978",
-	"geo-bmapurltxt": "@geo-bmapurltxt@",
+	"geo-bmapurltxt": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_TXT_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
 	"geo-attrlnk": "//geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
 	"geo-attrttl": "GeoGratis −ᑲᓇᑕᙳᐊᒥᓄᓇᙳᐊᖅ",
 	"geo-sel": "ᓂᕈᓗᓪᓕ",
@@ -211,6 +214,7 @@ wb.i18nDict = {
 	"geo-aoi-south": "ᓂᒋᖅ",
 	"geo-aoi-west": "ᐱᖓᓐᓇᖅ",
 	"geo-aoi-instructions": "ᐃᑦᑎᕐᕕᐅᔭᓕᕈᓄᓇᙳᐊᖅᓇᓗᓇᐃᒃᑯᑕᖏᓪᓘᓐᓃᑦᐃᓕᓗᒋᑦᑖᓐᓇᓗᓇᕿᓗᒍ\"ᐃᓚᓯᓂᖅ\"ᓇᕿᑦᑕᐅᑦ.",
+	"geo-aoi-title": "Draw box on map or enter coordinates",
 	"geo-aoi-btndraw": "ᑎᑎᖅᓯᓕ",
 	"geo-aoi-btnclear": "ᐲᔭᕐᓕ",
 	"geo-geoloc-btn": "ᐊᖏᓪᓕᒋᐊᖅᑎᑦᓯᓕ ᒫᓐᓇᐅᔪᖅ ᐃᓂᒋᔭᒥᓄᑦ",

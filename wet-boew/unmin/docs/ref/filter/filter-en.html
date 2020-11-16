@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
-<!--[if gt IE 8]><!-->
 <html class="no-js" lang="en" dir="ltr">
-<!--<![endif]-->
 	<head>
 		<meta charset="utf-8" />
 		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
@@ -13,33 +10,32 @@
  - Web Experience Toolkit
 </title>
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
-		<!-- Meta data -->
 		<meta name="description" content="Filters through content and only show content that match a certain keyword." />
-		<!-- Meta data-->
-		<!--[if gte IE 9 | !IE ]><!-->
+		
+		
+		
+		
+		<link rel="alternate" hreflang="fr" href="filter-fr.html" />
+		
 		<link href="../../../../theme-wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon" />
 		<link rel="stylesheet" href="../../../../theme-wet-boew/css/theme.css" />
-		<!--<![endif]-->
 		
-		<!--[if lt IE 9]>
-		<link href="../../../../theme-wet-boew/assets/favicon.ico" rel="shortcut icon" />
-		<link rel="stylesheet" href="../../../../theme-wet-boew/css/ie8-theme.css" />
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
-		<script src="../../../../wet-boew/js/ie8-wet-boew.js"></script>
-		<![endif]-->
 		
 		<noscript><link rel="stylesheet" href="../../../../wet-boew/css/noscript.css" /></noscript>
 	</head>
 	<body vocab="http://schema.org/" typeof="WebPage">
 		
-<ul id="wb-tphp">
-	<li class="wb-slc">
-		<a class="wb-sl" href="#wb-cont">Skip to main content</a>
-	</li>
-	<li class="wb-slc visible-sm visible-md visible-lg">
-		<a class="wb-sl" href="#wb-info">Skip to "About this site"</a>
-	</li>
-</ul>
+<nav>
+	<ul id="wb-tphp">
+		<li class="wb-slc">
+			<a class="wb-sl" href="#wb-cont">Skip to main content</a>
+		</li>
+		<li class="wb-slc visible-sm visible-md visible-lg">
+			<a class="wb-sl" href="#wb-info">Skip to "About this site"</a>
+		</li>
+	</ul>
+</nav>
+
 <header role="banner">
 	<div id="wb-bnr">
 		<div id="wb-bar">
@@ -67,7 +63,7 @@
 			<div class="row">
 				<div id="wb-sttl" class="col-md-8">
 					<a href="../../../index-en.html">
-						<object type="image/svg+xml" tabindex="-1" data="../../../../theme-wet-boew/assets/logo.svg"></object>
+						<img src="../../../../theme-wet-boew/assets/logo.svg" alt="" />
 						<span>Web Experience Toolkit<span class="wb-inv">, </span><small>Collaborative open source project led by the Government of Canada</small></span>
 					</a>
 				</div>
@@ -123,8 +119,6 @@
 
 	<main role="main" property="mainContentOfPage" class="container">
 		<h1 id="wb-cont" property="name">Filter</h1>
-		
-		
 		<p>
 			<a class="btn btn-primary" href="https://github.com/wet-boew/wet-boew/issues/new?title=Filter:%20">Questions or comments?</a>
 		</p>
@@ -162,11 +156,21 @@
 				<dd>Otherwise specified, it will filter and search for content in <code>&lt;li&gt;</code> then hide the group, default sub <code>&lt;section&gt;</code>, if there is not more list item</dd>
 
 				<dt>If set on a <code>&lt;table&gt;</code> with multiple <code>&lt;tbody&gt;</code></dt>
-				<dd>Otherwise specified, it will filter rows and search for content in <code>&lt;th&gt;</code> contained in <code>&lt;tbody&gt;</code> except the row containing <code>&lt;th& scope="rowgroup|row"gt;</code>. It is assumed those row is used to identify the row group header as the default scope for a row is "row".</dd>
+				<dd>Otherwise specified, it will filter rows and search for content in <code>&lt;th&gt;</code> contained in <code>&lt;tbody&gt;</code> except the row containing <code>&lt;th scope="rowgroup|row"&gt;</code>. It is assumed those row is used to identify the row group header as the default scope for a row is "row".</dd>
 
 				<dt>If set on any other element, like <code>&lt;ul&gt;</code> or <code>&lt;table&gt;</code> with one or zero <code>&lt;tbody&gt;</code></dt>
 				<dd>Otherwise specified, it will filter and search on <code>&lt;li&gt;</code> or on <code>&lt;tr&gt;</code> in <code>&lt;tbody&gt;</code> for tables</dd>
 			</dl>
+		</li>
+		<li>
+			<p><strong>Optional:</strong> Override the default search type to perform an AND or an ORs search by passing a JSON array through the <code>data-wb-filter</code> attribute and setting the <code>filterType</code> parameter.</p>
+
+			<p>By default the filter plugin will apply an exact pattern match when searching through content.</p>
+
+			<pre><code>&lt;ul class=&quot;wb-filter&quot; data-wb-filter='{ "filterType": "and" }'&gt;
+	&lt;li&gt;Alberta&lt;/li&gt;
+	...
+&lt;/ul&gt;</code></pre>
 		</li>
 		<li>Test the feature to see if it is properly configured and show correctly the number of total entries and the same upon filtering. If the number match, you are done.</li>
 		<li>In the scenario of those number don't match or you want to filter in a complex design, see the feature configuration below and make your own adjustment.</li>
@@ -187,7 +191,7 @@
 		 * @settings: JSON object of the user setting set on plugin initialisation
 		 */
 		filterCallback: function( $field, $elm, settings ) {
-			var $sections =	$elm.find( &quot;section&quot; ),
+			var $sections = $elm.find( &quot;section&quot; ),
 				sectionsLength = $sections.length,
 				s, $section;
 
@@ -279,6 +283,21 @@
 					</dl>
 				</td>
 			</tr>
+			<tr>
+				<td><code>filterType</code></td>
+				<td>Sets the type of search operator that will be applied to the filter. By default the filter will search for an exact pattern match, however developers can set the filter to search using an OR or AND operator.</td>
+				<td><code>data-wb-filter='{"filterType": "<em>[Type of search]</em>"}'</code></td>
+				<td>
+					<dl>
+						<dt>None (default):</dt>
+						<dd>Will use the default exact pattern match when searching for items</dd>
+						<dt><code>and</code>:</dt>
+						<dd>Will use an AND operator between search terms. Only items that contain all search terms will be shown</dd>
+						<dt><code>or</code>:</dt>
+						<dd>Will use an OR operator between search terms. All items that contain any of the supplied search terms will be shown</dd>
+					</dl>
+				</td>
+			</tr>
 		</tbody>
 	</table>
 </section>
@@ -323,17 +342,153 @@
 </section>
 
 <section>
+	<h2>Test Cases</h2>
+	<table class="table">
+		<thead>
+			<tr>
+				<th>ID</th>
+				<th>Test Scenario</th>
+				<th>Test Steps</th>
+				<th>Test Data</th>
+				<th>Expected Results</th>
+				<th>Actual&nbsp;Results</th>
+				<th>Pass/Fail</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>01</td>
+				<td>Check "exact" filtertype identifies correct matches when something is found</td>
+				<td>
+					<ol>
+						<li>Visit the <a href="../../../demos/filter/filter-en.html">working example</a> page</li>
+						<li>Scroll down to the "Applying additional search filters" section</li>
+						<li>Find the Filter Plugin under the "Exact pattern match (default)" section</li>
+						<li>Enter "Alberta" in the Filter text field</li>
+					</ol>
+				</td>
+				<td>Search term: "Alberta"</td>
+				<td>
+					<p>Only the "Alberta" entry should be shown.</p>
+					<p>All other entries should be hidden.</p>
+					<p>The filter plugin text should read: "Showing 1 filtered from 13 total entries"</p>
+				</td>
+				<td>As expected</td>
+				<td>Pass</td>
+			</tr>
+			<tr>
+				<td>02</td>
+				<td>Check "exact" filtertype returns no results when nothing is found</td>
+				<td>
+					<ol>
+						<li>Visit the <a href="../../../demos/filter/filter-en.html">working example</a> page</li>
+						<li>Scroll down to the "Applying additional search filters" section</li>
+						<li>Find the Filter Plugin under the "Exact pattern match (default)" section</li>
+						<li>Enter "No Way" in the Filter text field</li>
+					</ol>
+				</td>
+				<td>Search term: "No Way"</td>
+				<td>
+					<p>No matched entries should be shown.</p>
+					<p>The filter plugin text should read: "Showing 0 filtered from 13 total entries"</p>
+				</td>
+				<td>As expected</td>
+				<td>Pass</td>
+			</tr>
+			<tr>
+				<td>03</td>
+				<td>Check "and" filtertype identifies correct matches when something is found</td>
+				<td>
+					<ol>
+						<li>Visit the <a href="../../../demos/filter/filter-en.html">working example</a> page</li>
+						<li>Scroll down to the "Applying additional search filters" section</li>
+						<li>Find the Filter Plugin under the "AND operator" section</li>
+						<li>Enter "New Lab" in the Filter text field</li>
+					</ol>
+				</td>
+				<td>Search term: "New Lab"</td>
+				<td>
+					<p>Only the "Newfoundland &amp; Labrador" entry should be shown.</p>
+					<p>All other entries should be hidden.</p>
+					<p>The filter plugin text should read: "Showing 1 filtered from 13 total entries"</p>
+				</td>
+				<td>As expected</td>
+				<td>Pass</td>
+			</tr>
+			<tr>
+				<td>04</td>
+				<td>Check "and" filtertype returns no results when nothing is found</td>
+				<td>
+					<ol>
+						<li>Visit the <a href="../../../demos/filter/filter-en.html">working example</a> page</li>
+						<li>Scroll down to the "Applying additional search filters" section</li>
+						<li>Find the Filter Plugin under the "AND operator" section</li>
+						<li>Enter "Ontario Yukon" in the Filter text field</li>
+					</ol>
+				</td>
+				<td>Search term: "Ontario Yukon"</td>
+				<td>
+					<p>No matched entries should be shown.</p>
+					<p>The filter plugin text should read: "Showing 0 filtered from 13 total entries"</p>
+				</td>
+				<td>As expected</td>
+				<td>Pass</td>
+			</tr>
+			<tr>
+				<td>05</td>
+				<td>Check "or" filtertype identifies correct matches when something is found</td>
+				<td>
+					<ol>
+						<li>Visit the <a href="../../../demos/filter/filter-en.html">working example</a> page</li>
+						<li>Scroll down to the "Applying additional search filters" section</li>
+						<li>Find the Filter Plugin under the "OR operator" section</li>
+						<li>Enter "Ontario Alberta" in the Filter text field</li>
+					</ol>
+				</td>
+				<td>Search term: "Ontario Alberta"</td>
+				<td>
+					<p>Only the "Ontario" and the "Alberta" entries should be shown.</p>
+					<p>All other entries should be hidden.</p>
+					<p>The filter plugin text should read: "Showing 2 filtered from 13 total entries"</p>
+				</td>
+				<td>As expected</td>
+				<td>Pass</td>
+			</tr>
+			<tr>
+				<td>06</td>
+				<td>Check "or" filtertype returns no results when nothing is found</td>
+				<td>
+					<ol>
+						<li>Visit the <a href="../../../demos/filter/filter-en.html">working example</a> page</li>
+						<li>Scroll down to the "Applying additional search filters" section</li>
+						<li>Find the Filter Plugin under the "OR operator" section</li>
+						<li>Enter "Joe Jane Blah" in the Filter text field</li>
+					</ol>
+				</td>
+				<td>Search term: "Joe Jane Blah"</td>
+				<td>
+					<p>No matched entries should be shown.</p>
+					<p>The filter plugin text should read: "Showing 0 filtered from 13 total entries"</p>
+				</td>
+				<td>As expected</td>
+				<td>Pass</td>
+			</tr>
+		</tbody>
+	</table>
+</section>
+
+<section>
 	<h2>Source code</h2>
 	<p><a href="https://github.com/wet-boew/wet-boew/tree/master/src/plugins/filter">Filter source code on GitHub</a></p>
 </section>
 
 		<dl id="wb-dtmd">
 			<dt>Date modified:&#32;</dt>
-			<dd><time property="dateModified">2017-07-21</time></dd>
+			<dd><time property="dateModified">2018-05-23</time></dd>
 		</dl>
 	</main>
 
-	<footer role="contentinfo" id="wb-info" class="visible-sm visible-md visible-lg wb-navcurr">
+	<footer role="contentinfo" id="wb-info"  class="visible-sm visible-md visible-lg wb-navcurr">
 		<div class="container">
 			<nav role="navigation" class="row">
 				<h2>About this site</h2>
@@ -347,7 +502,7 @@
 					<h3>About</h3>
 					<ul class="list-unstyled">
 						<li><a href="../../../index-en.html#about">About the Web Experience Toolkit</a></li>
-						<li><a rel="external" href="http://www.tbs-sct.gc.ca/ws-nw/index-eng.asp">About the Web Standards</a></li>
+						<li><a rel="external" href="https://www.tbs-sct.gc.ca/ws-nw/index-eng.asp">About the Web Standards</a></li>
 					</ul>
 				</section>
 				<section class="col-sm-3">
@@ -362,18 +517,15 @@
 					<ul class="list-unstyled">
 						<li><a rel="external" href="https://twitter.com/WebExpToolkit">Twitter</a></li>
 					</ul>
-				</section>		</nav>
+				</section>
+			</nav>
 		</div>
 	</footer>
 
-		<!--[if gte IE 9 | !IE ]><!-->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
 		<script src="../../../../wet-boew/js/wet-boew.js"></script>
-		<!--<![endif]-->
 		
-		<!--[if lt IE 9]>
-		<script src="../../../../wet-boew/js/ie8-wet-boew2.js"></script>
 		
-		<![endif]-->
+		
 	</body>
 </html>

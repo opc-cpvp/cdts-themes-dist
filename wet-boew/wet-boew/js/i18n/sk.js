@@ -1,10 +1,10 @@
 /*
- * Web Experience Toolkit (WET) / Boîte à outils de l"expérience Web (BOEW)
- * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- */
+* Web Experience Toolkit (WET) / Boîte à outils de l"expérience Web (BOEW)
+* wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
+*/
 /*
 ----- Slovak dictionary (il8n) ---
- */
+*/
 ( function( wb ) {
 "use strict";
 
@@ -54,7 +54,7 @@ wb.i18nDict = {
 	"prv-l": "Predchádzajúci (klávesy šípka doľava)",
 	first: "Prvé",
 	last: "Posledný",
-	page: "Page",
+	page: "Jump to: Page",
 	"srch-menus": "Vyhľadávanie a ponuky",
 	email: "E-mail",
 	"menu-close": "Zavrite menu",
@@ -107,6 +107,7 @@ wb.i18nDict = {
 	"frm-nosubmit": "Formulár nemožno predložené, pretože ",
 	"errs-fnd": " chyby boli nájdené.",
 	"err-fnd": " chyba bola nájdená.",
+	"err-correct": "(Correct and resubmit)",
 
 	/* Date picker */
 	"date-hide": "Skryť kalendár",
@@ -156,6 +157,7 @@ wb.i18nDict = {
 	/* Charts widget */
 	"tbl-txt": "Tabuľka",
 	"tbl-dtls": "Graf. Podrobnosti v nasledujúcej tabuľke.",
+	"chrt-cmbslc": "Combined slice",
 
 	/* Session timeout */
 	"st-to-msg-bgn": "Vaša relácia vyprší automaticky #min# min #sec# sec.",
@@ -196,9 +198,10 @@ wb.i18nDict = {
 	"geo-allyttl": "Návod: Mapa navigácie",
 	"geo-tgllyr": "Prepnúť zobrazenie vrstvy",
 	"geo-hdnlyr": "Táto vrstva je v súčasnej dobe skrýva!",
-	"geo-bmapurl": "@geo-bmapurl@",
+	"geo-bmap-url": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT3978/MapServer/WMTS/",
+	"geo-bmap-matrix-set": "default028mm",
 	"geo-bmapttl": "BaseMaps_CBMT3978",
-	"geo-bmapurltxt": "@geo-bmapurltxt@",
+	"geo-bmapurltxt": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_TXT_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
 	"geo-attrlnk": "//geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
 	"geo-attrttl": "GeoGratis - Kanada základná mapa (len po anglicky alebo francúzsky)",
 	"geo-sel": "Vybrať",
@@ -211,6 +214,7 @@ wb.i18nDict = {
 	"geo-aoi-south": "Na juh",
 	"geo-aoi-west": "Západ",
 	"geo-aoi-instructions": "Nakreslite rámček na mape alebo zadajte súradnice nižšie a kliknite na tlačidlo \"Pridať\".",
+	"geo-aoi-title": "Draw box on map or enter coordinates",
 	"geo-aoi-btndraw": "Kresliť",
 	"geo-aoi-btnclear": "Odstrániť",
 	"geo-geoloc-btn": "Priblížiť sa k aktuálnej polohe",
@@ -238,6 +242,16 @@ wb.i18nDict = {
 } )( wb );
 
 wb.doc.one( "formLanguages.wb", function() {
+(function( factory ) {
+	if ( typeof define === "function" && define.amd ) {
+		define( ["jquery", "../jquery.validate"], factory );
+	} else if (typeof module === "object" && module.exports) {
+		module.exports = factory( require( "jquery" ) );
+	} else {
+		factory( jQuery );
+	}
+}(function( $ ) {
+
 /*
  * Translated default messages for the jQuery validation plugin.
  * Locale: SK (Slovak; slovenčina, slovenský jazyk)
@@ -258,6 +272,7 @@ $.extend( $.validator.messages, {
 	min: $.validator.format( "Nemôže byť menej ako {0}." ),
 	creditcard: "Číslo platobnej karty musí byť platné."
 } );
-
+return $;
+}));
 
 });

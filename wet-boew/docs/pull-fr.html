@@ -1,6 +1,5 @@
-<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="fr" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
+<!DOCTYPE html>
 <html class="no-js" lang="fr" dir="ltr">
-<!--<![endif]-->
 <head>
 <meta charset="utf-8">
 <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
@@ -8,22 +7,14 @@
 <title>Créér une demande de retrait - Documentation - Boîte à outils de l'expérience Web
 </title>
 <meta content="width=device-width,initial-scale=1" name="viewport">
-<!-- Meta data -->
 <meta name="description" content="Comment créer une demande de retrait">
-<!-- Meta data-->
-<!--[if gte IE 9 | !IE ]><!-->
+<link rel="alternate" hreflang="en" href="pull-en.html">
 <link href="../theme-wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
 <link rel="stylesheet" href="../theme-wet-boew/css/theme.min.css">
-<!--<![endif]-->
-<!--[if lt IE 9]>
-		<link href="../theme-wet-boew/assets/favicon.ico" rel="shortcut icon" />
-		<link rel="stylesheet" href="../theme-wet-boew/css/ie8-theme.min.css" />
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script src="../wet-boew/js/ie8-wet-boew.min.js"></script>
-		<![endif]-->
 <noscript><link rel="stylesheet" href="../wet-boew/css/noscript.min.css" /></noscript>
 </head>
 <body vocab="http://schema.org/" typeof="WebPage">
+<nav>
 <ul id="wb-tphp">
 <li class="wb-slc">
 <a class="wb-sl" href="#wb-cont">Passer au contenu principal</a>
@@ -32,6 +23,7 @@
 <a class="wb-sl" href="#wb-info">Passer à «&#160;À propos de ce site&#160;»</a>
 </li>
 </ul>
+</nav>
 <header role="banner">
 <div id="wb-bnr">
 <div id="wb-bar">
@@ -58,7 +50,7 @@
 <div class="row">
 <div id="wb-sttl" class="col-md-8">
 <a href="../index-fr.html">
-<object type="image/svg+xml" tabindex="-1" data="../theme-wet-boew/assets/logo.svg"></object>
+<img src="../theme-wet-boew/assets/logo.svg" alt="">
 <span>Boîte à outils de l'expérience Web<span class="wb-inv">, </span><small>Projet à source ouverte collaboratif dirigé par le Gouvernement du Canada</small></span>
 </a>
 </div>
@@ -109,7 +101,7 @@
 <h1 id="wb-cont" property="name">Créér une demande de retrait</h1>
 <p>Les demandes de retrait (<span lang="en">Pull requests</span>) sont bienvenues. Veuillez vous assurer que vos modifications sont à jour et limitez la portée d'engagement (<span lang="en">commit</span>) seulement aux fichiers que vous désirez modifier (pour éviter des conflits).</p>
 <ul>
-<li>Pour réduire la pollution d'engagement dans la base de code principale, considérez <a rel="external" href="http://git-scm.com/book/en/Git-Branching-Rebasing">rebaser</a> vos engagements avant de créer une demande de retrait de la branche principale.</li>
+<li>Pour réduire la pollution d'engagement dans la base de code principale, considérez <a rel="external" href="https://git-scm.com/book/en/Git-Branching-Rebasing">rebaser</a> vos engagements avant de créer une demande de retrait de la branche principale.</li>
 </ul>
 <section>
 <h2>Nouvelles composantes</h2>
@@ -146,23 +138,23 @@
 <li>Validez vos balises HTML pour vous assurer du HTML5 bien formé.
 <ul>
 <li>Ces tests seront exécutés comme partie de l'intégration (<span lang="en">build</span>) par défaut, ou en apellant <code>grunt htmllint</code> pour exécuter la tâche sur votre construction HTML.</li>
-<li>Vous pouvez manuellement tester pour des balises bien formées en utilisant le <a rel="external" href="http://validator.w3.org/nu/">validateur HTML W3C</a>, validez avec une paramètre XHTML5 et un crochet à <span lang="en">"Be lax about HTTP Content-Type"</span>.</li>
+<li>Vous pouvez manuellement tester pour des balises bien formées en utilisant le <a rel="external" href="https://validator.w3.org/nu/">validateur HTML W3C</a>, validez avec une paramètre XHTML5 et un crochet à <span lang="en">"Be lax about HTTP Content-Type"</span>.</li>
 </ul>
 </li>
 <li>
-<a rel="external" href="http://jigsaw.w3.org/css-validator/#validate_by_uri+with_options">Validez votre CSS</a> avec les changements suivants aux paramètres par défaut:
+<a rel="external" href="https://jigsaw.w3.org/css-validator/#validate_by_uri+with_options">Validez votre CSS</a> avec les changements suivants aux paramètres par défaut:
 <ul lang="en">
 <li><strong>Profile:</strong> CSS level 3</li>
 <li><strong>Vendor extensions:</strong> Warnings</li>
 </ul>
 </li>
-<li><a rel="external" href="http://www.jshint.com">Validez votre code JavaScript</a>. Cette validation est effectuée en apellant <code>grunt jshint</code></li>
+<li><a rel="external" href="https://eslint.org/">Validez votre code JavaScript</a>. Cette validation est effectuée en apellant <code>grunt eslint</code></li>
 <li><a href="opt-fr.html">Optimiser votre code JavaScript, CSS et HTML</a></li>
 <li>Recommandations de formattage :
 <ul>
-<li>L'indentation peut être renforcé en installant un module d'extension <a href="http://editorconfig.org">EditorConfig</a> pour votre environnement de développement intégré préféré.</li>
-<li>Indenter avec la tabulation en utilisant le <a rel="external" href="http://en.wikipedia.org/wiki/Indent_style#K.26R_style">style d'indentation K&amp;R</a></li>
-<li>Utiliser des guillemets simples pour des chaînes de caractères en JavaScript (pour que les double guillemets non échappés puissent être utilisés pour des attributs dans le code de sortie HTML).</li>
+<li>L'indentation peut être renforcé en installant un module d'extension <a href="https://editorconfig.org">EditorConfig</a> pour votre environnement de développement intégré préféré.</li>
+<li>Indenter avec la tabulation en utilisant le <a rel="external" href="https://en.wikipedia.org/wiki/Indent_style#K.26R_style">style d'indentation K&amp;R</a></li>
+<li>Utiliser des double guillemets pour des chaînes de caractères en JavaScript (pour que les guillemets simples non échappés puissent être utilisés pour des attributs dans le code de sortie HTML).</li>
 </ul>
 </li>
 <li>
@@ -218,7 +210,7 @@ Tester les pages Web contre la base de test des fureteurs suivants&#160;:
 <h3>À propos</h3>
 <ul class="list-unstyled">
 <li><a href="../index-fr.html#apropos">À propos de la Boîte à outils de l’expérience Web</a></li>
-<li><a rel="external" href="http://www.tbs-sct.gc.ca/ws-nw/index-fra.asp">À propos des normes Web</a></li>
+<li><a rel="external" href="https://www.tbs-sct.gc.ca/ws-nw/index-fra.asp">À propos des normes Web</a></li>
 </ul>
 </section>
 <section class="col-sm-3">
@@ -233,16 +225,11 @@ Tester les pages Web contre la base de test des fureteurs suivants&#160;:
 <ul class="list-unstyled">
 <li><a rel="external" href="https://twitter.com/BoiteExpWeb">Twitter</a></li>
 </ul>
-</section> </nav>
+</section>
+</nav>
 </div>
 </footer>
-<!--[if gte IE 9 | !IE ]><!-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="../wet-boew/js/wet-boew.min.js"></script>
-<!--<![endif]-->
-<!--[if lt IE 9]>
-		<script src="../wet-boew/js/ie8-wet-boew2.min.js"></script>
-		
-		<![endif]-->
 </body>
 </html>

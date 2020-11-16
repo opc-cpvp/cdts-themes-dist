@@ -1,10 +1,10 @@
 /*
- * Web Experience Toolkit (WET) / Boîte à outils de l"expérience Web (BOEW)
- * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- */
+* Web Experience Toolkit (WET) / Boîte à outils de l"expérience Web (BOEW)
+* wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
+*/
 /*
 ----- Armenian dictionary (il8n) ---
- */
+*/
 ( function( wb ) {
 "use strict";
 
@@ -54,7 +54,7 @@ wb.i18nDict = {
 	"prv-l": "Նախորդ (ձախ սլաքների բանալին)",
 	first: "Առաջին",
 	last: "Անցյալ",
-	page: "Page",
+	page: "Jump to: Page",
 	"srch-menus": "Որոնել եւ Ընտրացանկերը",
 	email: "Էլեկտրոնային փոստ",
 	"menu-close": "Փակել մենյուն",
@@ -107,6 +107,7 @@ wb.i18nDict = {
 	"frm-nosubmit": "Ձեւը չի կարող ներկայացվել, քանի որ ",
 	"errs-fnd": " սխալներ չեն հայտնաբերվել.",
 	"err-fnd": " սխալ է գտնվել.",
+	"err-correct": "(Correct and resubmit)",
 
 	/* Date picker */
 	"date-hide": "Թաքցնել Օրացույց",
@@ -156,6 +157,7 @@ wb.i18nDict = {
 	/* Charts widget */
 	"tbl-txt": "Սեղան",
 	"tbl-dtls": "Աղյուսակում. Մանրամասներ է հետեւյալ աղյուսակում.",
+	"chrt-cmbslc": "Combined slice",
 
 	/* Session timeout */
 	"st-to-msg-bgn": "Ձեր սեսիան կսպառվի ինքնաբերաբար ին #min# րոպե #sec# վրկ",
@@ -196,9 +198,10 @@ wb.i18nDict = {
 	"geo-allyttl": "Հրահանգներ: Նավիգացիոն քարտեզ",
 	"geo-tgllyr": "Ցուցադրման կամ թաքցնել շերտը",
 	"geo-hdnlyr": "Այս շերտի այժմ թաքնված.",
-	"geo-bmapurl": "@geo-bmapurl@",
+	"geo-bmap-url": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT3978/MapServer/WMTS/",
+	"geo-bmap-matrix-set": "default028mm",
 	"geo-bmapttl": "BaseMaps_CBMT3978",
-	"geo-bmapurltxt": "@geo-bmapurltxt@",
+	"geo-bmapurltxt": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_TXT_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
 	"geo-attrlnk": "//geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
 	"geo-attrttl": "GeoGratis - Կանադա բազա քարտեզ (անգլերեն կամ ֆրանսերեն միայն)",
 	"geo-sel": "Ընտրել",
@@ -211,6 +214,7 @@ wb.i18nDict = {
 	"geo-aoi-south": "Հարավ",
 	"geo-aoi-west": "Արեւմուտք",
 	"geo-aoi-instructions": "Ոչ ոքի վանդակը քարտեզի վրա, կամ մուտք գործել համակարգում ստորեւ, եւ սեղմեք \"Ավելացնել\" կոճակը:",
+	"geo-aoi-title": "Draw box on map or enter coordinates",
 	"geo-aoi-btndraw": "Նկարել",
 	"geo-aoi-btnclear": "Հեռացնել",
 	"geo-geoloc-btn": "Մեծացնել ձեր զբաղեցրած պաշտոնը",

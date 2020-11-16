@@ -1,10 +1,10 @@
 /*
- * Web Experience Toolkit (WET) / Boîte à outils de l"expérience Web (BOEW)
- * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- */
+* Web Experience Toolkit (WET) / Boîte à outils de l"expérience Web (BOEW)
+* wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
+*/
 /*
 ----- Korean dictionary (il8n) ---
- */
+*/
 ( function( wb ) {
 "use strict";
 
@@ -54,7 +54,7 @@ wb.i18nDict = {
 	"prv-l": "이전 (왼쪽 화살표 키)",
 	first: "처음으로",
 	last: "마지막",
-	page: "Page",
+	page: "Jump to: Page",
 	"srch-menus": "검색 및 메뉴",
 	email: "이메일",
 	"menu-close": "메뉴를 닫습니다",
@@ -107,6 +107,7 @@ wb.i18nDict = {
 	"frm-nosubmit": "양식을 제출 할 수 없습니다 때문에 ",
 	"errs-fnd": " 오류가 발견되었습니다.",
 	"err-fnd": " 오류가 발견되었습니다.",
+	"err-correct": "(Correct and resubmit)",
 
 	/* Date picker */
 	"date-hide": "캘린더 숨기기",
@@ -156,6 +157,7 @@ wb.i18nDict = {
 	/* Charts widget */
 	"tbl-txt": "표",
 	"tbl-dtls": "차트. 다음 테이블의 세부 사항.",
+	"chrt-cmbslc": "Combined slice",
 
 	/* Session timeout */
 	"st-to-msg-bgn": "세션이 #min# 분 #sec# 초에 자동으로 만료됩니다.",
@@ -196,9 +198,10 @@ wb.i18nDict = {
 	"geo-allyttl": "방법 :지도 탐색",
 	"geo-tgllyr": "레이어의 표시를 전환",
 	"geo-hdnlyr": "이 층은 현재 숨겨져 있습니다!",
-	"geo-bmapurl": "@geo-bmapurl@",
+	"geo-bmap-url": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT3978/MapServer/WMTS/",
+	"geo-bmap-matrix-set": "default028mm",
 	"geo-bmapttl": "BaseMaps_CBMT3978",
-	"geo-bmapurltxt": "@geo-bmapurltxt@",
+	"geo-bmapurltxt": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_TXT_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
 	"geo-attrlnk": "//geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
 	"geo-attrttl": "GeoGratis - 캐나다 기본지도 (영어 나 불어 만)",
 	"geo-sel": "선택",
@@ -211,6 +214,7 @@ wb.i18nDict = {
 	"geo-aoi-south": "남쪽으로",
 	"geo-aoi-west": "서쪽",
 	"geo-aoi-instructions": "지도에 상자를 그리거나 아래 좌표를 입력하고 \"추가\"버튼을 클릭합니다.",
+	"geo-aoi-title": "Draw box on map or enter coordinates",
 	"geo-aoi-btndraw": "무승부",
 	"geo-aoi-btnclear": "제거",
 	"geo-geoloc-btn": "현재 위치로 확대",
@@ -238,6 +242,16 @@ wb.i18nDict = {
 } )( wb );
 
 wb.doc.one( "formLanguages.wb", function() {
+(function( factory ) {
+	if ( typeof define === "function" && define.amd ) {
+		define( ["jquery", "../jquery.validate"], factory );
+	} else if (typeof module === "object" && module.exports) {
+		module.exports = factory( require( "jquery" ) );
+	} else {
+		factory( jQuery );
+	}
+}(function( $ ) {
+
 /*
  * Translated default messages for the jQuery validation plugin.
  * Locale: KO (Korean; 한국어)
@@ -261,6 +275,7 @@ $.extend( $.validator.messages, {
 	max: $.validator.format( "{0} 이하의 값을 입력하세요." ),
 	min: $.validator.format( "{0} 이상의 값을 입력하세요." )
 } );
-
+return $;
+}));
 
 });

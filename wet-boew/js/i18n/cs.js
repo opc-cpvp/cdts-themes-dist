@@ -1,10 +1,10 @@
 /*
- * Web Experience Toolkit (WET) / Boîte à outils de l"expérience Web (BOEW)
- * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- */
+* Web Experience Toolkit (WET) / Boîte à outils de l"expérience Web (BOEW)
+* wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
+*/
 /*
 ----- Czech dictionary (il8n) ---
- */
+*/
 ( function( wb ) {
 "use strict";
 
@@ -54,7 +54,7 @@ wb.i18nDict = {
 	"prv-l": "Předchozí (klávesy šipka vpravo)",
 	first: "První",
 	last: "Poslední",
-	page: "Page",
+	page: "Jump to: Page",
 	"srch-menus": "Vyhledávání a nabídky",
 	email: "Emailová",
 	"menu-close": "Zavřete menu",
@@ -107,6 +107,7 @@ wb.i18nDict = {
 	"frm-nosubmit": "Formulář nelze předloženy, protože ",
 	"errs-fnd": " chyby byly nalezeny.",
 	"err-fnd": " chyba byla nalezena.",
+	"err-correct": "(Correct and resubmit)",
 
 	/* Date picker */
 	"date-hide": "Skrýt kalendář",
@@ -156,6 +157,7 @@ wb.i18nDict = {
 	/* Charts widget */
 	"tbl-txt": "Tabulka",
 	"tbl-dtls": "Graf. Podrobnosti v následující tabulce.",
+	"chrt-cmbslc": "Combined slice",
 
 	/* Session timeout */
 	"st-to-msg-bgn": "Vaše relace vyprší automaticky #min# min #sec# sec.",
@@ -196,9 +198,10 @@ wb.i18nDict = {
 	"geo-allyttl": "Návod: Mapa navigace",
 	"geo-tgllyr": "Přepnout zobrazení vrstvy",
 	"geo-hdnlyr": "Tato vrstva je v současné době skrývá.",
-	"geo-bmapurl": "@geo-bmapurl@",
+	"geo-bmap-url": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT3978/MapServer/WMTS/",
+	"geo-bmap-matrix-set": "default028mm",
 	"geo-bmapttl": "BaseMaps_CBMT3978",
-	"geo-bmapurltxt": "@geo-bmapurltxt@",
+	"geo-bmapurltxt": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_TXT_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
 	"geo-attrlnk": "//geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
 	"geo-attrttl": "GeoGratis - Kanada základní mapa (pouze anglicky nebo francouzsky)",
 	"geo-sel": "Vybrat",
@@ -211,6 +214,7 @@ wb.i18nDict = {
 	"geo-aoi-south": "Na jih",
 	"geo-aoi-west": "Západ",
 	"geo-aoi-instructions": "Vymezit oblast na mapě nebo zadejte údaje níže a poté klikněte na tlačítko \"Přidat\".",
+	"geo-aoi-title": "Draw box on map or enter coordinates",
 	"geo-aoi-btndraw": "Kreslit",
 	"geo-aoi-btnclear": "Odstranit",
 	"geo-geoloc-btn": "Přiblížit se k aktuální poloze",
@@ -238,6 +242,16 @@ wb.i18nDict = {
 } )( wb );
 
 wb.doc.one( "formLanguages.wb", function() {
+(function( factory ) {
+	if ( typeof define === "function" && define.amd ) {
+		define( ["jquery", "../jquery.validate"], factory );
+	} else if (typeof module === "object" && module.exports) {
+		module.exports = factory( require( "jquery" ) );
+	} else {
+		factory( jQuery );
+	}
+}(function( $ ) {
+
 /*
  * Translated default messages for the jQuery validation plugin.
  * Locale: CS (Czech; čeština, český jazyk)
@@ -261,6 +275,7 @@ $.extend( $.validator.messages, {
 	max: $.validator.format( "Prosím, zadejte hodnotu menší nebo rovnu {0}." ),
 	min: $.validator.format( "Prosím, zadejte hodnotu větší nebo rovnu {0}." )
 } );
-
+return $;
+}));
 
 });

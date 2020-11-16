@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
-<!--[if gt IE 8]><!-->
 <html class="no-js" lang="en" dir="ltr">
-<!--<![endif]-->
 	<head>
 		<meta charset="utf-8" />
 		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
@@ -13,33 +10,32 @@
  - Web Experience Toolkit
 </title>
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
-		<!-- Meta data -->
 		<meta name="description" content="Display images and other content in a dialog box, either individually or as part of a gallery." />
-		<!-- Meta data-->
-		<!--[if gte IE 9 | !IE ]><!-->
+		
+		
+		
+		
+		<link rel="alternate" hreflang="fr" href="lightbox-fr.html" />
+		
 		<link href="../../../../theme-wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon" />
 		<link rel="stylesheet" href="../../../../theme-wet-boew/css/theme.css" />
-		<!--<![endif]-->
 		
-		<!--[if lt IE 9]>
-		<link href="../../../../theme-wet-boew/assets/favicon.ico" rel="shortcut icon" />
-		<link rel="stylesheet" href="../../../../theme-wet-boew/css/ie8-theme.css" />
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
-		<script src="../../../../wet-boew/js/ie8-wet-boew.js"></script>
-		<![endif]-->
 		
 		<noscript><link rel="stylesheet" href="../../../../wet-boew/css/noscript.css" /></noscript>
 	</head>
 	<body vocab="http://schema.org/" typeof="WebPage">
 		
-<ul id="wb-tphp">
-	<li class="wb-slc">
-		<a class="wb-sl" href="#wb-cont">Skip to main content</a>
-	</li>
-	<li class="wb-slc visible-sm visible-md visible-lg">
-		<a class="wb-sl" href="#wb-info">Skip to "About this site"</a>
-	</li>
-</ul>
+<nav>
+	<ul id="wb-tphp">
+		<li class="wb-slc">
+			<a class="wb-sl" href="#wb-cont">Skip to main content</a>
+		</li>
+		<li class="wb-slc visible-sm visible-md visible-lg">
+			<a class="wb-sl" href="#wb-info">Skip to "About this site"</a>
+		</li>
+	</ul>
+</nav>
+
 <header role="banner">
 	<div id="wb-bnr">
 		<div id="wb-bar">
@@ -67,7 +63,7 @@
 			<div class="row">
 				<div id="wb-sttl" class="col-md-8">
 					<a href="../../../index-en.html">
-						<object type="image/svg+xml" tabindex="-1" data="../../../../theme-wet-boew/assets/logo.svg"></object>
+						<img src="../../../../theme-wet-boew/assets/logo.svg" alt="" />
 						<span>Web Experience Toolkit<span class="wb-inv">, </span><small>Collaborative open source project led by the Government of Canada</small></span>
 					</a>
 				</div>
@@ -123,8 +119,6 @@
 
 	<main role="main" property="mainContentOfPage" class="container">
 		<h1 id="wb-cont" property="name">Lightbox</h1>
-		
-		
 		<p>
 			<a class="btn btn-primary" href="https://github.com/wet-boew/wet-boew/issues/new?title=Lightbox:%20">Questions or comments?</a>
 		</p>
@@ -133,7 +127,7 @@
 
 <section>
 	<h2>Purpose</h2>
-	<p>Display images and other content in a dialog box, either individually or as part of a gallery. Implements the <a href="http://www.w3.org/TR/wai-aria-practices/#dialog_modal">WAI-ARIA Dialog (Modal) design pattern</a>.</p>
+	<p>Display images and other content in a dialog box, either individually or as part of a gallery. Implements the <a href="https://www.w3.org/TR/wai-aria-practices/#dialog_modal">WAI-ARIA Dialog (Modal) design pattern</a>.</p>
 </section>
 
 <section>
@@ -217,12 +211,12 @@
 			<tr>
 				<td><code>popup-modal-dismiss</code></td>
 				<td>Identifies the button that is to be used to close a lightbox behaving like a modal dialog.</td>
-				<td>Add <code>popup-modal-dismiss</code> to the link or button that will be used to close the lightbox behaving like a modal dialog.</td>
+				<td>Add <code>popup-modal-dismiss</code> to the link or button that will be used to close the lightbox behaving like a modal dialog. If target attribute is set, the dialog box will be closed automatically when the user leaves the web page.</td>
 				<td>n/a</td>
 			</tr>
 			<tr>
 				<td><code>data-wb-lbx</code></td>
-				<td>Magnific Popup settings can be set through the <code>data-wb-lbx</code> attribute or <code>window[ "wb-lbx" ]</code>. See <a href="http://dimsemenov.com/plugins/magnific-popup/documentation.html#options">Magnific Popup documentation</a> for possible options.<br /><strong>Note:</strong> WET uses the open, change and parseAjax callbacks (See <a href="http://dimsemenov.com/plugins/magnific-popup/documentation.html#events">Events</a>).</td>
+				<td>Magnific Popup settings can be set through the <code>data-wb-lbx</code> attribute or <code>window[ "wb-lbx" ]</code>. See <a href="https://dimsemenov.com/plugins/magnific-popup/documentation.html#options">Magnific Popup documentation</a> for possible options.<br /><strong>Note:</strong> WET uses the open, change and parseAjax callbacks (See <a href="https://dimsemenov.com/plugins/magnific-popup/documentation.html#events">Events</a>).</td>
 				<td>Add <code>data-wb-lbx</code> attribute to the link element with the options. </td>
 				<td>e.g., <code>data-wb-lbx='{"type": "ajax"}'</code> will set the content type. Will have the same result as adding the <code>lbx-ajax</code> class.</td>
 			</tr>
@@ -282,11 +276,11 @@
 	{
 		settings: {
 			type: 'POST',
-			data: { 
+			data: {
 				foo: 'bar'
 			}
 		}
-    }
+	}
 ]);</code></pre>
 				</td>
 				<td>Used to manually open a Lightbox popup. Can be used to load single popups, galleries and modal popups. See <a href="../../../demos/lightbox/lightbox-en.html#examples5">Opening popups through JavaScript</a> for working examples.</td>
@@ -294,20 +288,20 @@
 			<tr>
 				<td><code>wb-ready.wb</code> (v4.0.5+)</td>
 				<td>Triggered automatically when WET has finished loading and executing.</td>
-				<td>Used to identify when all WET plugins and polyfills have finished loading and executing. 
+				<td>Used to identify when all WET plugins and polyfills have finished loading and executing.
 					<pre><code>$( document ).on( "wb-ready.wb", function( event ) {
 });</code></pre>
 				</td>
 			</tr>
 			<tr>
 				<td><code>mfp*</code> events (e.g., <code>mfpClose</code></td>
-				<td>Events triggered automatically by Magnific Popup (<a rel="external" href="http://dimsemenov.com/plugins/magnific-popup/documentation.html#events">documentation on Magnific Popup events</a>.</td>
+				<td>Events triggered automatically by Magnific Popup (<a rel="external" href="https://dimsemenov.com/plugins/magnific-popup/documentation.html#events">documentation on Magnific Popup events</a>.</td>
 				<td>Used by Magnific Popup to identify what events are occurring. <code>$.magnificPopup.instance</code> contains the properties of the popup in question.
 					<ul>
 						<li><strong>Opened with <code>.wb-lbx</code></strong>:
 							<pre><code>$( ".wb-lbx" ).on( "mfpClose", function( event ) {
 	var src = $.magnificPopup.instance.items[ 0 ].src;
-	
+
 	if ( src === "#inline_content" ) {
 	} else if ( src === "demo/1_b.jpg" ) {
 	}
@@ -316,7 +310,7 @@
 						<li><strong>Opened with JavaScript</strong>:
 							<pre><code>$( document ).on( "mfpClose", function( event ) {
 	var src = $.magnificPopup.instance.items[ 0 ].src;
-	
+
 	if ( src === "#inline_content" ) {
 	} else if ( src === "demo/1_b.jpg" ) {
 	}
@@ -330,6 +324,14 @@
 </section>
 
 <section>
+	<h2>Test case</h2>
+	<dl>
+		<dt><a href="test/click-on-same-page-link.html">Click on the same page link</a></dt>
+		<dd>Ensuring the dialog close when clicking on a link inside the opened dialog that are pointing to a location outside the dialog context, like futher down in the page.</dd>
+	</dl>
+</section>
+
+<section>
 	<h2>Source code</h2>
 	<p><a href="https://github.com/wet-boew/wet-boew/tree/master/src/plugins/lightbox">Lightbox source code on GitHub</a></p>
 </section>
@@ -340,7 +342,7 @@
 		</dl>
 	</main>
 
-	<footer role="contentinfo" id="wb-info" class="visible-sm visible-md visible-lg wb-navcurr">
+	<footer role="contentinfo" id="wb-info"  class="visible-sm visible-md visible-lg wb-navcurr">
 		<div class="container">
 			<nav role="navigation" class="row">
 				<h2>About this site</h2>
@@ -354,7 +356,7 @@
 					<h3>About</h3>
 					<ul class="list-unstyled">
 						<li><a href="../../../index-en.html#about">About the Web Experience Toolkit</a></li>
-						<li><a rel="external" href="http://www.tbs-sct.gc.ca/ws-nw/index-eng.asp">About the Web Standards</a></li>
+						<li><a rel="external" href="https://www.tbs-sct.gc.ca/ws-nw/index-eng.asp">About the Web Standards</a></li>
 					</ul>
 				</section>
 				<section class="col-sm-3">
@@ -369,18 +371,15 @@
 					<ul class="list-unstyled">
 						<li><a rel="external" href="https://twitter.com/WebExpToolkit">Twitter</a></li>
 					</ul>
-				</section>		</nav>
+				</section>
+			</nav>
 		</div>
 	</footer>
 
-		<!--[if gte IE 9 | !IE ]><!-->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
 		<script src="../../../../wet-boew/js/wet-boew.js"></script>
-		<!--<![endif]-->
 		
-		<!--[if lt IE 9]>
-		<script src="../../../../wet-boew/js/ie8-wet-boew2.js"></script>
 		
-		<![endif]-->
+		
 	</body>
 </html>

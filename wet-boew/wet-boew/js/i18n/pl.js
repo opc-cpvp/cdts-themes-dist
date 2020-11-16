@@ -1,10 +1,10 @@
 /*
- * Web Experience Toolkit (WET) / Boîte à outils de l"expérience Web (BOEW)
- * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- */
+* Web Experience Toolkit (WET) / Boîte à outils de l"expérience Web (BOEW)
+* wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
+*/
 /*
 ----- Polish dictionary (il8n) ---
- */
+*/
 ( function( wb ) {
 "use strict";
 
@@ -54,7 +54,7 @@ wb.i18nDict = {
 	"prv-l": "Poprzedni (klawisz strzałka w lewo)",
 	first: "Pierwszy",
 	last: "Ostatni",
-	page: "Page",
+	page: "Jump to: Page",
 	"srch-menus": "Wyszukaj i menu",
 	email: "Email",
 	"menu-close": "Zamknij menu",
@@ -107,6 +107,7 @@ wb.i18nDict = {
 	"frm-nosubmit": "Nie można było wysłać formularza, ponieważ ",
 	"errs-fnd": " znaleziono błędy",
 	"err-fnd": " znaleziono błąd",
+	"err-correct": "(Correct and resubmit)",
 
 	/* Date picker */
 	"date-hide": "Ukryj kalendarz",
@@ -156,6 +157,7 @@ wb.i18nDict = {
 	/* Charts widget */
 	"tbl-txt": "Tabela",
 	"tbl-dtls": "Wykres. Szczegóły w tabeli poniżej.",
+	"chrt-cmbslc": "Combined slice",
 
 	/* Session timeout */
 	"st-to-msg-bgn": "Twoja sesja wygaśnie automatycznie w #min# min #sec# sek.",
@@ -196,9 +198,10 @@ wb.i18nDict = {
 	"geo-allyttl": "Instrukcje: nawigacja mapy",
 	"geo-tgllyr": "Przełączyć wyświetlanie warstwy",
 	"geo-hdnlyr": "Warstwa ta jest obecnie ukryta.",
-	"geo-bmapurl": "@geo-bmapurl@",
+	"geo-bmap-url": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT3978/MapServer/WMTS/",
+	"geo-bmap-matrix-set": "default028mm",
 	"geo-bmapttl": "BaseMaps_CBMT3978",
-	"geo-bmapurltxt": "@geo-bmapurltxt@",
+	"geo-bmapurltxt": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_TXT_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
 	"geo-attrlnk": "//geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
 	"geo-attrttl": "GeoGratis - Kanada baza map (tylko w języku angielskim lub francuskim)",
 	"geo-sel": "Wybrać",
@@ -211,6 +214,7 @@ wb.i18nDict = {
 	"geo-aoi-south": "Południe",
 	"geo-aoi-west": "Zachód",
 	"geo-aoi-instructions": "Narysuj pole na mapie lub wprowadź współrzędne poniżej i kliknij na przycisk \"Dodaj\".",
+	"geo-aoi-title": "Draw box on map or enter coordinates",
 	"geo-aoi-btndraw": "Rysować",
 	"geo-aoi-btnclear": "Usunąć",
 	"geo-geoloc-btn": "Powiększyć się do bieżącej lokalizacji",
@@ -238,6 +242,16 @@ wb.i18nDict = {
 } )( wb );
 
 wb.doc.one( "formLanguages.wb", function() {
+(function( factory ) {
+	if ( typeof define === "function" && define.amd ) {
+		define( ["jquery", "../jquery.validate"], factory );
+	} else if (typeof module === "object" && module.exports) {
+		module.exports = factory( require( "jquery" ) );
+	} else {
+		factory( jQuery );
+	}
+}(function( $ ) {
+
 /*
  * Translated default messages for the jQuery validation plugin.
  * Locale: PL (Polish; język polski, polszczyzna)
@@ -254,6 +268,7 @@ $.extend( $.validator.messages, {
 	creditcard: "Proszę o podanie prawidłowej karty kredytowej.",
 	equalTo: "Proszę o podanie tej samej wartości ponownie.",
 	extension: "Proszę o podanie wartości z prawidłowym rozszerzeniem.",
+	nipPL: "Proszę o podanie prawidłowego numeru NIP.",
 	maxlength: $.validator.format( "Proszę o podanie nie więcej niż {0} znaków." ),
 	minlength: $.validator.format( "Proszę o podanie przynajmniej {0} znaków." ),
 	rangelength: $.validator.format( "Proszę o podanie wartości o długości od {0} do {1} znaków." ),
@@ -262,6 +277,7 @@ $.extend( $.validator.messages, {
 	min: $.validator.format( "Proszę o podanie wartości większej bądź równej {0}." ),
 	pattern: $.validator.format( "Pole zawiera niedozwolone znaki." )
 } );
-
+return $;
+}));
 
 });

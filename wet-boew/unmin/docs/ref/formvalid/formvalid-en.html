@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
-<!--[if gt IE 8]><!-->
 <html class="no-js" lang="en" dir="ltr">
-<!--<![endif]-->
 	<head>
 		<meta charset="utf-8" />
 		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
@@ -13,33 +10,32 @@
  - Web Experience Toolkit
 </title>
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
-		<!-- Meta data -->
 		<meta name="description" content="Provides generic validation and error message handling for Web forms." />
-		<!-- Meta data-->
-		<!--[if gte IE 9 | !IE ]><!-->
+		
+		
+		
+		
+		<link rel="alternate" hreflang="fr" href="formvalid-fr.html" />
+		
 		<link href="../../../../theme-wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon" />
 		<link rel="stylesheet" href="../../../../theme-wet-boew/css/theme.css" />
-		<!--<![endif]-->
 		
-		<!--[if lt IE 9]>
-		<link href="../../../../theme-wet-boew/assets/favicon.ico" rel="shortcut icon" />
-		<link rel="stylesheet" href="../../../../theme-wet-boew/css/ie8-theme.css" />
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
-		<script src="../../../../wet-boew/js/ie8-wet-boew.js"></script>
-		<![endif]-->
 		
 		<noscript><link rel="stylesheet" href="../../../../wet-boew/css/noscript.css" /></noscript>
 	</head>
 	<body vocab="http://schema.org/" typeof="WebPage">
 		
-<ul id="wb-tphp">
-	<li class="wb-slc">
-		<a class="wb-sl" href="#wb-cont">Skip to main content</a>
-	</li>
-	<li class="wb-slc visible-sm visible-md visible-lg">
-		<a class="wb-sl" href="#wb-info">Skip to "About this site"</a>
-	</li>
-</ul>
+<nav>
+	<ul id="wb-tphp">
+		<li class="wb-slc">
+			<a class="wb-sl" href="#wb-cont">Skip to main content</a>
+		</li>
+		<li class="wb-slc visible-sm visible-md visible-lg">
+			<a class="wb-sl" href="#wb-info">Skip to "About this site"</a>
+		</li>
+	</ul>
+</nav>
+
 <header role="banner">
 	<div id="wb-bnr">
 		<div id="wb-bar">
@@ -67,7 +63,7 @@
 			<div class="row">
 				<div id="wb-sttl" class="col-md-8">
 					<a href="../../../index-en.html">
-						<object type="image/svg+xml" tabindex="-1" data="../../../../theme-wet-boew/assets/logo.svg"></object>
+						<img src="../../../../theme-wet-boew/assets/logo.svg" alt="" />
 						<span>Web Experience Toolkit<span class="wb-inv">, </span><small>Collaborative open source project led by the Government of Canada</small></span>
 					</a>
 				</div>
@@ -123,8 +119,6 @@
 
 	<main role="main" property="mainContentOfPage" class="container">
 		<h1 id="wb-cont" property="name">Form validation</h1>
-		
-		
 		<p>
 			<a class="btn btn-primary" href="https://github.com/wet-boew/wet-boew/issues/new?title=Form%20validation:%20">Questions or comments?</a>
 		</p>
@@ -134,6 +128,7 @@
 <section>
 	<h2>Purpose</h2>
 	<p>This component provides generic validation and error message handling for Web forms.</p>
+	<p>The <a href="#MergeSCE">Merge Server-Client errors functionality</a> allows the merging of server error from an application with client errors .</p>
 </section>
 
 <section>
@@ -145,9 +140,15 @@
 
 <section>
 	<h2>Working example</h2>
+		<p>English:</p>
 	<ul>
-		<li><a href="../../../demos/formvalid/formvalid-en.html">English example</a></li>
-		<li><a href="../../../demos/formvalid/formvalid-fr.html">French example</a></li>
+		<li><a href="../../../demos/formvalid/formvalid-en.html">Form Validation</a></li>
+		<li><a href="../../../demos/formvalid/formvalid-server-en.html">Merge Server-Client Errors</a></li>
+	</ul>
+	<p>French:</p>
+	<ul lang="fr">
+		<li><a href="../../../demos/formvalid/formvalid-fr.html" hreflang="fr">Validation de formulaires</a></li>
+		<li><a href="../../../demos/formvalid/formvalid-server-fr.html" hreflang="fr">Fusion des erreurs Serveur-Client</a></li>
 	</ul>
 </section>
 
@@ -166,9 +167,12 @@
 &lt;/label&gt;</code></pre>
 		</li>
 		<li>Add <code>required="required"</code> to each mandatory form field
-			<pre><code>&lt;input id="fname1" name="fname1" type="text" required="required" /&gt;</code></pre>
+			<pre><code>&lt;input id="fname1" name="fname1" type="text" autocomplete="given-name" required="required" /&gt;</code></pre>
 		</li>
-		<li><strong>Optional:</strong> For input fields, add one of the <a href="#config">configuration options</a> for specialized validation.</li>
+		<li><p><strong>Optional: </strong>For input fields, add one of these <a href="#SpecializedValidation">options</a> for specialized validation.</p></li>
+		<li><strong>Optional: </strong>For ASP validators add the following attributes to enable the <a href="#MergeSCE">Merge Server-Client errors functionality</a>
+			<p><code>Display="Dynamic" EnableClientScript="false" CssClass="label label-danger wb-server-error"</code></p>
+		</li>
 	</ol>
 </section>
 
@@ -221,7 +225,8 @@
 		</tbody>
 	</table>
 	<section>
-		<h3>Specialized validation</h3>
+
+		<h3 id="SpecializedValidation">Specialized validation</h3>
 		<p>Add specialized validation to an input field by applying the following options.</p>
 		<table class="table">
 			<thead>
@@ -371,8 +376,34 @@
 				</tr>
 			</tbody>
 		</table>
-		<p>See <a href="http://jqueryvalidation.org/documentation/">jQuery Validation Plugin - Documentation</a> for more details.</p>
+		<p>See <a href="https://jqueryvalidation.org/documentation/">jQuery Validation Plugin - Documentation</a> for more details.</p>
 	</section>
+</section>
+
+<section>
+	<h3 id="MergeSCE">Merge Server-Client errors functionality</h3>
+	<p>If you want to concatenate the server errors with the client errors, add the following attributes to each ASP validator:</p>
+	<p><code>Display="Dynamic" EnableClientScript="false" CssClass="label label-danger wb-server-error"</code></p>
+	<p><Strong>Asp Validator examples:</strong></p>
+	<pre><code>&lt;asp:CustomValidator ID=&quot;TypeOfPrestationCv&quot; ErrorMessage = &quot;Your server error message&quot; ControlToValidate=&quot;TypeOfPrestation&quot; OnServerValidate=&quot;TypeOfPrestationCvServer&quot;
+<strong>Display=&quot;Dynamic&quot; EnableClientScript=&quot;false&quot; Cssclass=&quot;label label-danger wb-server-error&quot; runat=&quot;server&quot;&gt;&lt;/asp:CustomValidator&gt;</strong></code></pre>
+	<pre><code>&lt;asp:RequiredFieldValidator ID=&quot;TypeOfPrestationRfv&quot; ErrorMessage = &quot;Your server error message&quot; ControlToValidate=&quot;TypeOfPrestation&quot;
+<strong>Display=&quot;Dynamic&quot; EnableClientScript=&quot;false&quot; CssClass=&quot;label label-danger wb-server-error&quot; runat=&quot;server&quot;&gt;&lt;/asp:RequiredFieldValidator&gt;</strong></code></pre>
+
+	<p><Strong>ASP.Net Web Form Demo1 - Source Code on GitHub</strong></p>
+	<ul>
+		<li><a href="https://github.com/wet-boew/asp.net-formvalid-serverside/blob/master/Demo-Asp.Net-Web-Form-C%23/Demo1.aspx">Demo1.aspx</a></li>
+		<li><a href="https://github.com/wet-boew/asp.net-formvalid-serverside/blob/master/Demo-Asp.Net-Web-Form-C%23/Demo1.aspx.cs">Demo1.aspx.cs</a></li>
+		<li><a href="https://github.com/wet-boew/asp.net-formvalid-serverside/blob/master/Demo-Asp.Net-Web-Form-C%23/wbDisplayErrors.ascx">wbDisplayErrors.ascx (When Javascript is disabled)</a></li>
+		<li><a href="https://github.com/wet-boew/asp.net-formvalid-serverside/blob/master/Demo-Asp.Net-Web-Form-C%23/wbDisplayErrors.ascx.cs">wbDisplayErrors.ascx.cs</a></li>
+		<li><a href="https://github.com/wet-boew/asp.net-formvalid-serverside/blob/master/Demo-Asp.Net-Web-Form-C%23/wbCheckBoxList.ascx">wbCheckBoxList.ascx</a></li>
+		<li><a href="https://github.com/wet-boew/asp.net-formvalid-serverside/blob/master/Demo-Asp.Net-Web-Form-C%23/wbCheckBoxList.ascx.cs">wbCheckBoxList.ascx.cs</a></li>
+		<li><a href="https://github.com/wet-boew/asp.net-formvalid-serverside/blob/master/Demo-Asp.Net-Web-Form-C%23/wbRadioButtonList.ascx">wbRadioButtonList.ascx</a></li>
+		<li><a href="https://github.com/wet-boew/asp.net-formvalid-serverside/blob/master/Demo-Asp.Net-Web-Form-C%23/wbRadioButtonList.ascx.cs">wbRadioButtonList.ascx.cs</a></li>
+		<li><a href="https://github.com/wet-boew/asp.net-formvalid-serverside/blob/master/Demo-Asp.Net-Web-Form-C%23/Resources.resx">Resources.resx</a></li>
+		<li><a href="https://github.com/wet-boew/asp.net-formvalid-serverside/blob/master/Demo-Asp.Net-Web-Form-C%23/Resources.fr.resx">Resources.fr.resx</a></li>
+		<li><a href="https://github.com/wet-boew/asp.net-formvalid-serverside/blob/master/Demo-Asp.Net-Web-Form-C%23/Common.js">Common.js</a></li>
+	</ul>
 </section>
 
 <section>
@@ -412,7 +443,7 @@
 			</tr>
 		</tbody>
 	</table>
-	<p>See <a href="http://jqueryvalidation.org/documentation/">jQuery Validation Plugin - Documentation</a> for details about events specific to jQuery Validation.</p>
+	<p>See <a href="https://jqueryvalidation.org/documentation/">jQuery Validation Plugin - Documentation</a> for details about events specific to jQuery Validation.</p>
 </section>
 
 <section>
@@ -422,11 +453,11 @@
 
 		<dl id="wb-dtmd">
 			<dt>Date modified:&#32;</dt>
-			<dd><time property="dateModified">2015-07-22</time></dd>
+			<dd><time property="dateModified">2019-07-29</time></dd>
 		</dl>
 	</main>
 
-	<footer role="contentinfo" id="wb-info" class="visible-sm visible-md visible-lg wb-navcurr">
+	<footer role="contentinfo" id="wb-info"  class="visible-sm visible-md visible-lg wb-navcurr">
 		<div class="container">
 			<nav role="navigation" class="row">
 				<h2>About this site</h2>
@@ -440,7 +471,7 @@
 					<h3>About</h3>
 					<ul class="list-unstyled">
 						<li><a href="../../../index-en.html#about">About the Web Experience Toolkit</a></li>
-						<li><a rel="external" href="http://www.tbs-sct.gc.ca/ws-nw/index-eng.asp">About the Web Standards</a></li>
+						<li><a rel="external" href="https://www.tbs-sct.gc.ca/ws-nw/index-eng.asp">About the Web Standards</a></li>
 					</ul>
 				</section>
 				<section class="col-sm-3">
@@ -455,18 +486,15 @@
 					<ul class="list-unstyled">
 						<li><a rel="external" href="https://twitter.com/WebExpToolkit">Twitter</a></li>
 					</ul>
-				</section>		</nav>
+				</section>
+			</nav>
 		</div>
 	</footer>
 
-		<!--[if gte IE 9 | !IE ]><!-->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
 		<script src="../../../../wet-boew/js/wet-boew.js"></script>
-		<!--<![endif]-->
 		
-		<!--[if lt IE 9]>
-		<script src="../../../../wet-boew/js/ie8-wet-boew2.js"></script>
 		
-		<![endif]-->
+		
 	</body>
 </html>

@@ -1,6 +1,5 @@
-<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="fr" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
+<!DOCTYPE html>
 <html class="no-js" lang="fr" dir="ltr">
-<!--<![endif]-->
 <head>
 <meta charset="utf-8">
 <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
@@ -8,22 +7,14 @@
 <title>Tables - Plugiciels - Documentation - Boîte à outils de l'expérience Web
 </title>
 <meta content="width=device-width,initial-scale=1" name="viewport">
-<!-- Meta data -->
 <meta name="description" content="Ajoutes des fonctionnalités aux tableaux telles que la recherche, le tri, le filtrage et la pagination.">
-<!-- Meta data-->
-<!--[if gte IE 9 | !IE ]><!-->
+<link rel="alternate" hreflang="en" href="tables-en.html">
 <link href="../../../theme-wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
 <link rel="stylesheet" href="../../../theme-wet-boew/css/theme.min.css">
-<!--<![endif]-->
-<!--[if lt IE 9]>
-		<link href="../../../theme-wet-boew/assets/favicon.ico" rel="shortcut icon" />
-		<link rel="stylesheet" href="../../../theme-wet-boew/css/ie8-theme.min.css" />
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script src="../../../wet-boew/js/ie8-wet-boew.min.js"></script>
-		<![endif]-->
 <noscript><link rel="stylesheet" href="../../../wet-boew/css/noscript.min.css" /></noscript>
 </head>
 <body vocab="http://schema.org/" typeof="WebPage">
+<nav>
 <ul id="wb-tphp">
 <li class="wb-slc">
 <a class="wb-sl" href="#wb-cont">Passer au contenu principal</a>
@@ -32,6 +23,7 @@
 <a class="wb-sl" href="#wb-info">Passer à «&#160;À propos de ce site&#160;»</a>
 </li>
 </ul>
+</nav>
 <header role="banner">
 <div id="wb-bnr">
 <div id="wb-bar">
@@ -58,7 +50,7 @@
 <div class="row">
 <div id="wb-sttl" class="col-md-8">
 <a href="../../../index-fr.html">
-<object type="image/svg+xml" tabindex="-1" data="../../../theme-wet-boew/assets/logo.svg"></object>
+<img src="../../../theme-wet-boew/assets/logo.svg" alt="">
 <span>Boîte à outils de l'expérience Web<span class="wb-inv">, </span><small>Projet à source ouverte collaboratif dirigé par le Gouvernement du Canada</small></span>
 </a>
 </div>
@@ -132,16 +124,36 @@
 </section>
 <section>
 <h2>How to implement</h2>
+<section>
+<h3>DataTables</h3>
 <ol>
 <li>Add class <code>wb-tables</code> to the table tag of the table you wish to enhance.</li>
-<li>Modify the default configuration by passing a JSON array through the <code>data-wb-tables</code> attribute of the table tag.
-<pre><code>&lt;table class="wb-tables table table-striped table-hover" data-wb-tables='{ "ordering" : false }'&gt;</code></pre>
-</li>
+<li>Modify the default configuration by passing a JSON array through the <code>data-wb-tables</code> attribute of the table tag.</li>
 </ol>
+<pre><code>&lt;table class="wb-tables table table-striped table-hover" data-wb-tables='{ "ordering" : false }'&gt;</code></pre>
+</section>
+<section>
+<h3 id="advopt">Advanced Options</h3>
+<p>Allows the user to change how checkboxes are filtered.</p>
+<ol>
+<li>Add <code>data-aopts='{"type": "", "column": ""}'</code> arrtibute to any checkbox element to apply the advanced options.</li>
+<li>
+Available filter types:
+<ol>
+<li>ANY - This option will return entries that contain either A or B, or both.</li>
+<li>BOTH - This option will only return entries that contain both A and B.</li>
+<li>EITHER - This option will return all entries that are just A or just B - and not combinations of the two.</li>
+<li>AND - This option will only return entries that are a combination of A or B.</li>
+</ol>
+</li>
+<li>Column is the checkboxes that the filter well apply too (must match there 'data-column').</li>
+</ol>
+<pre><code>&lt;label for="advanced_options1_1"&gt;&lt;input type="radio" name="advanced_options1" id="advanced_options1_1" data-aopts='{"type": "any", "column": "5"}' checked /&gt;Any&lt;/label&gt;</code></pre>
+</section>
 </section>
 <section>
 <h2>Configuration options</h2>
-<p>All configuration options are detailed in the <a href="http://www.datatables.net/ref">DataTables documentation</a> and is fully accessible via the <code>data-wb-tables</code> attribute or <code>window[ "wb-tables" ]</code>.</p>
+<p>All configuration options are detailed in the <a href="https://www.datatables.net/ref">DataTables documentation</a> and is fully accessible via the <code>data-wb-tables</code> attribute or <code>window[ "wb-tables" ]</code>.</p>
 </section>
 <section>
 <h2>Events</h2>
@@ -189,7 +201,7 @@
 </tr>
 <tr>
 <td><code>*.dt</code> events (e.g., <code>xhr.dt</code></td>
-<td>Events triggered automatically by DataTables (<a href="http://datatables.net/reference/event/">documentation on DataTables events</a>.</td>
+<td>Events triggered automatically by DataTables (<a href="https://datatables.net/reference/event/">documentation on DataTables events</a>.</td>
 <td>Used by DataTables to identify what events are occurring.
 <pre><code>$( document ).on( "xhr.dt", ".wb-tables", function( event ) {
 });</code></pre>
@@ -224,7 +236,7 @@
 <h3>À propos</h3>
 <ul class="list-unstyled">
 <li><a href="../../../index-fr.html#apropos">À propos de la Boîte à outils de l’expérience Web</a></li>
-<li><a rel="external" href="http://www.tbs-sct.gc.ca/ws-nw/index-fra.asp">À propos des normes Web</a></li>
+<li><a rel="external" href="https://www.tbs-sct.gc.ca/ws-nw/index-fra.asp">À propos des normes Web</a></li>
 </ul>
 </section>
 <section class="col-sm-3">
@@ -239,16 +251,11 @@
 <ul class="list-unstyled">
 <li><a rel="external" href="https://twitter.com/BoiteExpWeb">Twitter</a></li>
 </ul>
-</section> </nav>
+</section>
+</nav>
 </div>
 </footer>
-<!--[if gte IE 9 | !IE ]><!-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="../../../wet-boew/js/wet-boew.min.js"></script>
-<!--<![endif]-->
-<!--[if lt IE 9]>
-		<script src="../../../wet-boew/js/ie8-wet-boew2.min.js"></script>
-		
-		<![endif]-->
 </body>
 </html>

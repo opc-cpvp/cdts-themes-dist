@@ -1,10 +1,10 @@
 /*
- * Web Experience Toolkit (WET) / Boîte à outils de l"expérience Web (BOEW)
- * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- */
+* Web Experience Toolkit (WET) / Boîte à outils de l"expérience Web (BOEW)
+* wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
+*/
 /*
 ----- Ukrainian dictionary (il8n) ---
- */
+*/
 ( function( wb ) {
 "use strict";
 
@@ -54,7 +54,7 @@ wb.i18nDict = {
 	"prv-l": "Попередній (клавішею ліва стрілка)",
 	first: "Перший",
 	last: "Oстанній",
-	page: "Page",
+	page: "Jump to: Page",
 	"srch-menus": "Пошук і меню",
 	email: "Електронна пошта",
 	"menu-close": "Закрийте меню",
@@ -107,6 +107,7 @@ wb.i18nDict = {
 	"frm-nosubmit": "Форма не подається через те, що",
 	"errs-fnd": "знайдено помилки.",
 	"err-fnd": "знайдено помилку.",
+	"err-correct": "(Correct and resubmit)",
 
 	/* Date picker */
 	"date-hide": "Сховати календар",
@@ -156,6 +157,7 @@ wb.i18nDict = {
 	/* Charts widget */
 	"tbl-txt": "Таблиця",
 	"tbl-dtls": "Графік. Див. деталі в таблиці.",
+	"chrt-cmbslc": "Combined slice",
 
 	/* Session timeout */
 	"st-to-msg-bgn": "Ваш сеанс закінчиться автоматично в #min# хв #sec# сек .",
@@ -196,9 +198,10 @@ wb.i18nDict = {
 	"geo-allyttl": "Інструкція: Карта навігації",
 	"geo-tgllyr": "Включити показ шару",
 	"geo-hdnlyr": "Цей шар прихований!",
-	"geo-bmapurl": "@geo-bmapurl@",
+	"geo-bmap-url": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT3978/MapServer/WMTS/",
+	"geo-bmap-matrix-set": "default028mm",
 	"geo-bmapttl": "BaseMaps_CBMT3978",
-	"geo-bmapurltxt": "@geo-bmapurltxt@",
+	"geo-bmapurltxt": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_TXT_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
 	"geo-attrlnk": "//geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
 	"geo-attrttl": "GeoGratis - Канада базової карти (англійською або французькою мовою)",
 	"geo-sel": "Вибирати",
@@ -211,6 +214,7 @@ wb.i18nDict = {
 	"geo-aoi-south": "Південь",
 	"geo-aoi-west": "Захід",
 	"geo-aoi-instructions": "Намалюйте вікно на карті або введіть координати нижче і натисніть кнопку \"Додати\".",
+	"geo-aoi-title": "Draw box on map or enter coordinates",
 	"geo-aoi-btndraw": "Малювати",
 	"geo-aoi-btnclear": "Видаляти",
 	"geo-geoloc-btn": "Збільшити до поточного розташування",
@@ -238,6 +242,16 @@ wb.i18nDict = {
 } )( wb );
 
 wb.doc.one( "formLanguages.wb", function() {
+(function( factory ) {
+	if ( typeof define === "function" && define.amd ) {
+		define( ["jquery", "../jquery.validate"], factory );
+	} else if (typeof module === "object" && module.exports) {
+		module.exports = factory( require( "jquery" ) );
+	} else {
+		factory( jQuery );
+	}
+}(function( $ ) {
+
 /*
  * Translated default messages for the jQuery validation plugin.
  * Locale: UK (Ukrainian; українська мова)
@@ -261,6 +275,7 @@ $.extend( $.validator.messages, {
 	max: $.validator.format( "Будь ласка, введіть число, менше або рівно {0}." ),
 	min: $.validator.format( "Будь ласка, введіть число, більше або рівно {0}." )
 } );
-
+return $;
+}));
 
 });

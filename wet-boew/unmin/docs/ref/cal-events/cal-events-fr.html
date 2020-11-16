@@ -1,8 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 9]><html class="no-js lt-ie9" lang="fr" dir="ltr"><![endif]-->
-<!--[if gt IE 8]><!-->
 <html class="no-js" lang="fr" dir="ltr">
-<!--<![endif]-->
 	<head>
 		<meta charset="utf-8" />
 		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
@@ -13,33 +10,33 @@
  - Boîte à outils de l'expérience Web
 </title>
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
-		<!-- Meta data -->
 		<meta name="description" content="Un calendrier servant à consulter une liste d&#x27;événements." />
-		<!-- Meta data-->
-		<!--[if gte IE 9 | !IE ]><!-->
+		
+		
+		
+		
+		
+		<link rel="alternate" hreflang="en" href="cal-events-en.html" />
+		
 		<link href="../../../../theme-wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon" />
 		<link rel="stylesheet" href="../../../../theme-wet-boew/css/theme.css" />
-		<!--<![endif]-->
 		
-		<!--[if lt IE 9]>
-		<link href="../../../../theme-wet-boew/assets/favicon.ico" rel="shortcut icon" />
-		<link rel="stylesheet" href="../../../../theme-wet-boew/css/ie8-theme.css" />
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
-		<script src="../../../../wet-boew/js/ie8-wet-boew.js"></script>
-		<![endif]-->
 		
 		<noscript><link rel="stylesheet" href="../../../../wet-boew/css/noscript.css" /></noscript>
 	</head>
 	<body vocab="http://schema.org/" typeof="WebPage">
 		
-<ul id="wb-tphp">
-	<li class="wb-slc">
-		<a class="wb-sl" href="#wb-cont">Passer au contenu principal</a>
-	</li>
-	<li class="wb-slc visible-sm visible-md visible-lg">
-		<a class="wb-sl" href="#wb-info">Passer à «&#160;À propos de ce site&#160;»</a>
-	</li>
-</ul>
+<nav>
+	<ul id="wb-tphp">
+		<li class="wb-slc">
+			<a class="wb-sl" href="#wb-cont">Passer au contenu principal</a>
+		</li>
+		<li class="wb-slc visible-sm visible-md visible-lg">
+			<a class="wb-sl" href="#wb-info">Passer à «&#160;À propos de ce site&#160;»</a>
+		</li>
+	</ul>
+</nav>
+
 <header role="banner">
 	<div id="wb-bnr">
 		<div id="wb-bar">
@@ -67,7 +64,7 @@
 			<div class="row">
 				<div id="wb-sttl" class="col-md-8">
 					<a href="../../../index-fr.html">
-						<object type="image/svg+xml" tabindex="-1" data="../../../../theme-wet-boew/assets/logo.svg"></object>
+						<img src="../../../../theme-wet-boew/assets/logo.svg" alt="" />
 						<span>Boîte à outils de l'expérience Web<span class="wb-inv">, </span><small>Projet à source ouverte collaboratif dirigé par le Gouvernement du Canada</small></span>
 					</a>
 				</div>
@@ -123,8 +120,6 @@
 
 	<main role="main" property="mainContentOfPage" class="container">
 		<h1 id="wb-cont" property="name">Calendrier d&#x27;événements</h1>
-		
-		
 		<p>
 			<a class="btn btn-primary" href="https://github.com/wet-boew/wet-boew/issues/new?title=Calendrier%20d&#x27;%C3%A9v%C3%A9nements:%20">Questions ou commentaires?</a>
 		</p>
@@ -133,7 +128,7 @@
 
 <section>
 	<h2>Objet</h2>
-	<p>Le but de cette fonctionnalité est de fournir une interface pour parcourir une liste chronologique d'événements. Met en œuvre le <a href="http://www.w3.org/TR/wai-aria-practices/#datepicker">modèle de conception &#171;&#160;<span lang="en">Date Picker</span>&#160;&#187; de WAI-ARIA (anglais seulement)</a>.</p>
+	<p>Le but de cette fonctionnalité est de fournir une interface pour parcourir une liste chronologique d'événements. Met en œuvre le <a href="https://www.w3.org/TR/wai-aria-practices/#datepicker">modèle de conception &#171;&#160;<span lang="en">Date Picker</span>&#160;&#187; de WAI-ARIA (anglais seulement)</a>.</p>
 </section>
 
 <section>
@@ -169,14 +164,14 @@
 	&lt;ol&gt;
 		&lt;li&gt;
 			&lt;section&gt;
-				&lt;h4&gt;&lt;a href="http://www.canada.gc.ca"&gt;Événement de seul-jour&lt;/a&gt;&lt;/h4&gt;
+				&lt;h4&gt;&lt;a href="https://www.canada.gc.ca"&gt;Événement de seul-jour&lt;/a&gt;&lt;/h4&gt;
 				&lt;p&gt;&lt;time datetime="2011-03-11"&gt;11 mars 2011&lt;/time&gt;&lt;/p&gt;
 				&lt;p&gt;Description de l'événement&lt;/p&gt;
 			&lt;/section&gt;
 		&lt;/li&gt;
 		&lt;li&gt;
 			&lt;section&gt;
-				&lt;h4&gt;&lt;a href="http://www.canada.gc.ca"&gt;Événement sur plusieurs jours&lt;/a&gt;&lt;/h4&gt;
+				&lt;h4&gt;&lt;a href="https://www.canada.gc.ca"&gt;Événement sur plusieurs jours&lt;/a&gt;&lt;/h4&gt;
 				&lt;p&gt;&lt;time datetime="2011-03-22"&gt;22 mars 2011&lt;/time&gt; à &lt;time datetime="2011-04-26"&gt;26 avril 2011&lt;/time&gt;&lt;/p&gt;
 				&lt;p&gt;Description de l'événement&lt;/p&gt;
 			&lt;/section&gt;
@@ -198,8 +193,8 @@
 				&lt;p&gt;Description de l'événement&lt;/p&gt;
 				&lt;p&gt;Liens:&lt;/p&gt;
 				&lt;ul&gt;
-					&lt;li&gt;&lt;a href="http://www.canada.gc.ca"&gt;Événement de seul-jour - Lien 1&lt;/a&gt;&lt;/li&gt;
-					&lt;li&gt;&lt;a href="http://www.canada.gc.ca"&gt;Événement de seul-jour - Lien 2&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="https://www.canada.gc.ca"&gt;Événement de seul-jour - Lien 1&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="https://www.canada.gc.ca"&gt;Événement de seul-jour - Lien 2&lt;/a&gt;&lt;/li&gt;
 				&lt;/ul&gt;
 			&lt;/section&gt;
 		&lt;/li&gt;
@@ -210,8 +205,8 @@
 				&lt;p&gt;Description de l'événement&lt;/p&gt;
 				&lt;p&gt;Liens:&lt;/p&gt;
 				&lt;ul&gt;
-					&lt;li&gt;&lt;a href="http://www.canada.gc.ca"&gt;Événement sur plusieurs jours - Lien 1&lt;/a&gt;&lt;/li&gt;
-					&lt;li&gt;&lt;a href="http://www.canada.gc.ca"&gt;Événement sur plusieurs jours - Lien 2&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="https://www.canada.gc.ca"&gt;Événement sur plusieurs jours - Lien 1&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href="https://www.canada.gc.ca"&gt;Événement sur plusieurs jours - Lien 2&lt;/a&gt;&lt;/li&gt;
 				&lt;/ul&gt;
 			&lt;/section&gt;
 		&lt;/li&gt;
@@ -231,13 +226,13 @@
 		&lt;ol&gt;
 			&lt;li class="cal-disp-onshow"&gt;
 				&lt;section&gt;
-					&lt;h5&gt;&lt;a href="http://www.ec.gc.ca"&gt;Événement 1&lt;/a&gt;&lt;/h5&gt;
+					&lt;h5&gt;&lt;a href="https://www.ec.gc.ca"&gt;Événement 1&lt;/a&gt;&lt;/h5&gt;
 					&lt;p&gt;&lt;time datetime="2011-03-11"&gt;11 mars 2011&lt;/time&gt;&lt;/p&gt;
 				&lt;/section&gt;
 			&lt;/li&gt;
 			&lt;li class="cal-disp-onshow"&gt;
 				&lt;section&gt;
-					&lt;h5&gt;&lt;a href="http://canada.gc.ca"&gt;Événement 2&lt;/a&gt;&lt;/h5&gt;
+					&lt;h5&gt;&lt;a href="https://canada.gc.ca"&gt;Événement 2&lt;/a&gt;&lt;/h5&gt;
 					&lt;p&gt;&lt;time datetime="2011-03-11"&gt;11 mars 2011&lt;/time&gt;&lt;/p&gt;
 				&lt;/section&gt;
 			&lt;/li&gt;
@@ -246,7 +241,7 @@
 					&lt;h5&gt;Expo 2010 Shanghai&lt;/h5&gt;
 					&lt;p&gt;&lt;time datetime="2011-03-22"&gt;22 mars 2011&lt;/time&gt; au &lt;time datetime="2011-04-26"&gt;26 avril 2011&lt;/time&gt;&lt;/p&gt;
 					&lt;p&gt;Le Pavillon du Canada souligne le dynamisme et la vitalité des villes canadiennes et de leurs résidents.&lt;/p&gt;
-					&lt;p&gt;Pour obtenir de plus amples renseignements, visitez le site Web de Canada à Expo 2010 Shanghai à l’adresse suivante : &lt;a href="http://www.expo2010canada.gc.ca/index-fra.cfm"&gt;www.expo2010canada.gc.ca/index-fra.cfm&lt;/a&gt;&lt;/p&gt;
+					&lt;p&gt;Pour obtenir de plus amples renseignements, visitez le site Web de Canada à Expo 2010 Shanghai à l’adresse suivante : &lt;a href="https://www.expo2010canada.gc.ca/index-fra.cfm"&gt;www.expo2010canada.gc.ca/index-fra.cfm&lt;/a&gt;&lt;/p&gt;
 				&lt;/section&gt;
 			&lt;/li&gt;
 			&lt;li class="cal-disp-onshow"&gt;
@@ -257,19 +252,19 @@
 			&lt;/li&gt;
 			&lt;li class="cal-disp-onshow"&gt;
 				&lt;section&gt;
-					&lt;h5&gt;&lt;a href="http://www.ec.gc.ca"&gt;Événement 6&lt;/a&gt;&lt;/h5&gt;
+					&lt;h5&gt;&lt;a href="https://www.ec.gc.ca"&gt;Événement 6&lt;/a&gt;&lt;/h5&gt;
 					&lt;p&gt;&lt;time datetime="2011-04-11"&gt;11 avril 2011&lt;/time&gt;&lt;/p&gt;
 				&lt;/section&gt;
 			&lt;/li&gt;
 			&lt;li class="cal-disp-onshow"&gt;
 				&lt;section&gt;
-					&lt;h5&gt;&lt;a href="http://canada.gc.ca"&gt;Événement 7&lt;/a&gt;&lt;/h5&gt;
+					&lt;h5&gt;&lt;a href="https://canada.gc.ca"&gt;Événement 7&lt;/a&gt;&lt;/h5&gt;
 					&lt;p&gt;&lt;time datetime="2011-04-23"&gt;23 avril 2011&lt;/time&gt;&lt;/p&gt;
 				&lt;/section&gt;
 			&lt;/li&gt;
 			&lt;li class="cal-disp-onshow"&gt;
 				&lt;section&gt;
-					&lt;h5&gt;&lt;a href="http://canada.gc.ca"&gt;Événement 17&lt;/a&gt;&lt;/h5&gt;
+					&lt;h5&gt;&lt;a href="https://canada.gc.ca"&gt;Événement 17&lt;/a&gt;&lt;/h5&gt;
 					&lt;p&gt;&lt;time datetime="2011-04-23"&gt;23 avril 2011&lt;/time&gt;&lt;/p&gt;
 				&lt;/section&gt;
 			&lt;/li&gt;
@@ -338,7 +333,7 @@
 		</dl>
 	</main>
 
-	<footer role="contentinfo" id="wb-info" class="visible-sm visible-md visible-lg wb-navcurr">
+	<footer role="contentinfo" id="wb-info"  class="visible-sm visible-md visible-lg wb-navcurr">
 		<div class="container">
 			<nav role="navigation" class="row">
 				<h2>À propos de ce site</h2>
@@ -352,7 +347,7 @@
 					<h3>À propos</h3>
 					<ul class="list-unstyled">
 						<li><a href="../../../index-fr.html#apropos">À propos de la Boîte à outils de l’expérience Web</a></li>
-						<li><a rel="external" href="http://www.tbs-sct.gc.ca/ws-nw/index-fra.asp">À propos des normes Web</a></li>
+						<li><a rel="external" href="https://www.tbs-sct.gc.ca/ws-nw/index-fra.asp">À propos des normes Web</a></li>
 					</ul>
 				</section>
 				<section class="col-sm-3">
@@ -367,18 +362,15 @@
 					<ul class="list-unstyled">
 						<li><a rel="external" href="https://twitter.com/BoiteExpWeb">Twitter</a></li>
 					</ul>
-				</section>		</nav>
+				</section>
+			</nav>
 		</div>
 	</footer>
 
-		<!--[if gte IE 9 | !IE ]><!-->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
 		<script src="../../../../wet-boew/js/wet-boew.js"></script>
-		<!--<![endif]-->
 		
-		<!--[if lt IE 9]>
-		<script src="../../../../wet-boew/js/ie8-wet-boew2.js"></script>
 		
-		<![endif]-->
+		
 	</body>
 </html>

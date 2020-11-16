@@ -1,10 +1,10 @@
 /*
- * Web Experience Toolkit (WET) / Boîte à outils de l"expérience Web (BOEW)
- * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
- */
+* Web Experience Toolkit (WET) / Boîte à outils de l"expérience Web (BOEW)
+* wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
+*/
 /*
 ----- Icelandic dictionary (il8n) ---
- */
+*/
 ( function( wb ) {
 "use strict";
 
@@ -54,7 +54,7 @@ wb.i18nDict = {
 	"prv-l": "Fyrri (vinstri ör lykill)",
 	first: "First",
 	last: "Síðasta",
-	page: "Page",
+	page: "Jump to: Page",
 	"srch-menus": "Leit og valmyndir",
 	email: "Email",
 	"menu-close": "Loka valmynd",
@@ -107,6 +107,7 @@ wb.i18nDict = {
 	"frm-nosubmit": "Eyðublaðið var ekki hægt að skila því ",
 	"errs-fnd": " villur fundust.",
 	"err-fnd": " villa fannst.",
+	"err-correct": "(Correct and resubmit)",
 
 	/* Date picker */
 	"date-hide": "Fela dagatal",
@@ -156,6 +157,7 @@ wb.i18nDict = {
 	/* Charts widget */
 	"tbl-txt": "Tafla",
 	"tbl-dtls": "Töfluna. Upplýsingar í eftirfarandi töflu.",
+	"chrt-cmbslc": "Combined slice",
 
 	/* Session timeout */
 	"st-to-msg-bgn": "Fundur mun renna sjálfkrafa í #min# mín #sec# sek.",
@@ -196,9 +198,10 @@ wb.i18nDict = {
 	"geo-allyttl": "Leiðbeiningar: Kort flakk",
 	"geo-tgllyr": "Víxla birtingu lag",
 	"geo-hdnlyr": "Þetta lag er nú falin.",
-	"geo-bmapurl": "@geo-bmapurl@",
+	"geo-bmap-url": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT3978/MapServer/WMTS/",
+	"geo-bmap-matrix-set": "default028mm",
 	"geo-bmapttl": "BaseMaps_CBMT3978",
-	"geo-bmapurltxt": "@geo-bmapurltxt@",
+	"geo-bmapurltxt": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_TXT_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
 	"geo-attrlnk": "//geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
 	"geo-attrttl": "GeoGratis - Kanada stöð kort (enska eða franska aðeins)",
 	"geo-sel": "Veldu",
@@ -211,6 +214,7 @@ wb.i18nDict = {
 	"geo-aoi-south": "Suður",
 	"geo-aoi-west": "Vestur",
 	"geo-aoi-instructions": "Draw kassi á kortið eða sláðu hnit neðan og smelltu á \"Bæta við\" hnappinn.",
+	"geo-aoi-title": "Draw box on map or enter coordinates",
 	"geo-aoi-btndraw": "Draga",
 	"geo-aoi-btnclear": "Fjarlægja",
 	"geo-geoloc-btn": "Aðdráttur til núverandi staðsetningu",
@@ -238,6 +242,16 @@ wb.i18nDict = {
 } )( wb );
 
 wb.doc.one( "formLanguages.wb", function() {
+(function( factory ) {
+	if ( typeof define === "function" && define.amd ) {
+		define( ["jquery", "../jquery.validate"], factory );
+	} else if (typeof module === "object" && module.exports) {
+		module.exports = factory( require( "jquery" ) );
+	} else {
+		factory( jQuery );
+	}
+}(function( $ ) {
+
 /*
  * Translated default messages for the jQuery validation plugin.
  * Locale: IS (Icelandic; íslenska)
@@ -259,6 +273,7 @@ $.extend( $.validator.messages, {
 	min: $.validator.format( "Sláðu inn gildi sem er stærra en eða jafnt og {0}." ),
 	creditcard: "Sláðu inn gilt greiðslukortanúmer."
 } );
-
+return $;
+}));
 
 });
