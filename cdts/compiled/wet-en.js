@@ -1,7 +1,7 @@
 /*!
  * Centrally Deployed Templates Solution (CDTS) / Solution de gabarits à déploiement centralisé (SGDC)
  * github.com/opc-cpvp/cdts-sgdc/blob/master/LICENSE
- * v4.0.37 - 2020-11-20
+ * v4.0.37 - 2020-11-21
  *
  */// This file was automatically generated from wet-en.soy.
 // Please don't edit this file by hand.
