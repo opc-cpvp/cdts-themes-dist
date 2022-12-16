@@ -1,19 +1,21 @@
 {
   "_args": [
     [
-      "github:opc-cpvp/themes-cdn#v4.0.26-gcweb-opc",
-      "/home/travis/build/opc-cpvp/cdts-gcweb-opc"
+      "gcweb-opc@github:opc-cpvp/themes-cdn#v4.0.26-gcweb-opc",
+      "/home/runner/work/cdts-gcweb-opc/cdts-gcweb-opc"
     ]
   ],
-  "_from": "github:opc-cpvp/themes-cdn#v4.0.26-gcweb-opc",
-  "_id": "gcweb-opc@github:opc-cpvp/themes-cdn#503cec3c7851c34b033ef37d257de81cbcab360d",
+  "_from": "gcweb-opc@github:opc-cpvp/themes-cdn#v4.0.26-gcweb-opc",
+  "_id": "gcweb-opc@git+ssh://git@github.com/opc-cpvp/themes-cdn.git#503cec3c7851c34b033ef37d257de81cbcab360d",
   "_inBundle": false,
   "_integrity": "",
   "_location": "/gcweb-opc",
   "_phantomChildren": {},
   "_requested": {
     "type": "git",
-    "raw": "github:opc-cpvp/themes-cdn#v4.0.26-gcweb-opc",
+    "raw": "gcweb-opc@github:opc-cpvp/themes-cdn#v4.0.26-gcweb-opc",
+    "name": "gcweb-opc",
+    "escapedName": "gcweb-opc",
     "rawSpec": "github:opc-cpvp/themes-cdn#v4.0.26-gcweb-opc",
     "saveSpec": "github:opc-cpvp/themes-cdn#v4.0.26-gcweb-opc",
     "fetchSpec": null,
@@ -22,9 +24,9 @@
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "github:opc-cpvp/themes-cdn#503cec3c7851c34b033ef37d257de81cbcab360d",
+  "_resolved": "git+ssh://git@github.com/opc-cpvp/themes-cdn.git#503cec3c7851c34b033ef37d257de81cbcab360d",
   "_spec": "github:opc-cpvp/themes-cdn#v4.0.26-gcweb-opc",
-  "_where": "/home/travis/build/opc-cpvp/cdts-gcweb-opc",
+  "_where": "/home/runner/work/cdts-gcweb-opc/cdts-gcweb-opc",
   "author": {
     "name": "opc-buildbot"
   },
