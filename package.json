@@ -1,0 +1,15 @@
+{
+  "name": "cdts-gcweb-opc",
+  "version": "4.0.37",
+  "description": "cdts-gcweb-opc theme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/opc-cpvp/cdts-themes-dist.git"
+  },
+  "author": "opc-buildbot",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/opc-cpvp/cdts-gcweb-opc/issues"
+  },
+  "homepage": "https://github.com/opc-cpvp/cdts-themes-dist#readme"
+}
