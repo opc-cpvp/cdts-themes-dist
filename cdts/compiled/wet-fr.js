@@ -1,7 +1,7 @@
 /*!
  * Centrally Deployed Templates Solution (CDTS) / Solution de gabarits à déploiement centralisé (SGDC)
  * github.com/opc-cpvp/cdts-sgdc/blob/master/LICENSE
- * v4.0.37 - 2022-12-16
+ * v4.0.37 - 2022-12-20
  *
  */// This file was automatically generated from wet-fr.soy.
 // Please don't edit this file by hand.
@@ -156,14 +156,14 @@ wet.builder.footer = function(opt_data, opt_ignored) {
   opt_data = opt_data || {};
   var output = '\t\t<footer id="wb-info">';
   if (opt_data.showFooter != false) {
-    output += '<nav class="container visible-sm visible-md visible-lg wb-navcurr" aria-labelledby="footer-links"><h2 class="wb-inv" id="footer-links">À propos du site</h2><div class="row"><div class="col-md-3"><section aria-labelledby="about-opc-section"><h3 id="about-opc-section">À propos du Commissariat</h3><p>Le commissaire à la protection de la vie privée du Canada est un agent du Parlement qui a pour mission de protéger et de promouvoir le droit à la vie privée.</p><ul class="list-unstyled"><li><a href=\'' + wet.builder.base(opt_data) + 'fr/a-propos-du-commissariat/qui-nous-sommes/\'>Qui nous sommes</a></li><li><a href=\'' + wet.builder.base(opt_data) + 'fr/a-propos-du-commissariat/ce-que-nous-faisons/\'>Ce que nous faisons</a></li><li><a href=\'' + wet.builder.base(opt_data) + 'fr/a-propos-du-commissariat/rapports-operationnels-du-commissariat/\'>Rapports sur les activités du Commissariat</a></li><li><a href=\'' + wet.builder.base(opt_data) + 'fr/a-propos-du-commissariat//publications/\'>Publications</a></li><li><a href=\'' + wet.builder.base(opt_data) + 'fr/a-propos-du-commissariat/travailler-au-commissariat\'>Travailler au Commissariat</a></li></ul></section></div><div class="col-md-3"><section aria-labelledby="opc-news-section"><h3 id="opc-news-section">Nouvelles du Commissariat</h3><p>Soyez informés des annonces et des activités du Commissariat à la protection de la vie privée du Canada de même que des événements auxquels il participe.</p><ul class="list-unstyled"><li><a href=\'' + wet.builder.base(opt_data) + 'fr/nouvelles-du-commissariat/nouvelles-et-annonces\'>Nouvelles et annonces</a></li><li><a href=\'' + wet.builder.base(opt_data) + 'fr/nouvelles-du-commissariat/evenements-lies-a-la-protection-de-la-vie-privee/\'>Événements liés à la protection de la vie privée</a></li><li><a href=\'' + wet.builder.base(opt_data) + 'fr/nouvelles-du-commissariat/allocutions/\'>Allocutions</a></li></ul></section></div><div class="col-md-3"><section aria-labelledby="respect-section"><h3 id="respect-section">Votre vie privée</h3><p><strong>Nous respectons votre vie privée.</strong></p><p>Lisez notre <a href=\'' + wet.builder.base(opt_data) + 'fr/protection-de-la-vie-privee-et-transparence-au-commissariat/pp/\'>Politique sur la protection des renseignements personnels</a> et nos <a href=\'' + wet.builder.base(opt_data) + 'fr/protection-de-la-vie-privee-et-transparence-au-commissariat/conditions-d-utilisation/\'>Conditions d’utilisation</a> pour en savoir plus sur la protection de vos renseignements personnels et votre droit à la vie privée lorsque vous naviguez sur le site Web <a href=\'' + wet.builder.base(opt_data) + '\'>priv.gc.ca</a> ou que vous communiquez avec le Commissariat à la protection de la vie privée du Canada.</p></section><section aria-labelledby="transparency-section"><h3 id="transparency-section">Transparence</h3><ul class="list-unstyled"><li><a href=\'' + wet.builder.base(opt_data) + 'fr/protection-de-la-vie-privee-et-transparence-au-commissariat/divulgation-proactive/\'>Divulgation proactive</a></li></ul></section></div><div class="col-md-3"><section aria-labelledby="contact-us-section"><h3 id="contact-us-section">Pour communiquer avec nous</h3><p>Vous voulez nous poser une question, nous faire part d’une préoccupation ou déposer une plainte contre une organisation? Nous pouvons vous aider.</p>';
+    output += '<nav class="container visible-sm visible-md visible-lg wb-navcurr" aria-labelledby="footer-links"><h2 class="wb-inv" id="footer-links">À propos du site</h2><div class="row"><div class="col-md-3"><section aria-labelledby="about-opc-section"><h3 id="about-opc-section">À propos du Commissariat</h3><p>Le commissaire à la protection de la vie privée du Canada est un agent du Parlement qui a pour mission de protéger et de promouvoir le droit à la vie privée.</p><ul class="list-unstyled"><li><a href=\'' + wet.builder.base(opt_data) + 'fr/a-propos-du-commissariat/qui-nous-sommes/\'>Qui nous sommes</a></li><li><a href=\'' + wet.builder.base(opt_data) + 'fr/a-propos-du-commissariat/ce-que-nous-faisons/\'>Ce que nous faisons</a></li><li><a href=\'' + wet.builder.base(opt_data) + 'fr/a-propos-du-commissariat/rapports-operationnels-du-commissariat/\'>Rapports sur les activités du Commissariat</a></li><li><a href=\'' + wet.builder.base(opt_data) + 'fr/accessibilite/\'>Accessibilité</a></li><li><a href=\'' + wet.builder.base(opt_data) + 'fr/a-propos-du-commissariat//publications/\'>Publications</a></li><li><a href=\'' + wet.builder.base(opt_data) + 'fr/a-propos-du-commissariat/travailler-au-commissariat\'>Travailler au Commissariat</a></li></ul></section></div><div class="col-md-3"><section aria-labelledby="opc-news-section"><h3 id="opc-news-section">Nouvelles du Commissariat</h3><p>Soyez informés des annonces et des activités du Commissariat à la protection de la vie privée du Canada de même que des événements auxquels il participe.</p><ul class="list-unstyled"><li><a href=\'' + wet.builder.base(opt_data) + 'fr/nouvelles-du-commissariat/nouvelles-et-annonces\'>Nouvelles et annonces</a></li><li><a href=\'' + wet.builder.base(opt_data) + 'fr/nouvelles-du-commissariat/evenements-lies-a-la-protection-de-la-vie-privee/\'>Événements liés à la protection de la vie privée</a></li><li><a href=\'' + wet.builder.base(opt_data) + 'fr/nouvelles-du-commissariat/allocutions/\'>Allocutions</a></li></ul></section></div><div class="col-md-3"><section aria-labelledby="respect-section"><h3 id="respect-section">Votre vie privée</h3><p><strong>Nous respectons votre vie privée.</strong></p><p>Lisez notre <a href=\'' + wet.builder.base(opt_data) + 'fr/protection-de-la-vie-privee-et-transparence-au-commissariat/pp/\'>Politique sur la protection des renseignements personnels</a> et nos <a href=\'' + wet.builder.base(opt_data) + 'fr/protection-de-la-vie-privee-et-transparence-au-commissariat/conditions-d-utilisation/\'>Conditions d’utilisation</a> pour en savoir plus sur la protection de vos renseignements personnels et votre droit à la vie privée lorsque vous naviguez sur le site Web <a href=\'' + wet.builder.base(opt_data) + '\'>priv.gc.ca</a> ou que vous communiquez avec le Commissariat à la protection de la vie privée du Canada.</p></section><section aria-labelledby="transparency-section"><h3 id="transparency-section">Transparence</h3><ul class="list-unstyled"><li><a href=\'' + wet.builder.base(opt_data) + 'fr/protection-de-la-vie-privee-et-transparence-au-commissariat/divulgation-proactive/\'>Divulgation proactive</a></li></ul></section></div><div class="col-md-3"><section aria-labelledby="contact-us-section"><h3 id="contact-us-section">Pour communiquer avec nous</h3><p>Vous voulez nous poser une question, nous faire part d’une préoccupation ou déposer une plainte contre une organisation? Nous pouvons vous aider.</p>';
     if (opt_data.contactLinks != null) {
       output += '<ul class="list-unstyled colcount-sm-2 colcount-md-3">';
-      var linkList350 = opt_data.contactLinks;
-      var linkListLen350 = linkList350.length;
-      for (var linkIndex350 = 0; linkIndex350 < linkListLen350; linkIndex350++) {
-        var linkData350 = linkList350[linkIndex350];
-        output += (linkIndex350 == 0) ? '<li><a href="' + soy.$$escapeHtml(linkData350.href) + '">Contactez-nous</a></li>' : '';
+      var linkList352 = opt_data.contactLinks;
+      var linkListLen352 = linkList352.length;
+      for (var linkIndex352 = 0; linkIndex352 < linkListLen352; linkIndex352++) {
+        var linkData352 = linkList352[linkIndex352];
+        output += (linkIndex352 == 0) ? '<li><a href="' + soy.$$escapeHtml(linkData352.href) + '">Contactez-nous</a></li>' : '';
       }
       output += '</ul>';
     } else {
@@ -173,31 +173,31 @@ wet.builder.footer = function(opt_data, opt_ignored) {
   } else {
     output += '<div id="transactFooter" class="landscape"></div><nav class="container visible-sm visible-md visible-lg wb-navcurr ftr-urlt-lnk"><h2 class="wb-inv">À propos du site</h2><ul>';
     if (opt_data.contactLinks != null) {
-      var linkList371 = opt_data.contactLinks;
-      var linkListLen371 = linkList371.length;
-      for (var linkIndex371 = 0; linkIndex371 < linkListLen371; linkIndex371++) {
-        var linkData371 = linkList371[linkIndex371];
-        output += (linkIndex371 == 0) ? '<li><a ' + ((linkData371.href) ? ' href="' + soy.$$escapeHtml(linkData371.href) + '"' : ' href=\'' + wet.builder.base(opt_data) + 'fr/communiquer-avec-le-commissariat/\'') + ((linkData371.newWindow) ? ' target="_blank"  rel="noopener"' : '') + '>Coordonnées' + ((linkData371.newWindow == true) ? '<span class="wb-inv"> Ce lien ouvrira dans une nouvelle fenêtre</span>' : '') + '</a></li>' : '';
+      var linkList373 = opt_data.contactLinks;
+      var linkListLen373 = linkList373.length;
+      for (var linkIndex373 = 0; linkIndex373 < linkListLen373; linkIndex373++) {
+        var linkData373 = linkList373[linkIndex373];
+        output += (linkIndex373 == 0) ? '<li><a ' + ((linkData373.href) ? ' href="' + soy.$$escapeHtml(linkData373.href) + '"' : ' href=\'' + wet.builder.base(opt_data) + 'fr/communiquer-avec-le-commissariat/\'') + ((linkData373.newWindow) ? ' target="_blank"  rel="noopener"' : '') + '>Coordonnées' + ((linkData373.newWindow == true) ? '<span class="wb-inv"> Ce lien ouvrira dans une nouvelle fenêtre</span>' : '') + '</a></li>' : '';
       }
     } else {
       output += '<li><a href=\'' + wet.builder.base(opt_data) + 'fr/communiquer-avec-le-commissariat/\'>Coordonnées</a></li>';
     }
     if (opt_data.termsLink != null) {
-      var linkList399 = opt_data.termsLink;
-      var linkListLen399 = linkList399.length;
-      for (var linkIndex399 = 0; linkIndex399 < linkListLen399; linkIndex399++) {
-        var linkData399 = linkList399[linkIndex399];
-        output += (linkIndex399 == 0) ? '<li><a ' + ((linkData399.href) ? ' href="' + soy.$$escapeHtml(linkData399.href) + '"' : ' href=\'' + wet.builder.base(opt_data) + 'fr/protection-de-la-vie-privee-et-transparence-au-commissariat/conditions-d-utilisation/\'') + ((linkData399.newWindow) ? ' target="_blank"  rel="noopener"' : '') + '>Avis' + ((linkData399.newWindow == true) ? '<span class="wb-inv"> Ce lien ouvrira dans une nouvelle fenêtre</span>' : '') + '</a></li>' : '';
+      var linkList401 = opt_data.termsLink;
+      var linkListLen401 = linkList401.length;
+      for (var linkIndex401 = 0; linkIndex401 < linkListLen401; linkIndex401++) {
+        var linkData401 = linkList401[linkIndex401];
+        output += (linkIndex401 == 0) ? '<li><a ' + ((linkData401.href) ? ' href="' + soy.$$escapeHtml(linkData401.href) + '"' : ' href=\'' + wet.builder.base(opt_data) + 'fr/protection-de-la-vie-privee-et-transparence-au-commissariat/conditions-d-utilisation/\'') + ((linkData401.newWindow) ? ' target="_blank"  rel="noopener"' : '') + '>Avis' + ((linkData401.newWindow == true) ? '<span class="wb-inv"> Ce lien ouvrira dans une nouvelle fenêtre</span>' : '') + '</a></li>' : '';
       }
     } else {
       output += '<li><a href=\'' + wet.builder.base(opt_data) + 'fr/protection-de-la-vie-privee-et-transparence-au-commissariat/conditions-d-utilisation/\'>Avis</a></li>';
     }
     if (opt_data.privacyLink != null) {
-      var linkList427 = opt_data.privacyLink;
-      var linkListLen427 = linkList427.length;
-      for (var linkIndex427 = 0; linkIndex427 < linkListLen427; linkIndex427++) {
-        var linkData427 = linkList427[linkIndex427];
-        output += (linkIndex427 == 0) ? '<li><a ' + ((linkData427.href) ? ' href="' + soy.$$escapeHtml(linkData427.href) + '"' : ' href=\'' + wet.builder.base(opt_data) + 'fr/protection-de-la-vie-privee-et-transparence-au-commissariat/pp/\'') + ((linkData427.newWindow) ? ' target="_blank"  rel="noopener"' : '') + '>Confidentialité' + ((linkData427.newWindow == true) ? '<span class="wb-inv"> Ce lien ouvrira dans une nouvelle fenêtre</span>' : '') + '</a></li>' : '';
+      var linkList429 = opt_data.privacyLink;
+      var linkListLen429 = linkList429.length;
+      for (var linkIndex429 = 0; linkIndex429 < linkListLen429; linkIndex429++) {
+        var linkData429 = linkList429[linkIndex429];
+        output += (linkIndex429 == 0) ? '<li><a ' + ((linkData429.href) ? ' href="' + soy.$$escapeHtml(linkData429.href) + '"' : ' href=\'' + wet.builder.base(opt_data) + 'fr/protection-de-la-vie-privee-et-transparence-au-commissariat/pp/\'') + ((linkData429.newWindow) ? ' target="_blank"  rel="noopener"' : '') + '>Confidentialité' + ((linkData429.newWindow == true) ? '<span class="wb-inv"> Ce lien ouvrira dans une nouvelle fenêtre</span>' : '') + '</a></li>' : '';
       }
     } else {
       output += '<li><a href=\'' + wet.builder.base(opt_data) + 'fr/protection-de-la-vie-privee-et-transparence-au-commissariat/pp/\'>Confidentialité</a></li>';

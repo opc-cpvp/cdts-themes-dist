@@ -1,7 +1,7 @@
 /*!
  * Centrally Deployed Templates Solution (CDTS) / Solution de gabarits à déploiement centralisé (SGDC)
  * github.com/opc-cpvp/cdts-sgdc/blob/master/LICENSE
- * v4.0.37 - 2022-12-16
+ * v4.0.37 - 2022-12-20
  *
  */// This file was automatically generated from wet-en.soy.
 // Please don't edit this file by hand.
@@ -156,14 +156,14 @@ wet.builder.footer = function(opt_data, opt_ignored) {
   opt_data = opt_data || {};
   var output = '\t\t<footer id="wb-info">';
   if (opt_data.showFooter != false) {
-    output += '<nav class="container visible-sm visible-md visible-lg wb-navcurr" aria-labelledby="footer-links"><h2 class="wb-inv" id="footer-links">About this site</h2><div class="row"><div class="col-md-3"><section aria-labelledby="about-opc-section"><h3 id="about-opc-section">About the OPC</h3><p>The Privacy Commissioner of Canada is an Agent of Parliament whose mission is to protect and promote privacy rights.</p><ul class="list-unstyled"><li><a href=\'' + wet.builder.base(opt_data) + 'en/about-the-opc/who-we-are/\'>Who we are</a></li><li><a href=\'' + wet.builder.base(opt_data) + 'en/about-the-opc/what-we-do/\'>What we do</a></li><li><a href=\'' + wet.builder.base(opt_data) + 'en/about-the-opc/opc-operational-reports/\'>OPC operational reports</a></li><li><a href=\'' + wet.builder.base(opt_data) + 'en/about-the-opc/publications/\'>Publications</a></li><li><a href=\'' + wet.builder.base(opt_data) + 'en/about-the-opc/working-at-the-opc/\'>Working at the OPC</a></li></ul></section></div><div class="col-md-3"><section aria-labelledby="opc-news-section"><h3 id="opc-news-section">OPC news</h3><p>Get updates about the OPC’s announcements and activities, as well as the events in which we participate.</p><ul class="list-unstyled"><li><a href=\'' + wet.builder.base(opt_data) + 'en/opc-news/news-and-announcements/\'>News and announcements</a></li><li><a href=\'' + wet.builder.base(opt_data) + 'en/opc-news/privacy-events/\'>Privacy events</a></li><li><a href=\'' + wet.builder.base(opt_data) + 'en/opc-news/speeches/\'>Speeches</a></li></ul></section></div><div class="col-md-3"><section aria-labelledby="respect-section"><h3 id="respect-section">Your privacy</h3><p><strong>We respect your privacy</strong></p><p>Read our <a href=\'' + wet.builder.base(opt_data) + 'en/privacy-and-transparency-at-the-opc/pp/\'>Privacy policy</a> and <a href=\'' + wet.builder.base(opt_data) + 'en/privacy-and-transparency-at-the-opc/terms-and-conditions-of-use/\'>Terms and conditions of use</a> to find out more about your privacy and rights when using the <a href=\'' + wet.builder.base(opt_data) + '\'>priv.gc.ca</a> website or contacting the Office of the Privacy Commissioner of Canada.</p></section><section aria-labelledby="transparency-section"><h3 id="transparency-section">Transparency</h3><ul class="list-unstyled"><li><a href=\'' + wet.builder.base(opt_data) + 'en/privacy-and-transparency-at-the-opc/proactive-disclosure/\'>Proactive disclosure</a></li></ul></section></div><div class="col-md-3"><section aria-labelledby="contact-us-section"><h3 id="contact-us-section">Contact us</h3><p>If you have a question, concerns about your privacy or want to file a complaint against an organization, we are here to help.</p>';
+    output += '<nav class="container visible-sm visible-md visible-lg wb-navcurr" aria-labelledby="footer-links"><h2 class="wb-inv" id="footer-links">About this site</h2><div class="row"><div class="col-md-3"><section aria-labelledby="about-opc-section"><h3 id="about-opc-section">About the OPC</h3><p>The Privacy Commissioner of Canada is an Agent of Parliament whose mission is to protect and promote privacy rights.</p><ul class="list-unstyled"><li><a href=\'' + wet.builder.base(opt_data) + 'en/about-the-opc/who-we-are/\'>Who we are</a></li><li><a href=\'' + wet.builder.base(opt_data) + 'en/about-the-opc/what-we-do/\'>What we do</a></li><li><a href=\'' + wet.builder.base(opt_data) + 'en/about-the-opc/opc-operational-reports/\'>OPC operational reports</a></li><li><a href=\'' + wet.builder.base(opt_data) + 'en/accessibility/\'>Accessibility</a></li><li><a href=\'' + wet.builder.base(opt_data) + 'en/about-the-opc/publications/\'>Publications</a></li><li><a href=\'' + wet.builder.base(opt_data) + 'en/about-the-opc/working-at-the-opc/\'>Working at the OPC</a></li></ul></section></div><div class="col-md-3"><section aria-labelledby="opc-news-section"><h3 id="opc-news-section">OPC news</h3><p>Get updates about the OPC’s announcements and activities, as well as the events in which we participate.</p><ul class="list-unstyled"><li><a href=\'' + wet.builder.base(opt_data) + 'en/opc-news/news-and-announcements/\'>News and announcements</a></li><li><a href=\'' + wet.builder.base(opt_data) + 'en/opc-news/privacy-events/\'>Privacy events</a></li><li><a href=\'' + wet.builder.base(opt_data) + 'en/opc-news/speeches/\'>Speeches</a></li></ul></section></div><div class="col-md-3"><section aria-labelledby="respect-section"><h3 id="respect-section">Your privacy</h3><p><strong>We respect your privacy</strong></p><p>Read our <a href=\'' + wet.builder.base(opt_data) + 'en/privacy-and-transparency-at-the-opc/pp/\'>Privacy policy</a> and <a href=\'' + wet.builder.base(opt_data) + 'en/privacy-and-transparency-at-the-opc/terms-and-conditions-of-use/\'>Terms and conditions of use</a> to find out more about your privacy and rights when using the <a href=\'' + wet.builder.base(opt_data) + '\'>priv.gc.ca</a> website or contacting the Office of the Privacy Commissioner of Canada.</p></section><section aria-labelledby="transparency-section"><h3 id="transparency-section">Transparency</h3><ul class="list-unstyled"><li><a href=\'' + wet.builder.base(opt_data) + 'en/privacy-and-transparency-at-the-opc/proactive-disclosure/\'>Proactive disclosure</a></li></ul></section></div><div class="col-md-3"><section aria-labelledby="contact-us-section"><h3 id="contact-us-section">Contact us</h3><p>If you have a question, concerns about your privacy or want to file a complaint against an organization, we are here to help.</p>';
     if (opt_data.contactLinks != null) {
       output += '<ul class="list-unstyled colcount-sm-2 colcount-md-3">';
-      var linkList350 = opt_data.contactLinks;
-      var linkListLen350 = linkList350.length;
-      for (var linkIndex350 = 0; linkIndex350 < linkListLen350; linkIndex350++) {
-        var linkData350 = linkList350[linkIndex350];
-        output += (linkIndex350 == 0) ? '<li><a href="' + soy.$$escapeHtml(linkData350.href) + '">Contact us</a></li>' : '';
+      var linkList352 = opt_data.contactLinks;
+      var linkListLen352 = linkList352.length;
+      for (var linkIndex352 = 0; linkIndex352 < linkListLen352; linkIndex352++) {
+        var linkData352 = linkList352[linkIndex352];
+        output += (linkIndex352 == 0) ? '<li><a href="' + soy.$$escapeHtml(linkData352.href) + '">Contact us</a></li>' : '';
       }
       output += '</ul>';
     } else {
@@ -173,31 +173,31 @@ wet.builder.footer = function(opt_data, opt_ignored) {
   } else {
     output += '<div id="transactFooter" class="landscape"></div><nav class="container visible-sm visible-md visible-lg wb-navcurr ftr-urlt-lnk"><h2 class="wb-inv">About this site</h2><ul>';
     if (opt_data.contactLinks != null) {
-      var linkList371 = opt_data.contactLinks;
-      var linkListLen371 = linkList371.length;
-      for (var linkIndex371 = 0; linkIndex371 < linkListLen371; linkIndex371++) {
-        var linkData371 = linkList371[linkIndex371];
-        output += (linkIndex371 == 0) ? '<li><a ' + ((linkData371.href) ? ' href="' + soy.$$escapeHtml(linkData371.href) + '"' : ' href=\'' + wet.builder.base(opt_data) + 'en/contact-the-opc/\'') + ((linkData371.newWindow) ? ' target="_blank"  rel="noopener"' : '') + '>Contact information' + ((linkData371.newWindow == true) ? '<span class="wb-inv"> This link will open in a new window</span>' : '') + '</a></li>' : '';
+      var linkList373 = opt_data.contactLinks;
+      var linkListLen373 = linkList373.length;
+      for (var linkIndex373 = 0; linkIndex373 < linkListLen373; linkIndex373++) {
+        var linkData373 = linkList373[linkIndex373];
+        output += (linkIndex373 == 0) ? '<li><a ' + ((linkData373.href) ? ' href="' + soy.$$escapeHtml(linkData373.href) + '"' : ' href=\'' + wet.builder.base(opt_data) + 'en/contact-the-opc/\'') + ((linkData373.newWindow) ? ' target="_blank"  rel="noopener"' : '') + '>Contact information' + ((linkData373.newWindow == true) ? '<span class="wb-inv"> This link will open in a new window</span>' : '') + '</a></li>' : '';
       }
     } else {
       output += '<li><a href=\'' + wet.builder.base(opt_data) + 'en/contact-the-opc/\'>Contact information</a></li>';
     }
     if (opt_data.termsLink != null) {
-      var linkList399 = opt_data.termsLink;
-      var linkListLen399 = linkList399.length;
-      for (var linkIndex399 = 0; linkIndex399 < linkListLen399; linkIndex399++) {
-        var linkData399 = linkList399[linkIndex399];
-        output += (linkIndex399 == 0) ? '<li><a ' + ((linkData399.href) ? ' href="' + soy.$$escapeHtml(linkData399.href) + '"' : ' href=\'' + wet.builder.base(opt_data) + 'en/privacy-and-transparency-at-the-opc/terms-and-conditions-of-use/\'') + ((linkData399.newWindow) ? ' target="_blank"  rel="noopener"' : '') + '>Terms and conditions' + ((linkData399.newWindow == true) ? '<span class="wb-inv"> This link will open in a new window</span>' : '') + '</a></li>' : '';
+      var linkList401 = opt_data.termsLink;
+      var linkListLen401 = linkList401.length;
+      for (var linkIndex401 = 0; linkIndex401 < linkListLen401; linkIndex401++) {
+        var linkData401 = linkList401[linkIndex401];
+        output += (linkIndex401 == 0) ? '<li><a ' + ((linkData401.href) ? ' href="' + soy.$$escapeHtml(linkData401.href) + '"' : ' href=\'' + wet.builder.base(opt_data) + 'en/privacy-and-transparency-at-the-opc/terms-and-conditions-of-use/\'') + ((linkData401.newWindow) ? ' target="_blank"  rel="noopener"' : '') + '>Terms and conditions' + ((linkData401.newWindow == true) ? '<span class="wb-inv"> This link will open in a new window</span>' : '') + '</a></li>' : '';
       }
     } else {
       output += '<li><a href=\'' + wet.builder.base(opt_data) + 'en/privacy-and-transparency-at-the-opc/terms-and-conditions-of-use/\'>Terms and conditions</a></li>';
     }
     if (opt_data.privacyLink != null) {
-      var linkList427 = opt_data.privacyLink;
-      var linkListLen427 = linkList427.length;
-      for (var linkIndex427 = 0; linkIndex427 < linkListLen427; linkIndex427++) {
-        var linkData427 = linkList427[linkIndex427];
-        output += (linkIndex427 == 0) ? '<li><a ' + ((linkData427.href) ? ' href="' + soy.$$escapeHtml(linkData427.href) + '"' : ' href=\'' + wet.builder.base(opt_data) + 'en/privacy-and-transparency-at-the-opc/pp/\'') + ((linkData427.newWindow) ? ' target="_blank"  rel="noopener"' : '') + '>Privacy' + ((linkData427.newWindow == true) ? '<span class="wb-inv"> This link will open in a new window</span>' : '') + '</a></li>' : '';
+      var linkList429 = opt_data.privacyLink;
+      var linkListLen429 = linkList429.length;
+      for (var linkIndex429 = 0; linkIndex429 < linkListLen429; linkIndex429++) {
+        var linkData429 = linkList429[linkIndex429];
+        output += (linkIndex429 == 0) ? '<li><a ' + ((linkData429.href) ? ' href="' + soy.$$escapeHtml(linkData429.href) + '"' : ' href=\'' + wet.builder.base(opt_data) + 'en/privacy-and-transparency-at-the-opc/pp/\'') + ((linkData429.newWindow) ? ' target="_blank"  rel="noopener"' : '') + '>Privacy' + ((linkData429.newWindow == true) ? '<span class="wb-inv"> This link will open in a new window</span>' : '') + '</a></li>' : '';
       }
     } else {
       output += '<li><a href=\'' + wet.builder.base(opt_data) + 'en/privacy-and-transparency-at-the-opc/pp/\'>Privacy</a></li>';
@@ -224,25 +224,25 @@ wet.builder.splash = function(opt_data, opt_ignored) {
   var output = '\t\t<div id="bg"></div><main><div class="sp-hb"><div class="sp-bx col-xs-12"><h1 property="name" class="wb-inv">Office of the Privacy Commissioner</h1><div class="row"><div class="col-md-12"><img src=\'' + wet.builder.environment(opt_data) + 'gcweb-opc/assets/opc-blk-fr.png\' class="img img-responsive" alt="Commissariat à la protection de la vie privée du Canada / Office of the Privacy Commissioner" /></div></div><div class="row"><section class="col-xs-6 text-right" lang="fr">' + ((opt_data.nameFra != null) ? '<h2>' + soy.$$escapeHtml(opt_data.nameFra) + '</h2>' : '<h2 class="wb-inv">Commissariat à la protection de la vie privée du Canada</h2>') + '<p><a href="' + soy.$$escapeHtml(opt_data.indexFra) + '" class="btn btn-primary" lang="fr">Français</a></p></section><section class="col-xs-6" lang="en">' + ((opt_data.nameEng != null) ? '<h2>' + soy.$$escapeHtml(opt_data.nameEng) + '</h2>' : '<h2 class="wb-inv">Office of the Privacy Commissioner</h2>') + '<p><a href="' + soy.$$escapeHtml(opt_data.indexEng) + '" class="btn btn-primary" lang="en">English</a></p></section></div></div><div class="sp-bx-bt col-xs-12"><div class="row"><div class="col-xs-12 col-md-12"><a href="' + soy.$$escapeHtml(opt_data.termsFra) + '" class="sp-lk" lang="fr">Conditions d\'utilisation</a> <span class="glyphicon glyphicon-asterisk"></span> <a href="' + soy.$$escapeHtml(opt_data.termsEng) + '" class="sp-lk">Terms & conditions</a></div></div></div></div></main><!--[if gte IE 9 | !IE ]><!--><script src="' + ((opt_data.jqueryEnv == 'external') ? wet.builder.environment(opt_data) + 'wet-boew/js/' : wet.builder.environment(opt_data) + 'wet-boew/js/') + 'jquery/2.2.4/jquery.min.js"><\/script><script src=\'' + wet.builder.environment(opt_data) + 'wet-boew/js/wet-boew.min.js\'><\/script><!--<![endif]--><!--[if lt IE 9]><script src=\'' + wet.builder.environment(opt_data) + 'wet-boew/js/ie8-wet-boew2.min.js\'><\/script><![endif]--><script src=\'' + wet.builder.environment(opt_data) + 'gcweb-opc/js/theme.min.js\'><\/script><link rel="stylesheet" href=\'' + wet.builder.environment(opt_data) + 'cdts/css/cdtsfixes.css\'>';
   if (opt_data.webAnalytics != null) {
     output += '<script type="text/javascript">var _paq = (function (paq) {var removeTrailingSlash = function(site) {return site.replace(/\\/$/, \'\');};';
-    var aaList576 = opt_data.webAnalytics;
-    var aaListLen576 = aaList576.length;
-    for (var aaIndex576 = 0; aaIndex576 < aaListLen576; aaIndex576++) {
-      var aaData576 = aaList576[aaIndex576];
-      output += 'var u = \'' + wet.builder.base(opt_data) + 'm/\'; var url = removeTrailingSlash(window.location.href).toLowerCase(); paq.push([\'setCustomDimension\', 2, url]); paq.push([\'setCustomUrl\', url]); paq.push([\'enableLinkTracking\']); paq.push([\'trackPageView\']); paq.push([\'trackVisibleContentImpressions\']); paq.push([\'setTrackerUrl\', u + \'m.php\']); paq.push([\'setSiteId\',  \'' + soy.$$escapeHtml(aaData576.siteId) + '\']);';
-      if (aaData576.customDimensions != null) {
-        var dimensionList584 = aaData576.customDimensions;
-        var dimensionListLen584 = dimensionList584.length;
-        for (var dimensionIndex584 = 0; dimensionIndex584 < dimensionListLen584; dimensionIndex584++) {
-          var dimensionData584 = dimensionList584[dimensionIndex584];
-          output += 'paq.push([\'setCustomDimension\', ' + soy.$$escapeHtml(dimensionData584.id) + ', \'' + soy.$$escapeHtml(dimensionData584.value) + '\']);';
+    var aaList578 = opt_data.webAnalytics;
+    var aaListLen578 = aaList578.length;
+    for (var aaIndex578 = 0; aaIndex578 < aaListLen578; aaIndex578++) {
+      var aaData578 = aaList578[aaIndex578];
+      output += 'var u = \'' + wet.builder.base(opt_data) + 'm/\'; var url = removeTrailingSlash(window.location.href).toLowerCase(); paq.push([\'setCustomDimension\', 2, url]); paq.push([\'setCustomUrl\', url]); paq.push([\'enableLinkTracking\']); paq.push([\'trackPageView\']); paq.push([\'trackVisibleContentImpressions\']); paq.push([\'setTrackerUrl\', u + \'m.php\']); paq.push([\'setSiteId\',  \'' + soy.$$escapeHtml(aaData578.siteId) + '\']);';
+      if (aaData578.customDimensions != null) {
+        var dimensionList586 = aaData578.customDimensions;
+        var dimensionListLen586 = dimensionList586.length;
+        for (var dimensionIndex586 = 0; dimensionIndex586 < dimensionListLen586; dimensionIndex586++) {
+          var dimensionData586 = dimensionList586[dimensionIndex586];
+          output += 'paq.push([\'setCustomDimension\', ' + soy.$$escapeHtml(dimensionData586.id) + ', \'' + soy.$$escapeHtml(dimensionData586.value) + '\']);';
         }
       }
-      if (aaData576.customVariables != null) {
-        var variableList593 = aaData576.customVariables;
-        var variableListLen593 = variableList593.length;
-        for (var variableIndex593 = 0; variableIndex593 < variableListLen593; variableIndex593++) {
-          var variableData593 = variableList593[variableIndex593];
-          output += 'paq.push([\'setCustomVariable\', ' + soy.$$escapeHtml(variableIndex593 + 1) + ', \'' + soy.$$escapeHtml(variableData593.name) + '\', \'' + soy.$$escapeHtml(variableData593.value) + '\', \'' + soy.$$escapeHtml(variableData593.scope) + '\']);';
+      if (aaData578.customVariables != null) {
+        var variableList595 = aaData578.customVariables;
+        var variableListLen595 = variableList595.length;
+        for (var variableIndex595 = 0; variableIndex595 < variableListLen595; variableIndex595++) {
+          var variableData595 = variableList595[variableIndex595];
+          output += 'paq.push([\'setCustomVariable\', ' + soy.$$escapeHtml(variableIndex595 + 1) + ', \'' + soy.$$escapeHtml(variableData595.name) + '\', \'' + soy.$$escapeHtml(variableData595.value) + '\', \'' + soy.$$escapeHtml(variableData595.scope) + '\']);';
         }
       }
     }
