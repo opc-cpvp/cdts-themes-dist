@@ -1,10 +1,10 @@
 /*
-* Web Experience Toolkit (WET) / Boîte à outils de l"expérience Web (BOEW)
-* wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
-*/
+ * Web Experience Toolkit (WET) / Boîte à outils de l"expérience Web (BOEW)
+ * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
+ */
 /*
 ----- Hindi dictionary (il8n) ---
-*/
+ */
 ( function( wb ) {
 "use strict";
 
@@ -54,7 +54,7 @@ wb.i18nDict = {
 	"prv-l": "पिछला (बाएँ तीर कुंजी)",
 	first: "पहले",
 	last: "अंतिम",
-	page: "Jump to: Page",
+	page: "Page",
 	"srch-menus": "खोज और मेनू",
 	email: "ईमेल",
 	"menu-close": "मेनू बंद",
@@ -107,7 +107,6 @@ wb.i18nDict = {
 	"frm-nosubmit": "फार्म प्रस्तुत नहीं किया जा सका क्योंकि ",
 	"errs-fnd": " त्रुटियों पाया गया.",
 	"err-fnd": " त्रुटि पाया गया था.",
-	"err-correct": "(Correct and resubmit)",
 
 	/* Date picker */
 	"date-hide": "कैलेंडर छिपाएँ",
@@ -157,7 +156,6 @@ wb.i18nDict = {
 	/* Charts widget */
 	"tbl-txt": "तालिका",
 	"tbl-dtls": "चार्ट. निम्न तालिका में विवरण.",
-	"chrt-cmbslc": "Combined slice",
 
 	/* Session timeout */
 	"st-to-msg-bgn": "आपका सत्र #min# मिनट #sec# सेकंड में स्वत: ही समाप्त हो जाएगी.",
@@ -198,10 +196,9 @@ wb.i18nDict = {
 	"geo-allyttl": "निर्देश: मानचित्र नेविगेशन",
 	"geo-tgllyr": "परत के प्रदर्शन टॉगल करें",
 	"geo-hdnlyr": "इस परत वर्तमान में छिपा हुआ है.",
-	"geo-bmap-url": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT3978/MapServer/WMTS/",
-	"geo-bmap-matrix-set": "default028mm",
+	"geo-bmapurl": "@geo-bmapurl@",
 	"geo-bmapttl": "BaseMaps_CBMT3978",
-	"geo-bmapurltxt": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_TXT_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
+	"geo-bmapurltxt": "@geo-bmapurltxt@",
 	"geo-attrlnk": "//geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
 	"geo-attrttl": "GeoGratis - कनाडा आधार नक्शा (अंग्रेजी या फ्रेंच केवल)",
 	"geo-sel": "चयन",
@@ -214,7 +211,6 @@ wb.i18nDict = {
 	"geo-aoi-south": "दक्षिण",
 	"geo-aoi-west": "पश्चिम",
 	"geo-aoi-instructions": "मानचित्र पर बॉक्स आकर्षित या नीचे निर्देशांक दर्ज करें और \"जोड़ें\" बटन पर क्लिक करें।",
-	"geo-aoi-title": "Draw box on map or enter coordinates",
 	"geo-aoi-btndraw": "खींचना",
 	"geo-aoi-btnclear": "हटाना",
 	"geo-geoloc-btn": "वर्तमान स्थान पर ज़ूम",

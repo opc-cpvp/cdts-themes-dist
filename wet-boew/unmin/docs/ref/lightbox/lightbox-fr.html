@@ -1,5 +1,8 @@
 <!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="fr" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!-->
 <html class="no-js" lang="fr" dir="ltr">
+<!--<![endif]-->
 	<head>
 		<meta charset="utf-8" />
 		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
@@ -10,33 +13,33 @@
  - Boîte à outils de l'expérience Web
 </title>
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
+		<!-- Meta data -->
 		<meta name="description" content="Afficher des images et d&#x27;autres contenus dans une boîte de dialogue, individuellement ou dans le cadre d&#x27;une galerie." />
-		
-		
-		
-		
-		
-		<link rel="alternate" hreflang="en" href="lightbox-en.html" />
-		
+		<!-- Meta data-->
+		<!--[if gte IE 9 | !IE ]><!-->
 		<link href="../../../../theme-wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon" />
 		<link rel="stylesheet" href="../../../../theme-wet-boew/css/theme.css" />
+		<!--<![endif]-->
 		
+		<!--[if lt IE 9]>
+		<link href="../../../../theme-wet-boew/assets/favicon.ico" rel="shortcut icon" />
+		<link rel="stylesheet" href="../../../../theme-wet-boew/css/ie8-theme.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+		<script src="../../../../wet-boew/js/ie8-wet-boew.js"></script>
+		<![endif]-->
 		
 		<noscript><link rel="stylesheet" href="../../../../wet-boew/css/noscript.css" /></noscript>
 	</head>
 	<body vocab="http://schema.org/" typeof="WebPage">
 		
-<nav>
-	<ul id="wb-tphp">
-		<li class="wb-slc">
-			<a class="wb-sl" href="#wb-cont">Passer au contenu principal</a>
-		</li>
-		<li class="wb-slc visible-sm visible-md visible-lg">
-			<a class="wb-sl" href="#wb-info">Passer à «&#160;À propos de ce site&#160;»</a>
-		</li>
-	</ul>
-</nav>
-
+<ul id="wb-tphp">
+	<li class="wb-slc">
+		<a class="wb-sl" href="#wb-cont">Passer au contenu principal</a>
+	</li>
+	<li class="wb-slc visible-sm visible-md visible-lg">
+		<a class="wb-sl" href="#wb-info">Passer à «&#160;À propos de ce site&#160;»</a>
+	</li>
+</ul>
 <header role="banner">
 	<div id="wb-bnr">
 		<div id="wb-bar">
@@ -64,7 +67,7 @@
 			<div class="row">
 				<div id="wb-sttl" class="col-md-8">
 					<a href="../../../index-fr.html">
-						<img src="../../../../theme-wet-boew/assets/logo.svg" alt="" />
+						<object type="image/svg+xml" tabindex="-1" data="../../../../theme-wet-boew/assets/logo.svg"></object>
 						<span>Boîte à outils de l'expérience Web<span class="wb-inv">, </span><small>Projet à source ouverte collaboratif dirigé par le Gouvernement du Canada</small></span>
 					</a>
 				</div>
@@ -120,16 +123,18 @@
 
 	<main role="main" property="mainContentOfPage" class="container">
 		<h1 id="wb-cont" property="name">Lightbox</h1>
+		
+		
 		<p>
 			<a class="btn btn-primary" href="https://github.com/wet-boew/wet-boew/issues/new?title=Lightbox:%20">Questions ou commentaires?</a>
 		</p>
-		
+			
 <span class="wb-prettify all-pre hide"></span>
 
 <div lang="fr">
 <section>
 	<h2>But</h2>
-	<p>Afficher des images et d'autres contenus dans une boîte de dialogue, soit individuellement ou comme partie d'une galerie. Implémente le modèle de conception <a href="https://www.w3.org/TR/wai-aria-practices/#dialog_modal">WAI-ARIA Dialog (Modal)</a>.</p>
+	<p>Afficher des images et d'autres contenus dans une boîte de dialogue, soit individuellement ou comme partie d'une galerie. Implémente le modèle de conception <a href="http://www.w3.org/TR/wai-aria-practices/#dialog_modal">WAI-ARIA Dialog (Modal)</a>.</p>
 </section>
 
 <section>
@@ -213,12 +218,12 @@
 			<tr>
 				<td><code>popup-modal-dismiss</code></td>
 				<td>Identifie le bouton qui doit être utilisé pour fermer un lightbox se comportant comme une boîte de dialogue modale.</td>
-				<td>Ajouter <code>popup-modal-dismiss</code> à l'attribut <code>class</code> du lien ou du bouton qui servira à fermer le lightbox se comportant comme une boîte de dialogue modale. <span lang="en">If the target attribute is set, the dialog box will be closed automatically when the user leaves the web page.</span></td>
+				<td>Ajouter <code>popup-modal-dismiss</code> à l'attribut <code>class</code> du lien ou du bouton qui servira à fermer le lightbox se comportant comme une boîte de dialogue modale.</td>
 				<td>n/a</td>
 			</tr>
 			<tr>
 				<td><code>data-wb-lbx</code></td>
-				<td>Les paramètres de Magnific Popup peuvent être configurés par l'attribut <code>data-wb-lbx</code>. Voir la <a href="https://dimsemenov.com/plugins/magnific-popup/documentation.html#options">documentation Magnific Popup</a> pour les options disponibles.<br /><strong>À noter :</strong> BOEW utilise les callbacks open, change et parseAjax (voir <a href="https://dimsemenov.com/plugins/magnific-popup/documentation.html#events">Événements</a>).</td>
+				<td>Les paramètres de Magnific Popup peuvent être configurés par l'attribut <code>data-wb-lbx</code>. Voir la <a href="http://dimsemenov.com/plugins/magnific-popup/documentation.html#options">documentation Magnific Popup</a> pour les options disponibles.<br /><strong>À noter :</strong> BOEW utilise les callbacks open, change et parseAjax (voir <a href="http://dimsemenov.com/plugins/magnific-popup/documentation.html#events">Événements</a>).</td>
 				<td>Ajouter l'attribut <code>data-wb-lbx</code> à l'élément lien ou utiliser <code>window[ "wb-lbx" ]</code> avec les options souhaitées. </td>
 				<td>p.ex., <code>data-wb-lbx='{"type": "ajax"}'</code> permet d'identifier le type de contenu. Donne le même résultat que l'ajout de la classe <code>lbx-ajax</code>.</td>
 			</tr>
@@ -278,11 +283,11 @@
 	{
 		settings: {
 			type: 'POST',
-			data: {
+			data: { 
 				foo: 'bar'
 			}
 		}
-	}
+    }
 ]);</code></pre>
 				</td>
 				<td>Utilisé pour ouvrir un Lightbox manuellement. Peut être utilisé pour afficher des boîtes individuelles, des galeries et des boîtes modales. Voir <a href="../../../demos/lightbox/lightbox-fr.html#examples5">Ouvrir des popups par JavaScript</a> pour des exemples d'application.</td>
@@ -290,20 +295,20 @@
 			<tr>
 				<td><code>wb-ready.wb</code> (v4.0.5+)</td>
 				<td>Déclenché automatiquement quand BOEW a terminé le chargement et l'exécution.</td>
-				<td>Utilisé pour identifier quand tous les plugiciels BOEW et les polyfills ont terminé leur chargement et leur exécution.
+				<td>Utilisé pour identifier quand tous les plugiciels BOEW et les polyfills ont terminé leur chargement et leur exécution. 
 					<pre><code>$( document ).on( "wb-ready.wb", function( event ) {
 });</code></pre>
 				</td>
 			</tr>
 			<tr>
 				<td>Événements <code>mfp*</code> (e.g., <code>mfpClose</code></td>
-				<td>Événements déclenchés automatiquement par Magnific Popup (<a rel="external" href="https://dimsemenov.com/plugins/magnific-popup/documentation.html#events">documentation sur les événements Magnific Popup</a>.</td>
+				<td>Événements déclenchés automatiquement par Magnific Popup (<a rel="external" href="http://dimsemenov.com/plugins/magnific-popup/documentation.html#events">documentation sur les événements Magnific Popup</a>.</td>
 				<td>Utilisés par Magnific Popup pour identifier quels événements sont en cours. <code>$.magnificPopup.instance</code> contient les propriétés du popup en question.
 					<ul>
 						<li><strong>Ouvert avec <code>.wb-lbx</code></strong>:
 							<pre><code>$( ".wb-lbx" ).on( "mfpClose", function( event ) {
 	var src = $.magnificPopup.instance.items[ 0 ].src;
-
+	
 	if ( src === "#inline_content" ) {
 	} else if ( src === "demo/1_b.jpg" ) {
 	}
@@ -312,7 +317,7 @@
 						<li><strong>Ouvert avec JavaScript</strong>:
 							<pre><code>$( document ).on( "mfpClose", function( event ) {
 	var src = $.magnificPopup.instance.items[ 0 ].src;
-
+	
 	if ( src === "#inline_content" ) {
 	} else if ( src === "demo/1_b.jpg" ) {
 	}
@@ -323,15 +328,6 @@
 			</tr>
 		</tbody>
 	</table>
-</section>
-
-<section>
-	<h2>Cas de mise à l'essai</h2>
-	<p>Les cas de mise à l'essai suivant sont seulement disponible en anglais.</p>
-	<dl lang="en">
-		<dt><a href="test/click-on-same-page-link.html">Click on the same page link</a></dt>
-		<dd>Ensuring the dialog close when clicking on a link inside the opened dialog that are pointing to a location outside the dialog context, like futher down in the page.</dd>
-	</dl>
 </section>
 
 <section>
@@ -346,7 +342,7 @@
 		</dl>
 	</main>
 
-	<footer role="contentinfo" id="wb-info"  class="visible-sm visible-md visible-lg wb-navcurr">
+	<footer role="contentinfo" id="wb-info" class="visible-sm visible-md visible-lg wb-navcurr">
 		<div class="container">
 			<nav role="navigation" class="row">
 				<h2>À propos de ce site</h2>
@@ -360,7 +356,7 @@
 					<h3>À propos</h3>
 					<ul class="list-unstyled">
 						<li><a href="../../../index-fr.html#apropos">À propos de la Boîte à outils de l’expérience Web</a></li>
-						<li><a rel="external" href="https://www.tbs-sct.gc.ca/ws-nw/index-fra.asp">À propos des normes Web</a></li>
+						<li><a rel="external" href="http://www.tbs-sct.gc.ca/ws-nw/index-fra.asp">À propos des normes Web</a></li>
 					</ul>
 				</section>
 				<section class="col-sm-3">
@@ -375,15 +371,18 @@
 					<ul class="list-unstyled">
 						<li><a rel="external" href="https://twitter.com/BoiteExpWeb">Twitter</a></li>
 					</ul>
-				</section>
-			</nav>
+				</section>		</nav>
 		</div>
 	</footer>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+		<!--[if gte IE 9 | !IE ]><!-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
 		<script src="../../../../wet-boew/js/wet-boew.js"></script>
+		<!--<![endif]-->
 		
+		<!--[if lt IE 9]>
+		<script src="../../../../wet-boew/js/ie8-wet-boew2.js"></script>
 		
-		
+		<![endif]-->
 	</body>
 </html>

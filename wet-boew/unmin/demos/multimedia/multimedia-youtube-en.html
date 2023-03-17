@@ -1,5 +1,8 @@
 <!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!-->
 <html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
 	<head>
 		<meta charset="utf-8" />
 		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
@@ -9,32 +12,33 @@
  - Web Experience Toolkit
 </title>
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
+		<!-- Meta data -->
 		<meta name="description" content="Provides an accessible multimedia player for embedding YouTube video into web pages." />
-		
-		
-		
-		
-		<link rel="alternate" hreflang="fr" href="multimedia-youtube-fr.html" />
-		
+		<!-- Meta data-->
+		<!--[if gte IE 9 | !IE ]><!-->
 		<link href="../../../theme-wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon" />
 		<link rel="stylesheet" href="../../../theme-wet-boew/css/theme.css" />
+		<!--<![endif]-->
 		
+		<!--[if lt IE 9]>
+		<link href="../../../theme-wet-boew/assets/favicon.ico" rel="shortcut icon" />
+		<link rel="stylesheet" href="../../../theme-wet-boew/css/ie8-theme.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+		<script src="../../../wet-boew/js/ie8-wet-boew.js"></script>
+		<![endif]-->
 		
 		<noscript><link rel="stylesheet" href="../../../wet-boew/css/noscript.css" /></noscript>
 	</head>
 	<body vocab="http://schema.org/" typeof="WebPage">
 		
-<nav>
-	<ul id="wb-tphp">
-		<li class="wb-slc">
-			<a class="wb-sl" href="#wb-cont">Skip to main content</a>
-		</li>
-		<li class="wb-slc visible-sm visible-md visible-lg">
-			<a class="wb-sl" href="#wb-info">Skip to "About this site"</a>
-		</li>
-	</ul>
-</nav>
-
+<ul id="wb-tphp">
+	<li class="wb-slc">
+		<a class="wb-sl" href="#wb-cont">Skip to main content</a>
+	</li>
+	<li class="wb-slc visible-sm visible-md visible-lg">
+		<a class="wb-sl" href="#wb-info">Skip to "About this site"</a>
+	</li>
+</ul>
 <header role="banner">
 	<div id="wb-bnr">
 		<div id="wb-bar">
@@ -62,7 +66,7 @@
 			<div class="row">
 				<div id="wb-sttl" class="col-md-8">
 					<a href="../../index-en.html">
-						<img src="../../../theme-wet-boew/assets/logo.svg" alt="" />
+						<object type="image/svg+xml" tabindex="-1" data="../../../theme-wet-boew/assets/logo.svg"></object>
 						<span>Web Experience Toolkit<span class="wb-inv">, </span><small>Collaborative open source project led by the Government of Canada</small></span>
 					</a>
 				</div>
@@ -115,8 +119,10 @@
 
 	<main role="main" property="mainContentOfPage" class="container">
 		<h1 id="wb-cont" property="name">Multimedia Player - YouTube</h1>
+		
+		
 		<ul class="list-inline">
-				<li><a class="btn btn-primary" href="../../docs/ref/multimedia/multimedia-en.html">Documentation</a></li>
+			<li><a class="btn btn-primary" href="../../docs/ref/multimedia/multimedia-en.html">Documentation</a></li>
 			<li><a class="btn btn-primary" href="https://github.com/wet-boew/wet-boew/issues/new?title=Multimedia%20Player%20-%20YouTube:%20">Questions or comments?</a></li>
 		</ul>
 		
@@ -133,9 +139,9 @@
 <div class="row">
 	<section class="col-md-6">
 		<h2>Example</h2>
-		<figure class="wb-mltmd" data-wb-mltmd='{"shareUrl": "https://www.youtube.com/watch?v=9znKJqnFuuY"}'>
+		<figure class="wb-mltmd" data-wb-mltmd='{"shareUrl": "http://www.youtube.com/watch?v=9znKJqnFuuY"}'>
 			<video title="Suspect">
-				<source type="video/youtube" src="https://www.youtube.com/watch?v=9znKJqnFuuY" />
+				<source type="video/youtube" src="http://www.youtube.com/watch?v=9znKJqnFuuY" />
 			</video>
 			<figcaption>
 				<p>Suspect (<a href="http://healthycanadians.gc.ca/video/suspect-eng.php#trans">Transcript</a>)</p>
@@ -144,9 +150,9 @@
 
 		<details class="mrgn-tp-md">
 			<summary>View code</summary>
-			<pre><code>&lt;figure class=&quot;wb-mltmd&quot; data-wb-mltmd='{"shareUrl": "https://www.youtube.com/watch?v=9znKJqnFuuY"}'&gt;
+			<pre><code>&lt;figure class=&quot;wb-mltmd&quot; data-wb-mltmd='{"shareUrl": "http://www.youtube.com/watch?v=9znKJqnFuuY"}'&gt;
 	&lt;video title=&quot;Suspect&quot;&gt;
-		&lt;source type=&quot;video/youtube&quot; src=&quot;https://www.youtube.com/watch?v=9znKJqnFuuY&quot; /&gt;
+		&lt;source type=&quot;video/youtube&quot; src=&quot;http://www.youtube.com/watch?v=9znKJqnFuuY&quot; /&gt;
 	&lt;/video&gt;
 	&lt;figcaption&gt;
 		&lt;p&gt;Suspect&lt;/p&gt;
@@ -156,52 +162,13 @@
 	</section>
 </div>
 
-<h2>Youtube video in a lightbox</h2>
-
-<p><a class="wb-lbx lbx-modal lbx-iframe" href="#video-youtube">Open the video</a></p>
-<section id="video-youtube" class="mfp-hide modal-dialog modal-content overlay-def">
-	<header class="modal-header">
-		<h3>Youtube video in a lightbox</h3>
-	</header>
-	<div class="modal-body">
-		<figure class="wb-mltmd" data-wb-mltmd='{"shareUrl": "https://www.youtube.com/watch?v=9znKJqnFuuY"}'>
-			<video title="Suspect">
-				<source type="video/youtube" src="https://www.youtube.com/watch?v=9znKJqnFuuY" />
-			</video>
-			<figcaption>
-				<p>Suspect (<a href="http://healthycanadians.gc.ca/video/suspect-eng.php#trans">Transcript</a>)</p>
-			</figcaption>
-		</figure>
-	</div>
-</section>
-
-<details>
-	<summary>View code</summary>
-	<pre><code>&lt;p&gt;&lt;a class="wb-lbx lbx-modal lbx-iframe" href="#video-youtube"&gt;Open the video&lt;/a&gt;&lt;/p&gt;
-&lt;section id="video-youtube" class="mfp-hide modal-dialog modal-content overlay-def"&gt;
-	&lt;header class="modal-header"&gt;
-		&lt;h3&gt;Youtube video in a lightbox&lt;/h3&gt;
-	&lt;/header&gt;
-	&lt;div class="modal-body"&gt;
-		&lt;figure class="wb-mltmd" data-wb-mltmd='{"shareUrl": "https://www.youtube.com/watch?v=9znKJqnFuuY"}'&gt;
-			&lt;video title="Suspect"&gt;
-				&lt;source type="video/youtube" src="https://www.youtube.com/watch?v=9znKJqnFuuY" /&gt;
-			&lt;/video&gt;
-			&lt;figcaption&gt;
-				&lt;p&gt;Suspect (&lt;a href="http://healthycanadians.gc.ca/video/suspect-eng.php#trans"&gt;Transcript&lt;/a&gt;)&lt;/p&gt;
-			&lt;/figcaption&gt;
-		&lt;/figure&gt;
-	&lt;/div&gt;
-&lt;/section&gt;</code></pre>
-</details>
-
 		<dl id="wb-dtmd">
 			<dt>Date modified:&#32;</dt>
 			<dd><time property="dateModified">2014-08-01</time></dd>
 		</dl>
 	</main>
 
-	<footer role="contentinfo" id="wb-info"  class="visible-sm visible-md visible-lg wb-navcurr">
+	<footer role="contentinfo" id="wb-info" class="visible-sm visible-md visible-lg wb-navcurr">
 		<div class="container">
 			<nav role="navigation" class="row">
 				<h2>About this site</h2>
@@ -215,7 +182,7 @@
 					<h3>About</h3>
 					<ul class="list-unstyled">
 						<li><a href="../../index-en.html#about">About the Web Experience Toolkit</a></li>
-						<li><a rel="external" href="https://www.tbs-sct.gc.ca/ws-nw/index-eng.asp">About the Web Standards</a></li>
+						<li><a rel="external" href="http://www.tbs-sct.gc.ca/ws-nw/index-eng.asp">About the Web Standards</a></li>
 					</ul>
 				</section>
 				<section class="col-sm-3">
@@ -230,15 +197,18 @@
 					<ul class="list-unstyled">
 						<li><a rel="external" href="https://twitter.com/WebExpToolkit">Twitter</a></li>
 					</ul>
-				</section>
-			</nav>
+				</section>		</nav>
 		</div>
 	</footer>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+		<!--[if gte IE 9 | !IE ]><!-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
 		<script src="../../../wet-boew/js/wet-boew.js"></script>
+		<!--<![endif]-->
 		
+		<!--[if lt IE 9]>
+		<script src="../../../wet-boew/js/ie8-wet-boew2.js"></script>
 		
-		
+		<![endif]-->
 	</body>
 </html>

@@ -1,5 +1,6 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="fr" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
 <html class="no-js" lang="fr" dir="ltr">
+<!--<![endif]-->
 <head>
 <meta charset="utf-8">
 <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
@@ -7,15 +8,22 @@
 <title>Boîte à outils de l’expérience Web (BOEW) - Exemples pratiques - Boîte à outils de l'expérience Web
 </title>
 <meta content="width=device-width,initial-scale=1" name="viewport">
+<!-- Meta data -->
 <meta name="description" content="La Boîte à outils de l’expérience Web (BOEW) rassemble différents composants réutilisables et prêts-à-utiliser pour la conception et la mise à jour de sites Web innovateurs qui sont à la fois accessibles, conviviaux et interopérables. Tous ces composants réutilisables sont des logiciels libres mis à la disposition des ministères et des collectivités Web externes.">
-<link rel="canonical" href="https://wet-boew.github.io/wet-boew/index-fr.html">
-<link rel="alternate" hreflang="en" href="index-en.html">
+<!-- Meta data-->
+<!--[if gte IE 9 | !IE ]><!-->
 <link href="./theme-wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
 <link rel="stylesheet" href="./theme-wet-boew/css/theme.min.css">
+<!--<![endif]-->
+<!--[if lt IE 9]>
+		<link href="./theme-wet-boew/assets/favicon.ico" rel="shortcut icon" />
+		<link rel="stylesheet" href="./theme-wet-boew/css/ie8-theme.min.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="./wet-boew/js/ie8-wet-boew.min.js"></script>
+		<![endif]-->
 <noscript><link rel="stylesheet" href="./wet-boew/css/noscript.min.css" /></noscript>
 </head>
 <body vocab="http://schema.org/" typeof="WebPage">
-<nav>
 <ul id="wb-tphp">
 <li class="wb-slc">
 <a class="wb-sl" href="#wb-cont">Passer au contenu principal</a>
@@ -24,7 +32,6 @@
 <a class="wb-sl" href="#wb-info">Passer à «&#160;À propos de ce site&#160;»</a>
 </li>
 </ul>
-</nav>
 <header role="banner">
 <div id="wb-bnr">
 <div id="wb-bar">
@@ -51,7 +58,7 @@
 <div class="row">
 <div id="wb-sttl" class="col-md-8">
 <a href="./index-fr.html">
-<img src="./theme-wet-boew/assets/logo.svg" alt="">
+<object type="image/svg+xml" tabindex="-1" data="./theme-wet-boew/assets/logo.svg"></object>
 <span>Boîte à outils de l'expérience Web<span class="wb-inv">, </span><small>Projet à source ouverte collaboratif dirigé par le Gouvernement du Canada</small></span>
 </a>
 </div>
@@ -85,6 +92,14 @@
 <main role="main" property="mainContentOfPage" class="container">
 <h1 id="wb-cont" property="name">Boîte à outils de l’expérience Web (BOEW)</h1>
 <section>
+<details class="alert alert-info" id="alert-info" open="open">
+<summary class="h2">
+<h2>Nouveau cycle de publication trimestrielle</h2>
+</summary>
+<p>La BOEW va maintenant être publiée 4 fois par ans au lieu de mensuellement pour faciliter la maintenance des applications et des sites Web.</p>
+</details>
+</section>
+<section>
 <h2 id="apropos">Qu’est-ce que la Boîte à outils de l’expérience Web?</h2>
 <ul>
 <li>Une bibliothèque de code <a href="docs/ref/accolades-fr.html#primes">primée</a> pour construire des sites Web <a href="#accessibilit">accessibles</a>, <a href="#facilit-demploi">faciles d'emploi</a>, <a href="#interoprabilit">interopérables</a>, <a href="#conception-optimise-pour-les-appareils-mobiles-et-ractive">optimisés pour les appareils mobiles</a> et <a href="#multilingue">multilingues</a></li>
@@ -93,79 +108,27 @@
 </ul>
 </section>
 <section>
-<h2 id="key">Ressources</h2>
-<div class="row wb-eqht">
-<div class="col-lg-4 col-md-6">
-<h3 class="h5"><a href="demos/index-fr.html">Exemples</a></h3>
-<p>Exemples pratique de l'ensemble des plugiciels incluant les outils de développement</p>
-</div>
-<div class="col-lg-4 col-md-6">
-<h3 class="h5"><a href="docs/index-fr.html">Documentation</a></h3>
-<p>Documentation technique et spécification de la configuration des plugiciels</p>
-</div>
-<div class="col-lg-4 col-md-6">
-<h3 class="h5"><a href="docs/versions/dwnld-fr.html">Téléchargements</a></h3>
-<p>Exécutable et note de version de la WET-BOEW et du thème de Canada.ca</p>
-</div>
-<div class="col-lg-4 col-md-6">
-<h3 class="h5"><a href="https://wet-boew.github.io/themes-dist/GCWeb/index-fr.html">Thème du Canada.ca (GCWeb)</a></h3>
-<p>Ressource technique et référence d'implémentation de la spécification du contenu et de l'AI pour Canada.ca</p>
-</div>
-<div class="col-lg-4 col-md-6">
-<h3 class="h5"><a href="https://github.com/wet-boew/" hreflang="en">Projet de la WET-BOEW sur github</a></h3>
-<p>Code source et suivi de billet de l'ensemble des projets de la wet-boew et tableau de bord des projets spécials</p>
-</div>
-<div class="col-lg-4 col-md-6">
-<h3 class="h5"><a href="https://wet-boew.github.io/wet-boew-styleguide/index-fr.html">Guide de style</a></h3>
-<p>Style, écriture, conception et guide d'accessibilité pour la Boîte à outils de l'expérience Web (BOEW)</p>
-</div>
-</div>
-<div class="row">
-<div class="col-md-6">
-<h3>Décision de conception</h3>
-<p><em>(dernière mise à jour: <time datetime="2020-02-14">14 février 2020</time>)</em></p>
-<p>Notes: DD-8, DD-9 et DD-10 sont disponible en anglais seulement, leur traduction française vont être publié sous peu.</p>
+<h2 id="cles">Ressources clés</h2>
 <ul>
-<li><a href="https://wet-boew.github.io/wet-boew-documentation/decision/1-fr.html">DD-1: Utiliser des éléments img pour charger des images SVG plutôt que des éléments object</a></li>
-<li><a href="https://wet-boew.github.io/wet-boew-documentation/decision/2-fr.html">DD-2: Navigateurs compatibles</a></li>
-<li><a href="https://wet-boew.github.io/wet-boew-documentation/decision/3-fr.html">DD-3: API de la BOEW</a></li>
-<li><a href="https://wet-boew.github.io/wet-boew-documentation/decision/4-fr.html">DD-4: Mode HTML de base et l’amélioration progressive</a></li>
-<li><a href="https://wet-boew.github.io/wet-boew-documentation/decision/5-fr.html">DD-5: Migration du dépôt</a></li>
-<li><a href="https://wet-boew.github.io/wet-boew-documentation/decision/6-fr.html">DD-6: Version</a></li>
-<li><a hreflang="en" lang="en" href="https://wet-boew.github.io/wet-boew-documentation/decision/8.html">DD-8: Dual implementation of structured data with JSON-LD and RDFa Lite in a single web page</a></li>
-<li><a hreflang="en" lang="en" href="https://wet-boew.github.io/wet-boew-documentation/decision/9.html">DD-9: Release early, release often (<abbr title="Short-term release">STR</abbr>)</a> (Approuvé)</li>
-<li><a hreflang="en" lang="en" href="https://wet-boew.github.io/wet-boew-documentation/decision/10.html">DD-10: Provisional feature</a> (Approuvé)</li>
-<li><a hreflang="en" lang="en" href="https://wet-boew.github.io/wet-boew-documentation/decision/11.html">DD-11: Resize text testing methodology</a> (Brouillon)</li>
-</ul>
-<p><a hreflang="en" lang="en" href="https://wet-boew.github.io/wet-boew-documentation/decision/index-en.html">Consult all Design decision</a></p>
-</div>
-<div class="col-md-6">
-<h3>Projets dans la famille de la WET-BOEW</h3>
-<ul>
-<li><a hreflang="en" lang="en" href="https://github.com/wet-boew/wet-boew-dotnet-controls">Web Control Library .NET</a> (en anglais)</li>
-<li><a hreflang="en" lang="en" href="https://github.com/wet-boew/wet-boew-drupal">Drupal WxT variant</a> (en anglais)</li>
-<li><a hreflang="fr" lang="fr" href="https://cenw-wscoe.github.io/sgdc-cdts/docs/index-fr.html">SGDC - Service centralisé de gabarit</a></li>
-<li><a hreflang="en" lang="en" href="https://github.com/orgs/wet-boew/projects/1">WCAG 2.1 Level AA review</a> (en anglais)</li>
-</ul>
-<p><small>(<a hreflang="en" lang="en" href="https://wet-boew.github.io/wet-boew-documentation/projects-en.html">All projects</a> - en anglais)</small></p>
-<h3>Ressources pour la gestion du projet de la BOEW</h3>
-<ul>
-<li><a hreflang="en" lang="en" href="https://wet-boew.github.io/wet-boew-documentation/research-en.html">Research and findings</a> (en anglais)</li>
-<li><a hreflang="en" lang="en" href="https://wet-boew.github.io/wet-boew-documentation/decision/index-en.html">Design decision</a> (en anglais)</li>
-<li><a hreflang="en" lang="en" href="https://wet-boew.github.io/wet-boew-documentation/index-en.html">Project documentations and design decision</a> (en anglais)</li>
-<li><a href="docs/start-fr.html#develop">lignes directrices pour les contributeurs</a></li>
+<li><a href="docs/index-fr.html">Documentation</a></li>
+<li><a href="docs/versions/dwnld-fr.html">Téléchargements</a></li>
+<li><a href="demos/index-fr.html">Exemples pratiques</a></li>
+<li><a href="docs/versions/index-fr.html">Historique des versions</a> et <a href="docs/versions/rdmp-fr.html">feuille de route</a></li>
+<li><a href="docs/index-fr.html#boew31">Avis concernant la BOEW v3.1</a></li>
 <li><a href="Licence-fr.html">Conditions régissant l'utilisation</a> (licence MIT)</li>
+<li><a href="https://github.com/wet-boew/wet-boew/">Dépôt de code source</a> et <a href="docs/start-fr.html#develop">lignes directrices pour les contributeurs</a></li>
+<li><a href="docs/comms-fr.html">Matériel de communications</a></li>
+<li><a href="docs/ref/wetsites-fr.html">Sites Web qui se servent de la BOEW</a></li>
+<li><a href="http://wet-boew.github.io/wet-boew-styleguide/v4/index-fr.html">Guide de style</a></li>
 </ul>
-</div>
-</div>
 </section>
 <section>
 <h2 id="avantages">Avantages</h2>
 <section>
 <h3 id="accessibilit">Accessibilité</h3>
 <ul>
-<li>Conformes aux <a href="https://www.w3.org/Translations/WCAG20-fr/">Règles pour l'accessibilité des contenus Web (WCAG) 2.0</a> niveau AA</li>
-<li>S'appuie sur <a href="https://www.w3.org/TR/wai-aria/">WAI-ARIA</a> pour améliorer l'accessibilité</li>
+<li>Conformes aux <a href="http://www.w3.org/Translations/WCAG20-fr/">Règles pour l'accessibilité des contenus Web (WCAG) 2.0</a> niveau AA</li>
+<li>S'appuie sur <a href="http://www.w3.org/TR/wai-aria/">WAI-ARIA</a> pour améliorer l'accessibilité</li>
 <li>Vérification avec les technologies d'assistance (Groupe de travail sur l'accessibilité)</li>
 </ul>
 </section>
@@ -179,9 +142,9 @@
 <section>
 <h3 id="interoprabilit">Interopérabilité</h3>
 <ul>
-<li>Approche centrée sur le <a href="https://www.w3.org/TR/html5/">HTML5</a> (s'appuyant sur le soutien HTML5 natif et puis les &laquo;correctifs&raquo; pour résoudre les problèmes de soutien)</li>
+<li>Approche centrée sur le <a href="http://www.w3.org/TR/html5/">HTML5</a> (s'appuyant sur le soutien HTML5 natif et puis les &laquo;correctifs&raquo; pour résoudre les problèmes de soutien)</li>
 <li>Soutien pour plusieurs navigateurs (IE, Firefox, Chrome, Safari, Opera)</li>
-<li>Soutien en développement pour les données HTML (<a href="https://www.w3.org/TR/rdfa-lite/">RDFa 1.1 Lite</a>, <a href="https://www.schema.org/">Schema.org</a>)</li>
+<li>Soutien en développement pour les données HTML (<a href="http://www.w3.org/TR/rdfa-lite/">RDFa 1.1 Lite</a>, <a href="http://www.schema.org/">Schema.org</a>)</li>
 </ul>
 </section>
 <section>
@@ -240,7 +203,7 @@
 <h3 id="personnalisable-et-rutilisable">Personnalisable et réutilisable</h3>
 <ul>
 <li>Cadre flexible qui supporte des thèmes personnalisés</li>
-<li>Soutien <a href="docs/ref/themesstyle-fr.html">5 thèmes différents</a>, y compris un <a href="https://wet-boew.github.io/themes-dist/theme-base/docs/ref/theme-base/theme-base-fr.html">thème de base</a> servant comme modèle</li>
+<li>Soutien <a href="docs/ref/themesstyle-fr.html">5 thèmes différents</a>, y compris un <a href="http://wet-boew.github.io/themes-dist/theme-base/docs/ref/theme-base/theme-base-fr.html">thème de base</a> servant comme modèle</li>
 <li>Modèles, <a href="docs/ref/plugins-fr.html">plugiciels</a> et gadgets réutilisables</li>
 <li><a href="docs/ref/variants-fr.html">Adapté aux différents systèmes de gestion de contenu et cadres de programmation</a> (Drupal, WordPress, SharePoint (en développement), DotNetNuke (en développement), PHP, SSI, Java/Maven)</li>
 </ul>
@@ -273,7 +236,7 @@
 </section>
 <dl id="wb-dtmd">
 <dt>Date de modification&#160;:&#32;</dt>
-<dd><time property="dateModified">2020-01-22</time></dd>
+<dd><time property="dateModified">2016-06-09</time></dd>
 </dl>
 </main>
 <footer role="contentinfo" id="wb-info" class="visible-sm visible-md visible-lg wb-navcurr">
@@ -290,7 +253,7 @@
 <h3>À propos</h3>
 <ul class="list-unstyled">
 <li><a href="./index-fr.html#apropos">À propos de la Boîte à outils de l’expérience Web</a></li>
-<li><a rel="external" href="https://www.tbs-sct.gc.ca/ws-nw/index-fra.asp">À propos des normes Web</a></li>
+<li><a rel="external" href="http://www.tbs-sct.gc.ca/ws-nw/index-fra.asp">À propos des normes Web</a></li>
 </ul>
 </section>
 <section class="col-sm-3">
@@ -305,11 +268,16 @@
 <ul class="list-unstyled">
 <li><a rel="external" href="https://twitter.com/BoiteExpWeb">Twitter</a></li>
 </ul>
-</section>
-</nav>
+</section> </nav>
 </div>
 </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!--[if gte IE 9 | !IE ]><!-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="./wet-boew/js/wet-boew.min.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+		<script src="./wet-boew/js/ie8-wet-boew2.min.js"></script>
+		
+		<![endif]-->
 </body>
 </html>

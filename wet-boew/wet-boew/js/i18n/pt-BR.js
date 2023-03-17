@@ -1,10 +1,10 @@
 /*
-* Web Experience Toolkit (WET) / Boîte à outils de l"expérience Web (BOEW)
-* wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
-*/
+ * Web Experience Toolkit (WET) / Boîte à outils de l"expérience Web (BOEW)
+ * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
+ */
 /*
 ----- Portuguese (Brazilian) dictionary (il8n) ---
-*/
+ */
 ( function( wb ) {
 "use strict";
 
@@ -54,7 +54,7 @@ wb.i18nDict = {
 	"prv-l": "Anterior (tecla seta para a esquerda)",
 	first: "Primeiro",
 	last: "Último",
-	page: "Jump to: Page",
+	page: "Page",
 	"srch-menus": "Pesquisa e menus",
 	email: "Correio eletrônico",
 	"menu-close": "Fechar o menu",
@@ -107,7 +107,6 @@ wb.i18nDict = {
 	"frm-nosubmit": "O formulário não pode ser submetido porque ",
 	"errs-fnd": " foram encontrados erros.",
 	"err-fnd": " foi encontrado um erro.",
-	"err-correct": "(Correct and resubmit)",
 
 	/* Date picker */
 	"date-hide": "Ocultar o calendário",
@@ -157,7 +156,6 @@ wb.i18nDict = {
 	/* Charts widget */
 	"tbl-txt": "Tabela",
 	"tbl-dtls": "Gráfico. Mais detalhes na tabela a seguir.",
-	"chrt-cmbslc": "Combined slice",
 
 	/* Session timeout */
 	"st-to-msg-bgn": "Sua sessão expira automaticamente em #min# min #sec# sec.",
@@ -198,10 +196,9 @@ wb.i18nDict = {
 	"geo-allyttl": "Instruções: Como navegar pelo mapa",
 	"geo-tgllyr": "Alternar a exibição da camada",
 	"geo-hdnlyr": "Esta camada está oculta.",
-	"geo-bmap-url": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT3978/MapServer/WMTS/",
-	"geo-bmap-matrix-set": "default028mm",
+	"geo-bmapurl": "@geo-bmapurl@",
 	"geo-bmapttl": "BaseMaps_CBMT3978",
-	"geo-bmapurltxt": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_TXT_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
+	"geo-bmapurltxt": "@geo-bmapurltxt@",
 	"geo-attrlnk": "//geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
 	"geo-attrttl": "GeoGratis - Canadá mapa base (Inglês ou francês)",
 	"geo-sel": "Selecionar",
@@ -214,7 +211,6 @@ wb.i18nDict = {
 	"geo-aoi-south": "Sul",
 	"geo-aoi-west": "Ocidente",
 	"geo-aoi-instructions": "Caixa Desenhe no mapa ou inserir coordenadas abaixo e clique no botão \"Adicionar\".",
-	"geo-aoi-title": "Draw box on map or enter coordinates",
 	"geo-aoi-btndraw": "Desenhar",
 	"geo-aoi-btnclear": "Remover",
 	"geo-geoloc-btn": "Ampliar local atual",

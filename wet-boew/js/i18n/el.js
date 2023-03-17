@@ -1,10 +1,10 @@
 /*
-* Web Experience Toolkit (WET) / Boîte à outils de l"expérience Web (BOEW)
-* wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
-*/
+ * Web Experience Toolkit (WET) / Boîte à outils de l"expérience Web (BOEW)
+ * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
+ */
 /*
 ----- Greek dictionary (il8n) ---
-*/
+ */
 ( function( wb ) {
 "use strict";
 
@@ -54,7 +54,7 @@ wb.i18nDict = {
 	"prv-l": "Προηγούμενος (αριστερό πλήκτρο βέλους)",
 	first: "Πρώτα",
 	last: "Τελευταίος",
-	page: "Jump to: Page",
+	page: "Page",
 	"srch-menus": "Αναζήτηση και μενού",
 	email: "E-mail",
 	"menu-close": "Κλείστε το μενού",
@@ -107,7 +107,6 @@ wb.i18nDict = {
 	"frm-nosubmit": "Το έντυπο θα μπορούσε να να δεν που υποβάλλονται, επειδή ",
 	"errs-fnd": " τα σφάλματα βρέθηκαν.",
 	"err-fnd": " σφάλμα ήταν που βρέθηκαν.",
-	"err-correct": "(Correct and resubmit)",
 
 	/* Date picker */
 	"date-hide": "Απόκρυψη ημερολόγιο",
@@ -157,7 +156,6 @@ wb.i18nDict = {
 	/* Charts widget */
 	"tbl-txt": "Τραπέζι",
 	"tbl-dtls": "Διάγραμμα. Λεπτομέρειες στον ακόλουθο πίνακα.",
-	"chrt-cmbslc": "Combined slice",
 
 	/* Session timeout */
 	"st-to-msg-bgn": "Η συνεδρία σας θα λήξει αυτόματα στο #min# min #sec# sec.",
@@ -198,10 +196,9 @@ wb.i18nDict = {
 	"geo-allyttl": "Οδηγίες: Χάρτης πλοήγησης",
 	"geo-tgllyr": "Εναλλαγή την οθόνη του του στρώμα",
 	"geo-hdnlyr": "Αυτό το στρώμα είναι κρυφές αυτή τη στιγμή.",
-	"geo-bmap-url": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT3978/MapServer/WMTS/",
-	"geo-bmap-matrix-set": "default028mm",
+	"geo-bmapurl": "@geo-bmapurl@",
 	"geo-bmapttl": "BaseMaps_CBMT3978",
-	"geo-bmapurltxt": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_TXT_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
+	"geo-bmapurltxt": "@geo-bmapurltxt@",
 	"geo-attrlnk": "//geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
 	"geo-attrttl": "GeoGratis - Καναδάς χάρτη βάσης (αγγλικά ή γαλλικά)",
 	"geo-sel": "Επιλέξτε το",
@@ -214,7 +211,6 @@ wb.i18nDict = {
 	"geo-aoi-south": "Νότια",
 	"geo-aoi-west": "Δύση",
 	"geo-aoi-instructions": "Σχεδιάστε το πλαίσιο στο χάρτη ή πληκτρολογήστε τις συντεταγμένες παρακάτω και κάντε κλικ στο κουμπί \"Προσθήκη\".",
-	"geo-aoi-title": "Draw box on map or enter coordinates",
 	"geo-aoi-btndraw": "Κλήρωση",
 	"geo-aoi-btnclear": "Κατάργηση",
 	"geo-geoloc-btn": "Ζουμ στην τρέχουσα θέση",
@@ -242,16 +238,6 @@ wb.i18nDict = {
 } )( wb );
 
 wb.doc.one( "formLanguages.wb", function() {
-(function( factory ) {
-	if ( typeof define === "function" && define.amd ) {
-		define( ["jquery", "../jquery.validate"], factory );
-	} else if (typeof module === "object" && module.exports) {
-		module.exports = factory( require( "jquery" ) );
-	} else {
-		factory( jQuery );
-	}
-}(function( $ ) {
-
 /*
  * Translated default messages for the jQuery validation plugin.
  * Locale: EL (Greek; ελληνικά)
@@ -275,7 +261,6 @@ $.extend( $.validator.messages, {
 	max: $.validator.format( "Παρακαλώ εισάγετε μια τιμή μικρότερη ή ίση του {0}." ),
 	min: $.validator.format( "Παρακαλώ εισάγετε μια τιμή μεγαλύτερη ή ίση του {0}." )
 } );
-return $;
-}));
+
 
 });

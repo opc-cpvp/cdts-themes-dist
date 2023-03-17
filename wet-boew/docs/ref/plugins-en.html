@@ -1,5 +1,6 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
 <html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
 <head>
 <meta charset="utf-8">
 <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
@@ -7,14 +8,22 @@
 <title>Plugins - Documentation - Web Experience Toolkit
 </title>
 <meta content="width=device-width,initial-scale=1" name="viewport">
+<!-- Meta data -->
 <meta name="description" content="Plugins - Documentation - Web Experience Toolkit (WET)">
-<link rel="alternate" hreflang="fr" href="plugins-fr.html">
+<!-- Meta data-->
+<!--[if gte IE 9 | !IE ]><!-->
 <link href="../../theme-wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
 <link rel="stylesheet" href="../../theme-wet-boew/css/theme.min.css">
+<!--<![endif]-->
+<!--[if lt IE 9]>
+		<link href="../../theme-wet-boew/assets/favicon.ico" rel="shortcut icon" />
+		<link rel="stylesheet" href="../../theme-wet-boew/css/ie8-theme.min.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="../../wet-boew/js/ie8-wet-boew.min.js"></script>
+		<![endif]-->
 <noscript><link rel="stylesheet" href="../../wet-boew/css/noscript.min.css" /></noscript>
 </head>
 <body vocab="http://schema.org/" typeof="WebPage">
-<nav>
 <ul id="wb-tphp">
 <li class="wb-slc">
 <a class="wb-sl" href="#wb-cont">Skip to main content</a>
@@ -23,7 +32,6 @@
 <a class="wb-sl" href="#wb-info">Skip to "About this site"</a>
 </li>
 </ul>
-</nav>
 <header role="banner">
 <div id="wb-bnr">
 <div id="wb-bar">
@@ -50,7 +58,7 @@
 <div class="row">
 <div id="wb-sttl" class="col-md-8">
 <a href="../../index-en.html">
-<img src="../../theme-wet-boew/assets/logo.svg" alt="">
+<object type="image/svg+xml" tabindex="-1" data="../../theme-wet-boew/assets/logo.svg"></object>
 <span>Web Experience Toolkit<span class="wb-inv">, </span><small>Collaborative open source project led by the Government of Canada</small></span>
 </a>
 </div>
@@ -104,7 +112,7 @@
 <li><a href="cal-events/cal-events-en.html">Calendar of Events</a> - Dynamically generates a calendar interface for navigating a list of events.</li>
 <li><a href="charts/charts-en.html">Charts and graphs</a> - Dynamically generates charts and graphs from table data.</li>
 <li><a href="collapsible-alerts/collapsible-alerts-en.html">Collapsible alerts</a> - Make alerts collapsible by users.</li>
-<li><a href="country-content/country-content-en.html">Country Content</a> - A basic AjaxLoader wrapper that inserts AJAXed-in content based on a visitor's country as determined by https://freegeoip.net</li>
+<li><a href="country-content/country-content-en.html">Country Content</a> - A basic AjaxLoader wrapper that inserts AJAXed-in content based on a visitor's country as determined by http://freegeoip.net</li>
 <li><a href="data-ajax/data-ajax-en.html">Data Ajax</a> - Displays an overlay when a section moves out of the viewport.</li>
 <li><a href="data-inview/data-inview-en.html">Data Inview</a> - Displays an overlay when a section moves out of the viewport.</li>
 <li><a href="data-picture/data-picture-en.html">Data Picture</a> - Event driven port of Picturefill.</li>
@@ -123,7 +131,6 @@
 <li><a href="prettify/prettify-en.html">Prettify</a> - Provides syntax highlighting of source code snippets in an HTML page using <a href="https://github.com/google/code-prettify">google-code-prettify</a>.</li>
 <li><a href="session-timeout/session-timeout-en.html">Session timeout</a> - Helps Web asset owners to provide session timeout and inactivity timeout functionality.</li>
 <li><a href="share/share-en.html">Share widget</a> - Facilitates sharing Web content on social media platforms.</li>
-<li><a href="stepsform/stepsform-en.html">Steps Form</a> - Splits a form into steps.</li>
 <li><a href="tabs/tabs-en.html">Tabbed Interface</a> - Dynamically transforms multiple sections of content into a tabbed interface.</li>
 <li><a href="tables/tables-en.html">Tables</a> - Integrates the DataTables plugin into WET providing searching, sorting, filtering, pagination and other advanced features for tables.</li>
 <li><a href="texthighlight/texthighlight-en.html">Text highlighting</a> - Automatically highlights certain words on a Web page. The highlighted words can be selected via the query string.</li>
@@ -157,7 +164,7 @@
 <h3>About</h3>
 <ul class="list-unstyled">
 <li><a href="../../index-en.html#about">About the Web Experience Toolkit</a></li>
-<li><a rel="external" href="https://www.tbs-sct.gc.ca/ws-nw/index-eng.asp">About the Web Standards</a></li>
+<li><a rel="external" href="http://www.tbs-sct.gc.ca/ws-nw/index-eng.asp">About the Web Standards</a></li>
 </ul>
 </section>
 <section class="col-sm-3">
@@ -172,11 +179,16 @@
 <ul class="list-unstyled">
 <li><a rel="external" href="https://twitter.com/WebExpToolkit">Twitter</a></li>
 </ul>
-</section>
-</nav>
+</section> </nav>
 </div>
 </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!--[if gte IE 9 | !IE ]><!-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="../../wet-boew/js/wet-boew.min.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+		<script src="../../wet-boew/js/ie8-wet-boew2.min.js"></script>
+		
+		<![endif]-->
 </body>
 </html>

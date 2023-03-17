@@ -1,10 +1,10 @@
 /*
-* Web Experience Toolkit (WET) / Boîte à outils de l"expérience Web (BOEW)
-* wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
-*/
+ * Web Experience Toolkit (WET) / Boîte à outils de l"expérience Web (BOEW)
+ * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
+ */
 /*
 ----- Thai dictionary (il8n) ---
-*/
+ */
 ( function( wb ) {
 "use strict";
 
@@ -54,7 +54,7 @@ wb.i18nDict = {
 	"prv-l": "ก่อน (คีย์ลูกศรซ้าย)",
 	first: "แรก",
 	last: "ล่าสุด",
-	page: "Jump to: Page",
+	page: "Page",
 	"srch-menus": "ค้นหาและเมนู",
 	email: "อีเมล์",
 	"menu-close": "ปิดเมนู",
@@ -107,7 +107,6 @@ wb.i18nDict = {
 	"frm-nosubmit": "รูปแบบไม่สามารถส่งเพราะ ",
 	"errs-fnd": " พบข้อผิดพลาด.",
 	"err-fnd": " ข้อผิดพลาดที่พบ.",
-	"err-correct": "(Correct and resubmit)",
 
 	/* Date picker */
 	"date-hide": "ซ่อนปฏิทิน",
@@ -157,7 +156,6 @@ wb.i18nDict = {
 	/* Charts widget */
 	"tbl-txt": "ตาราง",
 	"tbl-dtls": "แผนภูมิ รายละเอียดในตารางต่อไปนี้.",
-	"chrt-cmbslc": "Combined slice",
 
 	/* Session timeout */
 	"st-to-msg-bgn": "เซสชั่นของคุณจะหมดอายุโดยอัตโนมัติใน #min# นาที #sec# วินาที.ที่จะขยายเซสชั่นของคุณ",
@@ -198,10 +196,9 @@ wb.i18nDict = {
 	"geo-allyttl": "คำแนะนำ: แผนที่นำร่อง",
 	"geo-tgllyr": "สลับการแสดงผลของชั้น",
 	"geo-hdnlyr": "ชั้นนี้ซ่อนอยู่.",
-	"geo-bmap-url": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT3978/MapServer/WMTS/",
-	"geo-bmap-matrix-set": "default028mm",
+	"geo-bmapurl": "@geo-bmapurl@",
 	"geo-bmapttl": "BaseMaps_CBMT3978",
-	"geo-bmapurltxt": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_TXT_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
+	"geo-bmapurltxt": "@geo-bmapurltxt@",
 	"geo-attrlnk": "//geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
 	"geo-attrttl": "GeoGratis-แคนาดาฐานแผนที่ (ภาษาอังกฤษหรือภาษาฝรั่งเศสเท่านั้น)",
 	"geo-sel": "เลือก",
@@ -214,7 +211,6 @@ wb.i18nDict = {
 	"geo-aoi-south": "ใต้",
 	"geo-aoi-west": "ทิศตะวันตก",
 	"geo-aoi-instructions": "วาดกล่องบนแผนที่หรือป้อนพิกัดด้านล่างและคลิกที่ปุ่ม \"เพิ่ม\"",
-	"geo-aoi-title": "Draw box on map or enter coordinates",
 	"geo-aoi-btndraw": "วาด",
 	"geo-aoi-btnclear": "เอาออก",
 	"geo-geoloc-btn": "ขยายไปยังสถานที่ปัจจุบัน",
@@ -242,16 +238,6 @@ wb.i18nDict = {
 } )( wb );
 
 wb.doc.one( "formLanguages.wb", function() {
-(function( factory ) {
-	if ( typeof define === "function" && define.amd ) {
-		define( ["jquery", "../jquery.validate"], factory );
-	} else if (typeof module === "object" && module.exports) {
-		module.exports = factory( require( "jquery" ) );
-	} else {
-		factory( jQuery );
-	}
-}(function( $ ) {
-
 /*
  * Translated default messages for the jQuery validation plugin.
  * Locale: TH (Thai; ไทย)
@@ -275,7 +261,6 @@ $.extend( $.validator.messages, {
 	max: $.validator.format( "โปรดระบุค่าน้อยกว่าหรือเท่ากับ {0}" ),
 	min: $.validator.format( "โปรดระบุค่ามากกว่าหรือเท่ากับ {0}" )
 } );
-return $;
-}));
+
 
 });

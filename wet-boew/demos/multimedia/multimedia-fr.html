@@ -1,5 +1,6 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="fr" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
 <html class="no-js" lang="fr" dir="ltr">
+<!--<![endif]-->
 <head>
 <meta charset="utf-8">
 <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
@@ -7,14 +8,22 @@
 <title>Lecteur multimédia - Vidéo - Exemples pratiques - Boîte à outils de l'expérience Web
 </title>
 <meta content="width=device-width,initial-scale=1" name="viewport">
+<!-- Meta data -->
 <meta name="description" content="Un lecteur multimédia accessible permettant d&#x27;intégrer des contenus vidéo sur les pages Web.">
-<link rel="alternate" hreflang="en" href="multimedia-en.html">
+<!-- Meta data-->
+<!--[if gte IE 9 | !IE ]><!-->
 <link href="../../theme-wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
 <link rel="stylesheet" href="../../theme-wet-boew/css/theme.min.css">
+<!--<![endif]-->
+<!--[if lt IE 9]>
+		<link href="../../theme-wet-boew/assets/favicon.ico" rel="shortcut icon" />
+		<link rel="stylesheet" href="../../theme-wet-boew/css/ie8-theme.min.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="../../wet-boew/js/ie8-wet-boew.min.js"></script>
+		<![endif]-->
 <noscript><link rel="stylesheet" href="../../wet-boew/css/noscript.min.css" /></noscript>
 </head>
 <body vocab="http://schema.org/" typeof="WebPage">
-<nav>
 <ul id="wb-tphp">
 <li class="wb-slc">
 <a class="wb-sl" href="#wb-cont">Passer au contenu principal</a>
@@ -23,7 +32,6 @@
 <a class="wb-sl" href="#wb-info">Passer à «&#160;À propos de ce site&#160;»</a>
 </li>
 </ul>
-</nav>
 <header role="banner">
 <div id="wb-bnr">
 <div id="wb-bar">
@@ -50,7 +58,7 @@
 <div class="row">
 <div id="wb-sttl" class="col-md-8">
 <a href="../../index-fr.html">
-<img src="../../theme-wet-boew/assets/logo.svg" alt="">
+<object type="image/svg+xml" tabindex="-1" data="../../theme-wet-boew/assets/logo.svg"></object>
 <span>Boîte à outils de l'expérience Web<span class="wb-inv">, </span><small>Projet à source ouverte collaboratif dirigé par le Gouvernement du Canada</small></span>
 </a>
 </div>
@@ -123,8 +131,8 @@
 <h3>MPEG4 (H264 + AAC) et WebM (VP8) avec les sous-titres en HTML</h3>
 <figure class="wb-mltmd" data-wb-mltmd='{"shareUrl": "https://wet-boew.github.io/v4.0-ci/demos/multimedia/multimedia-fr.html"}'>
 <video poster="demo/video1-fr.jpg" title="Trouver un emploi">
-<source type="video/webm" src="https://video2.servicecanada.gc.ca/video/boew-wet/te-lj-fra.webm">
-<source type="video/mp4" src="https://video2.servicecanada.gc.ca/video/boew-wet/te-lj-fra.mp4">
+<source type="video/webm" src="http://video2.servicecanada.gc.ca/video/boew-wet/te-lj-fra.webm">
+<source type="video/mp4" src="http://video2.servicecanada.gc.ca/video/boew-wet/te-lj-fra.mp4">
 <track src="cpts-lg-fr.html" kind="captions" data-type="text/html" srclang="fr" label="Français">
 </video>
 <figcaption>
@@ -137,8 +145,8 @@
 <h4>HTML dans la page</h4>
 <pre><code>&lt;figure class=&quot;wb-mltmd&quot; data-wb-mltmd='{&quot;shareUrl&quot;: &quot;https://wet-boew.github.io/v4.0-ci/demos/multimedia/multimedia-fr.html&quot;}'&gt;
 	&lt;video poster=&quot;demo/video1-fr.jpg&quot; title=&quot;Trouver un emploi&quot;&gt;
-		&lt;source type=&quot;video/webm&quot; src=&quot;https://video2.servicecanada.gc.ca/video/boew-wet/te-lj-fra.webm&quot; /&gt;
-		&lt;source type=&quot;video/mp4&quot; src=&quot;https://video2.servicecanada.gc.ca/video/boew-wet/te-lj-fra.mp4&quot; /&gt;
+		&lt;source type=&quot;video/webm&quot; src=&quot;http://video2.servicecanada.gc.ca/video/boew-wet/te-lj-fra.webm&quot; /&gt;
+		&lt;source type=&quot;video/mp4&quot; src=&quot;http://video2.servicecanada.gc.ca/video/boew-wet/te-lj-fra.mp4&quot; /&gt;
 		&lt;track src=&quot;cpts-lg-fr.html&quot; kind=&quot;captions&quot; data-type=&quot;text/html&quot; srclang=&quot;fr&quot; label=&quot;Français&quot; /&gt;
 	&lt;/video&gt;
 	&lt;figcaption&gt;
@@ -164,8 +172,8 @@
 <h3>MPEG4 (H264 + AAC) et WebM (VP8) avec les sous-titres TTML</h3>
 <figure class="wb-mltmd" data-wb-mltmd='{"shareUrl": "https://wet-boew.github.io/v4.0-ci/demos/multimedia/multimedia-fr.html"}'>
 <video poster="demo/video2-fr.jpg" title="Video Example">
-<source type="video/webm" src="https://video2.servicecanada.gc.ca/video/boew-wet/dc-td-fra.webm">
-<source type="video/mp4" src="https://video2.servicecanada.gc.ca/video/boew-wet/dc-td-fra.mp4">
+<source type="video/webm" src="http://video2.servicecanada.gc.ca/video/boew-wet/dc-td-fra.webm">
+<source type="video/mp4" src="http://video2.servicecanada.gc.ca/video/boew-wet/dc-td-fra.mp4">
 <track src="demo/video2-captions-fr.xml" kind="captions" data-type="application/ttml+xml" srclang="fr" label="Français">
 </video>
 <figcaption>
@@ -178,8 +186,8 @@
 <h4>HTML dans la page</h4>
 <pre><code>&lt;figure class=&quot;wb-mltmd&quot; data-wb-mltmd='{&quot;shareUrl&quot;: &quot;https://wet-boew.github.io/v4.0-ci/demos/multimedia/multimedia-fr.html&quot;}'&gt;
 	&lt;video poster=&quot;demo/video2-fr.jpg&quot; title=&quot;Video Example&quot;&gt;
-		&lt;source type=&quot;video/webm&quot; src=&quot;https://video2.servicecanada.gc.ca/video/boew-wet/dc-td-fra.webm&quot; /&gt;
-		&lt;source type=&quot;video/mp4&quot; src=&quot;https://video2.servicecanada.gc.ca/video/boew-wet/dc-td-fra.mp4&quot; /&gt;
+		&lt;source type=&quot;video/webm&quot; src=&quot;http://video2.servicecanada.gc.ca/video/boew-wet/dc-td-fra.webm&quot; /&gt;
+		&lt;source type=&quot;video/mp4&quot; src=&quot;http://video2.servicecanada.gc.ca/video/boew-wet/dc-td-fra.mp4&quot; /&gt;
 		&lt;track src=&quot;demo/video2-captions-fr.xml&quot; kind=&quot;captions&quot; data-type=&quot;application/ttml+xml&quot; srclang=&quot;fr&quot; label=&quot;Français&quot; /&gt;
 	&lt;/video&gt;
 	&lt;figcaption&gt;
@@ -213,7 +221,7 @@
 <p>Cet exemple illustre l'utilisation d'un relevé de notes en ligne pour fournir des légendes. Cet exemple peut également démontrer le mécanisme de secours dans les navigateurs Web qui ne supporte pas les vidéos HTML5.</p>
 <figure class="wb-mltmd">
 <video poster="demo/video1-fr.jpg" title="Trouver un emploi">
-<source type="video/mp4" src="https://video2.servicecanada.gc.ca/video/boew-wet/te-lj-fra.mp4">
+<source type="video/mp4" src="http://video2.servicecanada.gc.ca/video/boew-wet/te-lj-fra.mp4">
 <track src="#inline-captions" kind="captions" data-type="text/html" srclang="fr" label="Français">
 </video>
 <figcaption>
@@ -288,7 +296,7 @@
 <summary>Visualiser le code</summary>
 <pre><code>&lt;figure class=&quot;wb-mltmd&quot;&gt;
 	&lt;video poster=&quot;demo/video1-fr.jpg&quot; title=&quot;Trouver un emploi&quot;&gt;
-		&lt;source type=&quot;video/mp4&quot; src=&quot;https://video2.servicecanada.gc.ca/video/boew-wet/te-lj-fra.mp4&quot; /&gt;
+		&lt;source type=&quot;video/mp4&quot; src=&quot;http://video2.servicecanada.gc.ca/video/boew-wet/te-lj-fra.mp4&quot; /&gt;
 		&lt;track src=&quot;#inline-captions&quot; kind=&quot;captions&quot; data-type=&quot;text/html&quot; srclang=&quot;fr&quot; label=&quot;Français&quot; /&gt;
 	&lt;/video&gt;
 	&lt;figcaption&gt;
@@ -308,7 +316,7 @@
 <p>Cet exemple illustre l'utilisation de boutons pour naviguer à des marqueurs temporels dans une vidéo.</p>
 <figure class="wb-mltmd">
 <video poster="demo/video1-fr.jpg" title="Trouver un emploi">
-<source type="video/mp4" src="https://video2.servicecanada.gc.ca/video/boew-wet/te-lj-fra.mp4">
+<source type="video/mp4" src="http://video2.servicecanada.gc.ca/video/boew-wet/te-lj-fra.mp4">
 <track src="#inline-captions" kind="captions" data-type="text/html" srclang="fr" label="Français">
 </video>
 <button class="btn btn-info cuepoint" data-cuepoint="45s" type="button">Marqueur temporel - 45s</button>
@@ -321,7 +329,7 @@
 <summary>Visualiser le code</summary>
 <pre><code>&lt;figure class=&quot;wb-mltmd&quot;&gt;
 	&lt;video poster=&quot;demo/video1-fr.jpg&quot; title=&quot;Trouver un emploi&quot;&gt;
-		&lt;source type=&quot;video/mp4&quot; src=&quot;https://video2.servicecanada.gc.ca/video/boew-wet/te-lj-fra.mp4&quot; /&gt;
+		&lt;source type=&quot;video/mp4&quot; src=&quot;http://video2.servicecanada.gc.ca/video/boew-wet/te-lj-fra.mp4&quot; /&gt;
 		&lt;track src=&quot;#inline-captions&quot; kind=&quot;captions&quot; data-type=&quot;text/html&quot; srclang=&quot;en&quot; label=&quot;Français&quot; /&gt;
 	&lt;/video&gt;
 	&lt;button class="btn btn-info cuepoint" data-cuepoint="45s" type="button"&gt;Marqueur temporel - 45s&lt;/button&gt;
@@ -332,57 +340,6 @@
 &lt;/figure&gt;</code></pre>
 </details>
 </section>
-</div>
-<section>
-<h3>Lecteur multimédia dans une fenêtre superposé</h3>
-<p><a href="#mltmd-overlay" aria-controls="mltmd-overlay" class="overlay-lnk" role="button">Ouvrir le vidéo</a></p>
-<details class="mrgn-tp-md">
-<summary>View code</summary>
-<pre><code>&lt;p&gt;&lt;a href="#mltmd-overlay" aria-controls="mltmd-overlay" class="overlay-lnk" role="button"&gt;Ouvrir le vidéo&lt;/a&gt;&lt;/p&gt;
-
-&lt;section id="mltmd-overlay" class="wb-overlay modal-content overlay-def wb-popup-full"&gt;
-	&lt;header class="modal-header"&gt;
-		&lt;h2 class="modal-title"&gt;Lecteur multimédia dans une fenêtre superposé&lt;/h2&gt;
-	&lt;/header&gt;
-	&lt;div class="modal-body"&gt;
-		&lt;div class="row"&gt;
-			&lt;div class="col-xs-8 col-xs-offset-2"&gt;
-				&lt;figure class="wb-mltmd" data-wb-mltmd='{"shareUrl": "https://wet-boew.github.io/v4.0-ci/demos/multimedia/multimedia-fr.html"}'&gt;
-					&lt;video poster="demo/video1-fr.jpg" title="Trouver un emploi"&gt;
-						&lt;source type="video/webm" src="https://video2.servicecanada.gc.ca/video/boew-wet/te-lj-fra.webm" /&gt;
-						&lt;source type="video/mp4" src="https://video2.servicecanada.gc.ca/video/boew-wet/te-lj-fra.mp4" /&gt;
-						&lt;track src="cpts-lg-fr.html" kind="captions" data-type="text/html" srclang="fr" label="Français" /&gt;
-					&lt;/video&gt;
-					&lt;figcaption&gt;
-						&lt;p&gt;Trouver un emploi (&lt;a href="cpts-lg-fr.html"&gt;Transcription&lt;/a&gt;)&lt;/p&gt;
-					&lt;/figcaption&gt;
-				&lt;/figure&gt;
-			&lt;/div&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
-&lt;/section&gt;</code></pre>
-</details>
-</section>
-</section>
-<section id="mltmd-overlay" class="wb-overlay modal-content overlay-def wb-popup-full">
-<header class="modal-header">
-<h2 class="modal-title">Lecteur multimédia dans une fenêtre superposé</h2>
-</header>
-<div class="modal-body">
-<div class="row">
-<div class="col-xs-8 col-xs-offset-2">
-<figure class="wb-mltmd" data-wb-mltmd='{"shareUrl": "https://wet-boew.github.io/v4.0-ci/demos/multimedia/multimedia-fr.html"}'>
-<video poster="demo/video1-fr.jpg" title="Trouver un emploi">
-<source type="video/webm" src="https://video2.servicecanada.gc.ca/video/boew-wet/te-lj-fra.webm">
-<source type="video/mp4" src="https://video2.servicecanada.gc.ca/video/boew-wet/te-lj-fra.mp4">
-<track src="cpts-lg-fr.html" kind="captions" data-type="text/html" srclang="fr" label="Français">
-</video>
-<figcaption>
-<p>Trouver un emploi (<a href="cpts-lg-fr.html">Transcription</a>)</p>
-</figcaption>
-</figure>
-</div>
-</div>
 </div>
 </section>
 <dl id="wb-dtmd">
@@ -404,7 +361,7 @@
 <h3>À propos</h3>
 <ul class="list-unstyled">
 <li><a href="../../index-fr.html#apropos">À propos de la Boîte à outils de l’expérience Web</a></li>
-<li><a rel="external" href="https://www.tbs-sct.gc.ca/ws-nw/index-fra.asp">À propos des normes Web</a></li>
+<li><a rel="external" href="http://www.tbs-sct.gc.ca/ws-nw/index-fra.asp">À propos des normes Web</a></li>
 </ul>
 </section>
 <section class="col-sm-3">
@@ -419,11 +376,16 @@
 <ul class="list-unstyled">
 <li><a rel="external" href="https://twitter.com/BoiteExpWeb">Twitter</a></li>
 </ul>
-</section>
-</nav>
+</section> </nav>
 </div>
 </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!--[if gte IE 9 | !IE ]><!-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="../../wet-boew/js/wet-boew.min.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+		<script src="../../wet-boew/js/ie8-wet-boew2.min.js"></script>
+		
+		<![endif]-->
 </body>
 </html>

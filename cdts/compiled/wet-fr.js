@@ -1,7 +1,7 @@
 /*!
  * Centrally Deployed Templates Solution (CDTS) / Solution de gabarits à déploiement centralisé (SGDC)
  * github.com/opc-cpvp/cdts-sgdc/blob/master/LICENSE
- * v4.0.37 - 2022-12-20
+ * v4.0.26 - 2023-03-17
  *
  */// This file was automatically generated from wet-fr.soy.
 // Please don't edit this file by hand.
@@ -41,7 +41,7 @@ wet.builder.appFooter = function(opt_data, opt_ignored) {
 
 
 wet.builder.environment = function(opt_data, opt_ignored) {
-  return (opt_data.cdnPath != null) ? soy.$$escapeHtml(opt_data.cdnPath) : wet.builder.base(opt_data) + 'app/cls/WET/gcweb-opc/v4_0_37/';
+  return (opt_data.cdnPath != null) ? soy.$$escapeHtml(opt_data.cdnPath) : wet.builder.base(opt_data) + 'app/cls/WET/gcweb-opc/v4_0_26/';
 };
 
 
@@ -52,28 +52,28 @@ wet.builder.base = function(opt_data, opt_ignored) {
 
 wet.builder.refTop = function(opt_data, opt_ignored) {
   opt_data = opt_data || {};
-  var output = '\t\t<!--[if gte IE 9 | !IE ]><!--><link href=\'' + wet.builder.environment(opt_data) + 'gcweb-opc/assets/favicon.ico\' rel="icon" type="image/x-icon" /><link rel="stylesheet" href=\'' + wet.builder.environment(opt_data) + 'gcweb-opc/css/theme.min.css\' /><link rel="stylesheet" href=\'' + wet.builder.environment(opt_data) + 'cdts/css/cdtsfixes.css\'>' + ((opt_data.isApplication == true) ? '<link rel="stylesheet" href=\'' + wet.builder.environment(opt_data) + 'cdts/css/cdtsapps.css\'>' : '') + '<!--<![endif]--><!--[if lt IE 9]><link href=\'' + wet.builder.environment(opt_data) + 'gcweb-opc/assets/favicon.ico\' rel="shortcut icon" /><link rel="stylesheet" href=\'' + wet.builder.environment(opt_data) + 'gcweb-opc/css/ie8-theme.min.css\' /><script src=\'' + wet.builder.environment(opt_data) + 'wet-boew/js/jquery/2.2.4/jquery.min.js\'><\/script><script src=\'' + wet.builder.environment(opt_data) + 'wet-boew/js/ie8-wet-boew.min.js\'><\/script><![endif]--><!--[if lte IE 9]><![endif]--><link rel="stylesheet" href=\'' + wet.builder.environment(opt_data) + 'gcweb-opc/assets/css/opc-style.css\' /><link rel="stylesheet" href=\'' + wet.builder.environment(opt_data) + 'components/feedback.css\' />';
+  var output = '\t\t<!--[if gte IE 9 | !IE ]><!--><link href=\'' + wet.builder.environment(opt_data) + 'gcweb-opc/assets/favicon.ico\' rel="icon" type="image/x-icon" /><link rel="stylesheet" href=\'' + wet.builder.environment(opt_data) + 'gcweb-opc/css/theme.min.css\' /><link rel="stylesheet" href=\'' + wet.builder.environment(opt_data) + 'cdts/css/cdtsfixes.css\'>' + ((opt_data.isApplication == true) ? '<link rel="stylesheet" href=\'' + wet.builder.environment(opt_data) + 'cdts/css/cdtsapps.css\'>' : '') + '<!--<![endif]--><!--[if lt IE 9]><link href=\'' + wet.builder.environment(opt_data) + 'gcweb-opc/assets/favicon.ico\' rel="shortcut icon" /><link rel="stylesheet" href=\'' + wet.builder.environment(opt_data) + 'gcweb-opc/css/ie8-theme.min.css\' /><script src=\'' + wet.builder.environment(opt_data) + 'wet-boew/js/jquery/1.11.1/jquery.min.js\'><\/script><script src=\'' + wet.builder.environment(opt_data) + 'wet-boew/js/ie8-wet-boew.min.js\'><\/script><![endif]--><!--[if lte IE 9]><![endif]--><link rel="stylesheet" href=\'' + wet.builder.environment(opt_data) + 'gcweb-opc/assets/css/opc-style.css\' />';
   if (opt_data.webAnalytics != null) {
     output += '<script type="text/javascript">var _paq = (function (paq) {var removeTrailingSlash = function(site) {return site.replace(/\\/$/, \'\');};';
-    var aaList60 = opt_data.webAnalytics;
-    var aaListLen60 = aaList60.length;
-    for (var aaIndex60 = 0; aaIndex60 < aaListLen60; aaIndex60++) {
-      var aaData60 = aaList60[aaIndex60];
-      output += 'var u = \'' + wet.builder.base(opt_data) + 'm/\'; var url = removeTrailingSlash(window.location.href).toLowerCase(); paq.push([\'setCustomDimension\', 2, url]); paq.push([\'setCustomUrl\', url]); paq.push([\'enableLinkTracking\']); paq.push([\'trackPageView\']); paq.push([\'trackVisibleContentImpressions\']); paq.push([\'setTrackerUrl\', u + \'m.php\']); paq.push([\'setSiteId\',  \'' + soy.$$escapeHtml(aaData60.siteId) + '\']);';
-      if (aaData60.customDimensions != null) {
-        var dimensionList68 = aaData60.customDimensions;
-        var dimensionListLen68 = dimensionList68.length;
-        for (var dimensionIndex68 = 0; dimensionIndex68 < dimensionListLen68; dimensionIndex68++) {
-          var dimensionData68 = dimensionList68[dimensionIndex68];
-          output += 'paq.push([\'setCustomDimension\', ' + soy.$$escapeHtml(dimensionData68.id) + ', \'' + soy.$$escapeHtml(dimensionData68.value) + '\']);';
+    var aaList58 = opt_data.webAnalytics;
+    var aaListLen58 = aaList58.length;
+    for (var aaIndex58 = 0; aaIndex58 < aaListLen58; aaIndex58++) {
+      var aaData58 = aaList58[aaIndex58];
+      output += 'var u = \'' + wet.builder.base(opt_data) + 'm/\'; var url = removeTrailingSlash(window.location.href).toLowerCase(); paq.push([\'setCustomDimension\', 2, url]); paq.push([\'setCustomUrl\', url]); paq.push([\'enableLinkTracking\']); paq.push([\'trackPageView\']); paq.push([\'trackVisibleContentImpressions\']); paq.push([\'setTrackerUrl\', u + \'m.php\']); paq.push([\'setSiteId\',  \'' + soy.$$escapeHtml(aaData58.siteId) + '\']);';
+      if (aaData58.customDimensions != null) {
+        var dimensionList66 = aaData58.customDimensions;
+        var dimensionListLen66 = dimensionList66.length;
+        for (var dimensionIndex66 = 0; dimensionIndex66 < dimensionListLen66; dimensionIndex66++) {
+          var dimensionData66 = dimensionList66[dimensionIndex66];
+          output += 'paq.push([\'setCustomDimension\', ' + soy.$$escapeHtml(dimensionData66.id) + ', \'' + soy.$$escapeHtml(dimensionData66.value) + '\']);';
         }
       }
-      if (aaData60.customVariables != null) {
-        var variableList77 = aaData60.customVariables;
-        var variableListLen77 = variableList77.length;
-        for (var variableIndex77 = 0; variableIndex77 < variableListLen77; variableIndex77++) {
-          var variableData77 = variableList77[variableIndex77];
-          output += 'paq.push([\'setCustomVariable\', ' + soy.$$escapeHtml(variableIndex77 + 1) + ', \'' + soy.$$escapeHtml(variableData77.name) + '\', \'' + soy.$$escapeHtml(variableData77.value) + '\', \'' + soy.$$escapeHtml(variableData77.scope) + '\']);';
+      if (aaData58.customVariables != null) {
+        var variableList75 = aaData58.customVariables;
+        var variableListLen75 = variableList75.length;
+        for (var variableIndex75 = 0; variableIndex75 < variableListLen75; variableIndex75++) {
+          var variableData75 = variableList75[variableIndex75];
+          output += 'paq.push([\'setCustomVariable\', ' + soy.$$escapeHtml(variableIndex75 + 1) + ', \'' + soy.$$escapeHtml(variableData75.name) + '\', \'' + soy.$$escapeHtml(variableData75.value) + '\', \'' + soy.$$escapeHtml(variableData75.scope) + '\']);';
         }
       }
     }
@@ -88,11 +88,11 @@ wet.builder.top = function(opt_data, opt_ignored) {
   var output = '\t\t<section aria-label="Skip to"><ul id="wb-tphp"><li class="wb-slc"><a class="wb-sl" href="#wb-cont">Passer au contenu principal</a></li><li class="wb-slc visible-sm visible-md visible-lg"><a class="wb-sl" href="#wb-info">Passer à «&#160;À propos de ce site&#160;»</a></li>' + ((opt_data.topSecMenu == true) ? '<li class="wb-slc visible-md visible-lg"><a class="wb-sl" href="#wb-sec">Passer au menu de la section</a></li>' : '') + '</ul></section><header role="banner"><div id="wb-bnr" class="container">';
   if (opt_data.lngLinks != null) {
     output += '<section id="wb-lng" class="visible-md visible-lg text-right" aria-labelledby="lang-section"><h2 id="lang-section" class="wb-inv">Sélection de la langue</h2><div class="row"><div class="col-md-12"><ul class="list-inline margin-bottom-none">';
-    var linkList99 = opt_data.lngLinks;
-    var linkListLen99 = linkList99.length;
-    for (var linkIndex99 = 0; linkIndex99 < linkListLen99; linkIndex99++) {
-      var linkData99 = linkList99[linkIndex99];
-      output += '<li><a hreflang="' + soy.$$escapeHtml(linkData99.lang) + '" lang="' + soy.$$escapeHtml(linkData99.lang) + '" href="' + soy.$$escapeHtml(linkData99.href) + '">' + soy.$$escapeHtml(linkData99.text) + '</a></li>';
+    var linkList97 = opt_data.lngLinks;
+    var linkListLen97 = linkList97.length;
+    for (var linkIndex97 = 0; linkIndex97 < linkListLen97; linkIndex97++) {
+      var linkData97 = linkList97[linkIndex97];
+      output += '<li><a hreflang="' + soy.$$escapeHtml(linkData97.lang) + '" lang="' + soy.$$escapeHtml(linkData97.lang) + '" href="' + soy.$$escapeHtml(linkData97.href) + '">' + soy.$$escapeHtml(linkData97.text) + '</a></li>';
     }
     output += '</ul></div></div></section>';
   }
@@ -100,11 +100,11 @@ wet.builder.top = function(opt_data, opt_ignored) {
   if (opt_data.breadcrumbs != false) {
     output += '<nav id="wb-bc" property="breadcrumb" aria-labelledby="you-are-here"><h2 id="you-are-here">Vous êtes ici :</h2><div class="container"><div class="row"><ol class="breadcrumb">';
     if (opt_data.breadcrumbs != null) {
-      var itemList156 = opt_data.breadcrumbs;
-      var itemListLen156 = itemList156.length;
-      for (var itemIndex156 = 0; itemIndex156 < itemListLen156; itemIndex156++) {
-        var itemData156 = itemList156[itemIndex156];
-        output += '<li>' + ((itemData156.acronym != null) ? '<abbr title="' + soy.$$escapeHtml(itemData156.acronym) + '">' : '') + ((itemData156.href != null) ? '<a href="' + soy.$$escapeHtml(itemData156.href) + '">' : '') + soy.$$escapeHtml(itemData156.title) + ((itemData156.href != null) ? '</a>' : '') + ((itemData156.acronym != null) ? '</abbr>' : '') + '</li>';
+      var itemList154 = opt_data.breadcrumbs;
+      var itemListLen154 = itemList154.length;
+      for (var itemIndex154 = 0; itemIndex154 < itemListLen154; itemIndex154++) {
+        var itemData154 = itemList154[itemIndex154];
+        output += '<li>' + ((itemData154.acronym != null) ? '<abbr title="' + soy.$$escapeHtml(itemData154.acronym) + '">' : '') + ((itemData154.href != null) ? '<a href="' + soy.$$escapeHtml(itemData154.href) + '">' : '') + soy.$$escapeHtml(itemData154.title) + ((itemData154.href != null) ? '</a>' : '') + ((itemData154.acronym != null) ? '</abbr>' : '') + '</li>';
       }
     } else {
       output += '<li><a href=\'' + wet.builder.base(opt_data) + 'fr/\'>Accueil</a></li>';
@@ -118,32 +118,32 @@ wet.builder.top = function(opt_data, opt_ignored) {
 
 wet.builder.preFooter = function(opt_data, opt_ignored) {
   opt_data = opt_data || {};
-  return '\t\t' + ((opt_data.showPostContent != false) ? '' : '') + ((opt_data.pagedetails != false) ? '<div class="pagedetails' + ((opt_data.isContainer != null) ? ' container' : '') + '">' + ((opt_data.showFeedback != null || opt_data.showShare != null) ? '<div class="row mrgn-tp-sm">' + ((opt_data.showFeedback != null && opt_data.showFeedback != false) ? '<div class="col-sm-6 col-md-5 col-lg-5">' + ((opt_data.showFeedback != true) ? '<feedback-element locale="fr" feedback-type="problem" feedback-api="' + soy.$$escapeHtml(opt_data.showFeedback) + '"></feedback-element>' : '<feedback-element locale="fr" feedback-type="problem"></feedback-element>') + '</div>' : '') + ((opt_data.showShare != null && opt_data.showShare != false) ? '<div class="col-sm-6 col-md-4 col-lg-5 col-md-offset-' + ((opt_data.showFeedback != null && opt_data.showFeedback != false) ? '3' : '8') + ' col-lg-offset-' + ((opt_data.showFeedback != null && opt_data.showFeedback != false) ? '2' : '7') + '">' + ((opt_data.showFeedback != null && opt_data.showFeedback != true && opt_data.showFeedback != false) ? '<feedback-element locale="fr" feedback-type="helpful" feedback-api="' + soy.$$escapeHtml(opt_data.showFeedback) + '"></feedback-element>' : '<feedback-element locale="fr" feedback-type="helpful"></feedback-element>') + '</div>' : '') + '</div>' : '') + '<dl id="wb-dtmd">' + ((opt_data.screenIdentifier != null) ? '<dt>Identificateur d\'écran&#160;:&#32;</dt><dd property="identifier">' + soy.$$escapeHtml(opt_data.screenIdentifier) + '</dd>' : '') + ((opt_data.dateModified != null) ? '<dt>Date de modification&#160;:&#32;</dt><dd><time property="dateModified">' + soy.$$escapeHtml(opt_data.dateModified) + '</time></dd>' : '') + ((opt_data.versionIdentifier != null) ? '<dt>Version&#160;:&#32;</dt><dd property="version">' + soy.$$escapeHtml(opt_data.versionIdentifier) + '</dd>' : '') + '</dl></div>' : '');
+  return '\t\t' + ((opt_data.showPostContent != false) ? '' : '') + ((opt_data.pagedetails != false) ? '<div class="pagedetails' + ((opt_data.isContainer != null) ? ' container' : '') + '">' + ((opt_data.showFeedback != null || opt_data.showShare != null) ? '<div class="row mrgn-tp-sm">' + ((opt_data.showFeedback != null && opt_data.showFeedback != false) ? '<div class="col-sm-6 col-md-5 col-lg-5"><i18n-host locale="fr">' + ((opt_data.showFeedback != true) ? '<feedback-problem feedback-api="' + soy.$$escapeHtml(opt_data.showFeedback) + '"></feedback-problem>' : '<feedback-problem></feedback-problem>') + '</i18n-host></div>' : '') + ((opt_data.showShare != null && opt_data.showShare != false) ? '<div class="col-sm-6 col-md-4 col-lg-5 col-md-offset-' + ((opt_data.showFeedback != null && opt_data.showFeedback != false) ? '3' : '8') + ' col-lg-offset-' + ((opt_data.showFeedback != null && opt_data.showFeedback != false) ? '2' : '7') + '"><i18n-host locale="fr">' + ((opt_data.showFeedback != null && opt_data.showFeedback != true && opt_data.showFeedback != false) ? '<feedback-helpful feedback-api="' + soy.$$escapeHtml(opt_data.showFeedback) + '"></feedback-helpful>' : '<feedback-helpful></feedback-helpful>') + '</i18n-host></div>' : '') + '</div>' : '') + '<dl id="wb-dtmd">' + ((opt_data.screenIdentifier != null) ? '<dt>Identificateur d\'écran&#160;:&#32;</dt><dd property="identifier">' + soy.$$escapeHtml(opt_data.screenIdentifier) + '</dd>' : '') + ((opt_data.dateModified != null) ? '<dt>Date de modification&#160;:&#32;</dt><dd><time property="dateModified">' + soy.$$escapeHtml(opt_data.dateModified) + '</time></dd>' : '') + ((opt_data.versionIdentifier != null) ? '<dt>Version&#160;:&#32;</dt><dd property="version">' + soy.$$escapeHtml(opt_data.versionIdentifier) + '</dd>' : '') + '</dl></div></i18n-host>' : '');
 };
 
 
 wet.builder.secmenu = function(opt_data, opt_ignored) {
   var output = '\t\t\t<h2 id="wb-sec-h" class="wb-inv">Menu de la section</h2>';
-  var sectionList253 = opt_data.sections;
-  var sectionListLen253 = sectionList253.length;
-  for (var sectionIndex253 = 0; sectionIndex253 < sectionListLen253; sectionIndex253++) {
-    var sectionData253 = sectionList253[sectionIndex253];
-    output += '<section class="list-group menu list-unstyled"><h3>' + ((sectionData253.sectionLink != null) ? '<a href="' + soy.$$escapeHtml(sectionData253.sectionLink) + '"' + ((sectionData253.newWindow == true) ? ' target="_blank"  rel="noopener"' : '') + '>' : '') + soy.$$escapeHtml(sectionData253.sectionName) + ((sectionData253.newWindow == true) ? '<span class="wb-inv"> Ce lien ouvrira dans une nouvelle fenêtre</span>' : '') + ((sectionData253.sectionLink != null) ? '</a>' : '') + '</h3><ul class="list-group menu list-unstyled">';
-    var linkList272 = sectionData253.menuLinks;
-    var linkListLen272 = linkList272.length;
-    for (var linkIndex272 = 0; linkIndex272 < linkListLen272; linkIndex272++) {
-      var linkData272 = linkList272[linkIndex272];
-      if (linkData272.subLinks != null) {
-        output += '<li><a href="' + soy.$$escapeHtml(linkData272.href) + '" class="list-group-item"' + ((linkData272.newWindow == true) ? ' target="_blank"  rel="noopener"' : '') + '>' + soy.$$escapeHtml(linkData272.text) + ((linkData272.newWindow == true) ? '<span class="wb-inv"> Ce lien ouvrira dans une nouvelle fenêtre</span>' : '') + '</a><ul class="list-group menu list-unstyled">';
-        var sublinkList287 = linkData272.subLinks;
-        var sublinkListLen287 = sublinkList287.length;
-        for (var sublinkIndex287 = 0; sublinkIndex287 < sublinkListLen287; sublinkIndex287++) {
-          var sublinkData287 = sublinkList287[sublinkIndex287];
-          output += '<li><a href="' + soy.$$escapeHtml(sublinkData287.subhref) + '" class="list-group-item"' + ((sublinkData287.newWindow == true) ? ' target="_blank"  rel="noopener"' : '') + '>' + soy.$$escapeHtml(sublinkData287.subtext) + ((sublinkData287.newWindow == true) ? '<span class="wb-inv"> Ce lien ouvrira dans une nouvelle fenêtre</span>' : '') + '</a></li>';
+  var sectionList251 = opt_data.sections;
+  var sectionListLen251 = sectionList251.length;
+  for (var sectionIndex251 = 0; sectionIndex251 < sectionListLen251; sectionIndex251++) {
+    var sectionData251 = sectionList251[sectionIndex251];
+    output += '<section class="list-group menu list-unstyled"><h3>' + ((sectionData251.sectionLink != null) ? '<a href="' + soy.$$escapeHtml(sectionData251.sectionLink) + '"' + ((sectionData251.newWindow == true) ? ' target="_blank"  rel="noopener"' : '') + '>' : '') + soy.$$escapeHtml(sectionData251.sectionName) + ((sectionData251.newWindow == true) ? '<span class="wb-inv"> Ce lien ouvrira dans une nouvelle fenêtre</span>' : '') + ((sectionData251.sectionLink != null) ? '</a>' : '') + '</h3><ul class="list-group menu list-unstyled">';
+    var linkList270 = sectionData251.menuLinks;
+    var linkListLen270 = linkList270.length;
+    for (var linkIndex270 = 0; linkIndex270 < linkListLen270; linkIndex270++) {
+      var linkData270 = linkList270[linkIndex270];
+      if (linkData270.subLinks != null) {
+        output += '<li><a href="' + soy.$$escapeHtml(linkData270.href) + '" class="list-group-item"' + ((linkData270.newWindow == true) ? ' target="_blank"  rel="noopener"' : '') + '>' + soy.$$escapeHtml(linkData270.text) + ((linkData270.newWindow == true) ? '<span class="wb-inv"> Ce lien ouvrira dans une nouvelle fenêtre</span>' : '') + '</a><ul class="list-group menu list-unstyled">';
+        var sublinkList285 = linkData270.subLinks;
+        var sublinkListLen285 = sublinkList285.length;
+        for (var sublinkIndex285 = 0; sublinkIndex285 < sublinkListLen285; sublinkIndex285++) {
+          var sublinkData285 = sublinkList285[sublinkIndex285];
+          output += '<li><a href="' + soy.$$escapeHtml(sublinkData285.subhref) + '" class="list-group-item"' + ((sublinkData285.newWindow == true) ? ' target="_blank"  rel="noopener"' : '') + '>' + soy.$$escapeHtml(sublinkData285.subtext) + ((sublinkData285.newWindow == true) ? '<span class="wb-inv"> Ce lien ouvrira dans une nouvelle fenêtre</span>' : '') + '</a></li>';
         }
         output += '</ul></li>';
       } else {
-        output += '<li><a href="' + soy.$$escapeHtml(linkData272.href) + '" class="list-group-item"' + ((linkData272.newWindow == true) ? ' target="_blank"  rel="noopener"' : '') + '>' + soy.$$escapeHtml(linkData272.text) + ((linkData272.newWindow == true) ? '<span class="wb-inv"> Ce lien ouvrira dans une nouvelle fenêtre</span>' : '') + '</a></li>';
+        output += '<li><a href="' + soy.$$escapeHtml(linkData270.href) + '" class="list-group-item"' + ((linkData270.newWindow == true) ? ' target="_blank"  rel="noopener"' : '') + '>' + soy.$$escapeHtml(linkData270.text) + ((linkData270.newWindow == true) ? '<span class="wb-inv"> Ce lien ouvrira dans une nouvelle fenêtre</span>' : '') + '</a></li>';
       }
     }
     output += '</ul></section>';
@@ -159,11 +159,11 @@ wet.builder.footer = function(opt_data, opt_ignored) {
     output += '<nav class="container visible-sm visible-md visible-lg wb-navcurr" aria-labelledby="footer-links"><h2 class="wb-inv" id="footer-links">À propos du site</h2><div class="row"><div class="col-md-3"><section aria-labelledby="about-opc-section"><h3 id="about-opc-section">À propos du Commissariat</h3><p>Le commissaire à la protection de la vie privée du Canada est un agent du Parlement qui a pour mission de protéger et de promouvoir le droit à la vie privée.</p><ul class="list-unstyled"><li><a href=\'' + wet.builder.base(opt_data) + 'fr/a-propos-du-commissariat/qui-nous-sommes/\'>Qui nous sommes</a></li><li><a href=\'' + wet.builder.base(opt_data) + 'fr/a-propos-du-commissariat/ce-que-nous-faisons/\'>Ce que nous faisons</a></li><li><a href=\'' + wet.builder.base(opt_data) + 'fr/a-propos-du-commissariat/rapports-operationnels-du-commissariat/\'>Rapports sur les activités du Commissariat</a></li><li><a href=\'' + wet.builder.base(opt_data) + 'fr/accessibilite/\'>Accessibilité</a></li><li><a href=\'' + wet.builder.base(opt_data) + 'fr/a-propos-du-commissariat//publications/\'>Publications</a></li><li><a href=\'' + wet.builder.base(opt_data) + 'fr/a-propos-du-commissariat/travailler-au-commissariat\'>Travailler au Commissariat</a></li></ul></section></div><div class="col-md-3"><section aria-labelledby="opc-news-section"><h3 id="opc-news-section">Nouvelles du Commissariat</h3><p>Soyez informés des annonces et des activités du Commissariat à la protection de la vie privée du Canada de même que des événements auxquels il participe.</p><ul class="list-unstyled"><li><a href=\'' + wet.builder.base(opt_data) + 'fr/nouvelles-du-commissariat/nouvelles-et-annonces\'>Nouvelles et annonces</a></li><li><a href=\'' + wet.builder.base(opt_data) + 'fr/nouvelles-du-commissariat/evenements-lies-a-la-protection-de-la-vie-privee/\'>Événements liés à la protection de la vie privée</a></li><li><a href=\'' + wet.builder.base(opt_data) + 'fr/nouvelles-du-commissariat/allocutions/\'>Allocutions</a></li></ul></section></div><div class="col-md-3"><section aria-labelledby="respect-section"><h3 id="respect-section">Votre vie privée</h3><p><strong>Nous respectons votre vie privée.</strong></p><p>Lisez notre <a href=\'' + wet.builder.base(opt_data) + 'fr/protection-de-la-vie-privee-et-transparence-au-commissariat/pp/\'>Politique sur la protection des renseignements personnels</a> et nos <a href=\'' + wet.builder.base(opt_data) + 'fr/protection-de-la-vie-privee-et-transparence-au-commissariat/conditions-d-utilisation/\'>Conditions d’utilisation</a> pour en savoir plus sur la protection de vos renseignements personnels et votre droit à la vie privée lorsque vous naviguez sur le site Web <a href=\'' + wet.builder.base(opt_data) + '\'>priv.gc.ca</a> ou que vous communiquez avec le Commissariat à la protection de la vie privée du Canada.</p></section><section aria-labelledby="transparency-section"><h3 id="transparency-section">Transparence</h3><ul class="list-unstyled"><li><a href=\'' + wet.builder.base(opt_data) + 'fr/protection-de-la-vie-privee-et-transparence-au-commissariat/divulgation-proactive/\'>Divulgation proactive</a></li></ul></section></div><div class="col-md-3"><section aria-labelledby="contact-us-section"><h3 id="contact-us-section">Pour communiquer avec nous</h3><p>Vous voulez nous poser une question, nous faire part d’une préoccupation ou déposer une plainte contre une organisation? Nous pouvons vous aider.</p>';
     if (opt_data.contactLinks != null) {
       output += '<ul class="list-unstyled colcount-sm-2 colcount-md-3">';
-      var linkList352 = opt_data.contactLinks;
-      var linkListLen352 = linkList352.length;
-      for (var linkIndex352 = 0; linkIndex352 < linkListLen352; linkIndex352++) {
-        var linkData352 = linkList352[linkIndex352];
-        output += (linkIndex352 == 0) ? '<li><a href="' + soy.$$escapeHtml(linkData352.href) + '">Contactez-nous</a></li>' : '';
+      var linkList350 = opt_data.contactLinks;
+      var linkListLen350 = linkList350.length;
+      for (var linkIndex350 = 0; linkIndex350 < linkListLen350; linkIndex350++) {
+        var linkData350 = linkList350[linkIndex350];
+        output += (linkIndex350 == 0) ? '<li><a href="' + soy.$$escapeHtml(linkData350.href) + '">Contactez-nous</a></li>' : '';
       }
       output += '</ul>';
     } else {
@@ -173,31 +173,31 @@ wet.builder.footer = function(opt_data, opt_ignored) {
   } else {
     output += '<div id="transactFooter" class="landscape"></div><nav class="container visible-sm visible-md visible-lg wb-navcurr ftr-urlt-lnk"><h2 class="wb-inv">À propos du site</h2><ul>';
     if (opt_data.contactLinks != null) {
-      var linkList373 = opt_data.contactLinks;
-      var linkListLen373 = linkList373.length;
-      for (var linkIndex373 = 0; linkIndex373 < linkListLen373; linkIndex373++) {
-        var linkData373 = linkList373[linkIndex373];
-        output += (linkIndex373 == 0) ? '<li><a ' + ((linkData373.href) ? ' href="' + soy.$$escapeHtml(linkData373.href) + '"' : ' href=\'' + wet.builder.base(opt_data) + 'fr/communiquer-avec-le-commissariat/\'') + ((linkData373.newWindow) ? ' target="_blank"  rel="noopener"' : '') + '>Coordonnées' + ((linkData373.newWindow == true) ? '<span class="wb-inv"> Ce lien ouvrira dans une nouvelle fenêtre</span>' : '') + '</a></li>' : '';
+      var linkList371 = opt_data.contactLinks;
+      var linkListLen371 = linkList371.length;
+      for (var linkIndex371 = 0; linkIndex371 < linkListLen371; linkIndex371++) {
+        var linkData371 = linkList371[linkIndex371];
+        output += (linkIndex371 == 0) ? '<li><a ' + ((linkData371.href) ? ' href="' + soy.$$escapeHtml(linkData371.href) + '"' : ' href=\'' + wet.builder.base(opt_data) + 'fr/communiquer-avec-le-commissariat/\'') + ((linkData371.newWindow) ? ' target="_blank"  rel="noopener"' : '') + '>Coordonnées' + ((linkData371.newWindow == true) ? '<span class="wb-inv"> Ce lien ouvrira dans une nouvelle fenêtre</span>' : '') + '</a></li>' : '';
       }
     } else {
       output += '<li><a href=\'' + wet.builder.base(opt_data) + 'fr/communiquer-avec-le-commissariat/\'>Coordonnées</a></li>';
     }
     if (opt_data.termsLink != null) {
-      var linkList401 = opt_data.termsLink;
-      var linkListLen401 = linkList401.length;
-      for (var linkIndex401 = 0; linkIndex401 < linkListLen401; linkIndex401++) {
-        var linkData401 = linkList401[linkIndex401];
-        output += (linkIndex401 == 0) ? '<li><a ' + ((linkData401.href) ? ' href="' + soy.$$escapeHtml(linkData401.href) + '"' : ' href=\'' + wet.builder.base(opt_data) + 'fr/protection-de-la-vie-privee-et-transparence-au-commissariat/conditions-d-utilisation/\'') + ((linkData401.newWindow) ? ' target="_blank"  rel="noopener"' : '') + '>Avis' + ((linkData401.newWindow == true) ? '<span class="wb-inv"> Ce lien ouvrira dans une nouvelle fenêtre</span>' : '') + '</a></li>' : '';
+      var linkList399 = opt_data.termsLink;
+      var linkListLen399 = linkList399.length;
+      for (var linkIndex399 = 0; linkIndex399 < linkListLen399; linkIndex399++) {
+        var linkData399 = linkList399[linkIndex399];
+        output += (linkIndex399 == 0) ? '<li><a ' + ((linkData399.href) ? ' href="' + soy.$$escapeHtml(linkData399.href) + '"' : ' href=\'' + wet.builder.base(opt_data) + 'fr/protection-de-la-vie-privee-et-transparence-au-commissariat/conditions-d-utilisation/\'') + ((linkData399.newWindow) ? ' target="_blank"  rel="noopener"' : '') + '>Avis' + ((linkData399.newWindow == true) ? '<span class="wb-inv"> Ce lien ouvrira dans une nouvelle fenêtre</span>' : '') + '</a></li>' : '';
       }
     } else {
       output += '<li><a href=\'' + wet.builder.base(opt_data) + 'fr/protection-de-la-vie-privee-et-transparence-au-commissariat/conditions-d-utilisation/\'>Avis</a></li>';
     }
     if (opt_data.privacyLink != null) {
-      var linkList429 = opt_data.privacyLink;
-      var linkListLen429 = linkList429.length;
-      for (var linkIndex429 = 0; linkIndex429 < linkListLen429; linkIndex429++) {
-        var linkData429 = linkList429[linkIndex429];
-        output += (linkIndex429 == 0) ? '<li><a ' + ((linkData429.href) ? ' href="' + soy.$$escapeHtml(linkData429.href) + '"' : ' href=\'' + wet.builder.base(opt_data) + 'fr/protection-de-la-vie-privee-et-transparence-au-commissariat/pp/\'') + ((linkData429.newWindow) ? ' target="_blank"  rel="noopener"' : '') + '>Confidentialité' + ((linkData429.newWindow == true) ? '<span class="wb-inv"> Ce lien ouvrira dans une nouvelle fenêtre</span>' : '') + '</a></li>' : '';
+      var linkList427 = opt_data.privacyLink;
+      var linkListLen427 = linkList427.length;
+      for (var linkIndex427 = 0; linkIndex427 < linkListLen427; linkIndex427++) {
+        var linkData427 = linkList427[linkIndex427];
+        output += (linkIndex427 == 0) ? '<li><a ' + ((linkData427.href) ? ' href="' + soy.$$escapeHtml(linkData427.href) + '"' : ' href=\'' + wet.builder.base(opt_data) + 'fr/protection-de-la-vie-privee-et-transparence-au-commissariat/pp/\'') + ((linkData427.newWindow) ? ' target="_blank"  rel="noopener"' : '') + '>Confidentialité' + ((linkData427.newWindow == true) ? '<span class="wb-inv"> Ce lien ouvrira dans une nouvelle fenêtre</span>' : '') + '</a></li>' : '';
       }
     } else {
       output += '<li><a href=\'' + wet.builder.base(opt_data) + 'fr/protection-de-la-vie-privee-et-transparence-au-commissariat/pp/\'>Confidentialité</a></li>';
@@ -211,7 +211,7 @@ wet.builder.footer = function(opt_data, opt_ignored) {
 
 wet.builder.refFooter = function(opt_data, opt_ignored) {
   opt_data = opt_data || {};
-  return '\t\t<!--[if gte IE 9 | !IE ]><!--><script src=\'' + ((opt_data.jqueryEnv == 'external') ? wet.builder.environment(opt_data) + 'wet-boew/js/' : wet.builder.environment(opt_data) + 'wet-boew/js/') + 'jquery/2.2.4/jquery.min.js\'><\/script><script src=\'' + wet.builder.environment(opt_data) + 'wet-boew/js/wet-boew.min.js\'><\/script><!--<![endif]--><!--[if lt IE 9]><script src=\'' + wet.builder.environment(opt_data) + 'wet-boew/js/ie8-wet-boew2.min.js\'><\/script><![endif]--><script src=\'' + wet.builder.environment(opt_data) + 'gcweb-opc/js/theme.min.js\'><\/script><script src=\'' + wet.builder.environment(opt_data) + 'components/feedback.js\'><\/script>' + ((opt_data.exitScript == true) ? '<script src=\'' + wet.builder.environment(opt_data) + 'cdts/js/exitScript.js\'><\/script><script data-id="exitScript" data-token="' + soy.$$escapeHtml(opt_data.exitURL) + '" data-token-domains="' + soy.$$escapeHtml(opt_data.exitDomains) + '" data-token-modal="' + soy.$$escapeHtml(opt_data.displayModal) + '">clickA();<\/script><a id="sExitModalLink" class="wb-lbx lbx-modal wb-inv" title="" href="#sExitModal" tabindex="-1">Avis de sortie sécurisée</a><section id="sExitModal" class="mfp-hide modal-dialog modal-content overlay-def"><header class="modal-header"><h2 class="modal-title">Avertissement</h2></header><div class="modal-body"><p>' + ((opt_data.exitMsg != null && opt_data.exitMsg.length > 0) ? soy.$$escapeHtml(opt_data.exitMsg) : 'Vous êtes sur le point de quitter un site sécurisé. Voulez-vous continuer?') + '</p><ul class="list-inline text-center"><li><a class="btn btn-primary popup-modal-dismiss pull-left" id="eCancel" href="javascript:void(0)" type="button">' + ((opt_data.cancelMsg != null && opt_data.cancelMsg.length > 0) ? soy.$$escapeHtml(opt_data.cancelMsg) : 'Annuler') + '</a></li><li><a class="btn btn-default popup-modal pull-right" id="eOK" href="javascript:void(0)" type="button">' + ((opt_data.yesMsg != null && opt_data.yesMsg.length > 0) ? soy.$$escapeHtml(opt_data.yesMsg) : 'Oui') + '</a></li></ul></div></section>' : '') + ((opt_data.isApplication == true) ? '<script src=\'' + wet.builder.environment(opt_data) + 'cdts/js/cdtscustom.js\'><\/script>' : '') + ((opt_data.webAnalytics != null) ? '' : '');
+  return '\t\t<!--[if gte IE 9 | !IE ]><!--><script src=\'' + ((opt_data.jqueryEnv == 'external') ? wet.builder.environment(opt_data) + 'wet-boew/js/' : wet.builder.environment(opt_data) + 'wet-boew/js/') + 'jquery/2.1.4/jquery.min.js\'><\/script><script src=\'' + wet.builder.environment(opt_data) + 'wet-boew/js/wet-boew.min.js\'><\/script><!--<![endif]--><!--[if lt IE 9]><script src=\'' + wet.builder.environment(opt_data) + 'wet-boew/js/ie8-wet-boew2.min.js\'><\/script><![endif]--><script src=\'' + wet.builder.environment(opt_data) + 'gcweb-opc/js/theme.min.js\'><\/script><script src=\'' + wet.builder.environment(opt_data) + 'components/feedback.js\'><\/script>' + ((opt_data.exitScript == true) ? '<script src=\'' + wet.builder.environment(opt_data) + 'cdts/js/exitScript.js\'><\/script><script data-id="exitScript" data-token="' + soy.$$escapeHtml(opt_data.exitURL) + '" data-token-domains="' + soy.$$escapeHtml(opt_data.exitDomains) + '" data-token-modal="' + soy.$$escapeHtml(opt_data.displayModal) + '">clickA();<\/script><a id="sExitModalLink" class="wb-lbx lbx-modal wb-inv" title="" href="#sExitModal" tabindex="-1">Avis de sortie sécurisée</a><section id="sExitModal" class="mfp-hide modal-dialog modal-content overlay-def"><header class="modal-header"><h2 class="modal-title">Avertissement</h2></header><div class="modal-body"><p>' + ((opt_data.exitMsg != null && opt_data.exitMsg.length > 0) ? soy.$$escapeHtml(opt_data.exitMsg) : 'Vous êtes sur le point de quitter un site sécurisé. Voulez-vous continuer?') + '</p><ul class="list-inline text-center"><li><a class="btn btn-primary popup-modal-dismiss pull-left" id="eCancel" href="javascript:void(0)" type="button">' + ((opt_data.cancelMsg != null && opt_data.cancelMsg.length > 0) ? soy.$$escapeHtml(opt_data.cancelMsg) : 'Annuler') + '</a></li><li><a class="btn btn-default popup-modal pull-right" id="eOK" href="javascript:void(0)" type="button">' + ((opt_data.yesMsg != null && opt_data.yesMsg.length > 0) ? soy.$$escapeHtml(opt_data.yesMsg) : 'Oui') + '</a></li></ul></div></section>' : '') + ((opt_data.isApplication == true) ? '<script src=\'' + wet.builder.environment(opt_data) + 'cdts/js/cdtscustom.js\'><\/script>' : '') + ((opt_data.webAnalytics != null) ? '' : '');
 };
 
 // This file was automatically generated from appPage-fr.soy.
@@ -436,7 +436,7 @@ if (typeof serverPage == 'undefined') { var serverPage = {}; }
 
 
 serverPage.serverRefTop = function(opt_data, opt_ignored) {
-  return '\t\t<!--[if gte IE 9 | !IE ]><!--><link href=\'' + wet.builder.environment(opt_data) + 'gcweb-opc/assets/favicon.ico\' rel="icon" type="image/x-icon"><link rel="stylesheet" href=\'' + wet.builder.environment(opt_data) + 'gcweb-opc/css/theme-srv.min.css\'><!--<![endif]--><!--[if lt IE 9]><link href=\'' + wet.builder.environment(opt_data) + 'gcweb-opc/assets/favicon.ico\' rel="shortcut icon" /><link rel="stylesheet" href=\'' + wet.builder.environment(opt_data) + 'gcweb-opc/css/ie8-theme-srv.min.css\' /><script src=\'' + wet.builder.environment(opt_data) + 'wet-boew/js/jquery/2.2.4/jquery.min.js\'><\/script><script src=\'' + wet.builder.environment(opt_data) + 'wet-boew/js/ie8-wet-boew.min.js\'><\/script><![endif]-->';
+  return '\t\t<!--[if gte IE 9 | !IE ]><!--><link href=\'' + wet.builder.environment(opt_data) + 'gcweb-opc/assets/favicon.ico\' rel="icon" type="image/x-icon"><link rel="stylesheet" href=\'' + wet.builder.environment(opt_data) + 'gcweb-opc/css/theme-srv.min.css\'><!--<![endif]--><!--[if lt IE 9]><link href=\'' + wet.builder.environment(opt_data) + 'gcweb-opc/assets/favicon.ico\' rel="shortcut icon" /><link rel="stylesheet" href=\'' + wet.builder.environment(opt_data) + 'gcweb-opc/css/ie8-theme-srv.min.css\' /><script src=\'' + wet.builder.environment(opt_data) + 'wet-boew/js/jquery/1.11.1/jquery.min.js\'><\/script><script src=\'' + wet.builder.environment(opt_data) + 'wet-boew/js/ie8-wet-boew.min.js\'><\/script><![endif]-->';
 };
 
 

@@ -1,10 +1,10 @@
 /*
-* Web Experience Toolkit (WET) / Boîte à outils de l"expérience Web (BOEW)
-* wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
-*/
+ * Web Experience Toolkit (WET) / Boîte à outils de l"expérience Web (BOEW)
+ * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
+ */
 /*
 ----- Russian dictionary (il8n) ---
-*/
+ */
 ( function( wb ) {
 "use strict";
 
@@ -54,7 +54,7 @@ wb.i18nDict = {
 	"prv-l": "Предыдущий (клавишей стрелка влево)",
 	first: "Первое",
 	last: "Последнее",
-	page: "Jump to: Page",
+	page: "Page",
 	"srch-menus": "Поиск и меню",
 	email: "E-mail",
 	"menu-close": "Закройте меню",
@@ -107,7 +107,6 @@ wb.i18nDict = {
 	"frm-nosubmit": "Формы не могут быть представлены, потому что ",
 	"errs-fnd": " были обнаружены ошибки.",
 	"err-fnd": " была обнаружена ошибка.",
-	"err-correct": "(Correct and resubmit)",
 
 	/* Date picker */
 	"date-hide": "Скрыть календарь",
@@ -157,7 +156,6 @@ wb.i18nDict = {
 	/* Charts widget */
 	"tbl-txt": "Таблица",
 	"tbl-dtls": "График. Подробности в таблице ниже.",
-	"chrt-cmbslc": "Combined slice",
 
 	/* Session timeout */
 	"st-to-msg-bgn": "Ваш сеанс закончится автоматически в #min# мин #sec# сек.",
@@ -198,10 +196,9 @@ wb.i18nDict = {
 	"geo-allyttl": "Инструкция: Карта навигации",
 	"geo-tgllyr": "Включить показ слоя",
 	"geo-hdnlyr": "Этот слой скрыт.",
-	"geo-bmap-url": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT3978/MapServer/WMTS/",
-	"geo-bmap-matrix-set": "default028mm",
+	"geo-bmapurl": "@geo-bmapurl@",
 	"geo-bmapttl": "BaseMaps_CBMT3978",
-	"geo-bmapurltxt": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_TXT_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
+	"geo-bmapurltxt": "@geo-bmapurltxt@",
 	"geo-attrlnk": "//geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
 	"geo-attrttl": "GeoGratis - Канада базовой карты (на английском или французском языке)",
 	"geo-sel": "Выбирать",
@@ -214,7 +211,6 @@ wb.i18nDict = {
 	"geo-aoi-south": "Юг",
 	"geo-aoi-west": "Запад",
 	"geo-aoi-instructions": "Нарисуйте окно на карте или введите координаты ниже и нажмите кнопку \"Добавить\".",
-	"geo-aoi-title": "Draw box on map or enter coordinates",
 	"geo-aoi-btndraw": "Рисовать",
 	"geo-aoi-btnclear": "Удалять",
 	"geo-geoloc-btn": "Увеличить к текущему местоположению",
@@ -242,16 +238,6 @@ wb.i18nDict = {
 } )( wb );
 
 wb.doc.one( "formLanguages.wb", function() {
-(function( factory ) {
-	if ( typeof define === "function" && define.amd ) {
-		define( ["jquery", "../jquery.validate"], factory );
-	} else if (typeof module === "object" && module.exports) {
-		module.exports = factory( require( "jquery" ) );
-	} else {
-		factory( jQuery );
-	}
-}(function( $ ) {
-
 /*
  * Translated default messages for the jQuery validation plugin.
  * Locale: RU (Russian; русский язык)
@@ -275,7 +261,6 @@ $.extend( $.validator.messages, {
 	max: $.validator.format( "Пожалуйста, введите число, меньшее или равное {0}." ),
 	min: $.validator.format( "Пожалуйста, введите число, большее или равное {0}." )
 } );
-return $;
-}));
+
 
 });

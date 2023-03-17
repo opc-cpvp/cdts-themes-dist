@@ -1,5 +1,8 @@
 <!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="fr" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!-->
 <html class="no-js" lang="fr" dir="ltr">
+<!--<![endif]-->
 	<head>
 		<meta charset="utf-8" />
 		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
@@ -9,33 +12,33 @@
  - Boîte à outils de l'expérience Web
 </title>
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
+		<!-- Meta data -->
 		<meta name="description" content="Correctifs - Documentation - Boîte à outils de l&#x27;expérience Web (BOEW)" />
-		
-		
-		
-		
-		
-		<link rel="alternate" hreflang="en" href="polyfills-en.html" />
-		
+		<!-- Meta data-->
+		<!--[if gte IE 9 | !IE ]><!-->
 		<link href="../../../theme-wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon" />
 		<link rel="stylesheet" href="../../../theme-wet-boew/css/theme.css" />
+		<!--<![endif]-->
 		
+		<!--[if lt IE 9]>
+		<link href="../../../theme-wet-boew/assets/favicon.ico" rel="shortcut icon" />
+		<link rel="stylesheet" href="../../../theme-wet-boew/css/ie8-theme.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+		<script src="../../../wet-boew/js/ie8-wet-boew.js"></script>
+		<![endif]-->
 		
 		<noscript><link rel="stylesheet" href="../../../wet-boew/css/noscript.css" /></noscript>
 	</head>
 	<body vocab="http://schema.org/" typeof="WebPage">
 		
-<nav>
-	<ul id="wb-tphp">
-		<li class="wb-slc">
-			<a class="wb-sl" href="#wb-cont">Passer au contenu principal</a>
-		</li>
-		<li class="wb-slc visible-sm visible-md visible-lg">
-			<a class="wb-sl" href="#wb-info">Passer à «&#160;À propos de ce site&#160;»</a>
-		</li>
-	</ul>
-</nav>
-
+<ul id="wb-tphp">
+	<li class="wb-slc">
+		<a class="wb-sl" href="#wb-cont">Passer au contenu principal</a>
+	</li>
+	<li class="wb-slc visible-sm visible-md visible-lg">
+		<a class="wb-sl" href="#wb-info">Passer à «&#160;À propos de ce site&#160;»</a>
+	</li>
+</ul>
 <header role="banner">
 	<div id="wb-bnr">
 		<div id="wb-bar">
@@ -63,7 +66,7 @@
 			<div class="row">
 				<div id="wb-sttl" class="col-md-8">
 					<a href="../../index-fr.html">
-						<img src="../../../theme-wet-boew/assets/logo.svg" alt="" />
+						<object type="image/svg+xml" tabindex="-1" data="../../../theme-wet-boew/assets/logo.svg"></object>
 						<span>Boîte à outils de l'expérience Web<span class="wb-inv">, </span><small>Projet à source ouverte collaboratif dirigé par le Gouvernement du Canada</small></span>
 					</a>
 				</div>
@@ -117,6 +120,8 @@
 	<main role="main" property="mainContentOfPage" class="container">
 		<h1 id="wb-cont" property="name">Correctifs</h1>
 		
+		
+		
 <p lang="en"><strong>Needs translation</strong> The polyfills are JavaScript components that mimic the behaviour of HTML5 tags in browsers that do not recognized such tags. They provide backwards compatibility for HTML5 in browsers that do not support HTML5.</p>
 <ul>
 	<li><a href="meter/meter-fr.html">Correctif «&#160;meter&#160;» (compteur)</a> - Émule l’élément «&#160;<code>meter</code>&#160;» pour les navigateurs qui ne le supportent pas. L'élément «&#160;<code>meter</code>&#160;» affiche une mesure scalaire dans une gamme connue.</li>
@@ -134,7 +139,7 @@
 		</dl>
 	</main>
 
-	<footer role="contentinfo" id="wb-info"  class="visible-sm visible-md visible-lg wb-navcurr">
+	<footer role="contentinfo" id="wb-info" class="visible-sm visible-md visible-lg wb-navcurr">
 		<div class="container">
 			<nav role="navigation" class="row">
 				<h2>À propos de ce site</h2>
@@ -148,7 +153,7 @@
 					<h3>À propos</h3>
 					<ul class="list-unstyled">
 						<li><a href="../../index-fr.html#apropos">À propos de la Boîte à outils de l’expérience Web</a></li>
-						<li><a rel="external" href="https://www.tbs-sct.gc.ca/ws-nw/index-fra.asp">À propos des normes Web</a></li>
+						<li><a rel="external" href="http://www.tbs-sct.gc.ca/ws-nw/index-fra.asp">À propos des normes Web</a></li>
 					</ul>
 				</section>
 				<section class="col-sm-3">
@@ -163,15 +168,18 @@
 					<ul class="list-unstyled">
 						<li><a rel="external" href="https://twitter.com/BoiteExpWeb">Twitter</a></li>
 					</ul>
-				</section>
-			</nav>
+				</section>		</nav>
 		</div>
 	</footer>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+		<!--[if gte IE 9 | !IE ]><!-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
 		<script src="../../../wet-boew/js/wet-boew.js"></script>
+		<!--<![endif]-->
 		
+		<!--[if lt IE 9]>
+		<script src="../../../wet-boew/js/ie8-wet-boew2.js"></script>
 		
-		
+		<![endif]-->
 	</body>
 </html>

@@ -1,5 +1,6 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="fr" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
 <html class="no-js" lang="fr" dir="ltr">
+<!--<![endif]-->
 <head>
 <meta charset="utf-8">
 <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
@@ -7,14 +8,22 @@
 <title>Lecteur multimédia - Plugiciels - Documentation - Boîte à outils de l'expérience Web
 </title>
 <meta content="width=device-width,initial-scale=1" name="viewport">
+<!-- Meta data -->
 <meta name="description" content="Un lecteur multimédia accessible permettant d&#x27;intégrer des contenus vidéo et audio sur les pages Web.">
-<link rel="alternate" hreflang="en" href="multimedia-en.html">
+<!-- Meta data-->
+<!--[if gte IE 9 | !IE ]><!-->
 <link href="../../../theme-wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
 <link rel="stylesheet" href="../../../theme-wet-boew/css/theme.min.css">
+<!--<![endif]-->
+<!--[if lt IE 9]>
+		<link href="../../../theme-wet-boew/assets/favicon.ico" rel="shortcut icon" />
+		<link rel="stylesheet" href="../../../theme-wet-boew/css/ie8-theme.min.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="../../../wet-boew/js/ie8-wet-boew.min.js"></script>
+		<![endif]-->
 <noscript><link rel="stylesheet" href="../../../wet-boew/css/noscript.min.css" /></noscript>
 </head>
 <body vocab="http://schema.org/" typeof="WebPage">
-<nav>
 <ul id="wb-tphp">
 <li class="wb-slc">
 <a class="wb-sl" href="#wb-cont">Passer au contenu principal</a>
@@ -23,7 +32,6 @@
 <a class="wb-sl" href="#wb-info">Passer à «&#160;À propos de ce site&#160;»</a>
 </li>
 </ul>
-</nav>
 <header role="banner">
 <div id="wb-bnr">
 <div id="wb-bar">
@@ -50,7 +58,7 @@
 <div class="row">
 <div id="wb-sttl" class="col-md-8">
 <a href="../../../index-fr.html">
-<img src="../../../theme-wet-boew/assets/logo.svg" alt="">
+<object type="image/svg+xml" tabindex="-1" data="../../../theme-wet-boew/assets/logo.svg"></object>
 <span>Boîte à outils de l'expérience Web<span class="wb-inv">, </span><small>Projet à source ouverte collaboratif dirigé par le Gouvernement du Canada</small></span>
 </a>
 </div>
@@ -154,7 +162,7 @@ Ajoutez l'élément <code>figcaption</code> à l'élément <code>figure</code> a
 	&lt;p&gt;Trouver un emploi&lt;/p&gt;
 &lt;/figcaption&gt;</code></pre>
 <pre><code>&lt;figcaption&gt;
-	&lt;p&gt;Trouver un emploi (&lt;a href="cpts-lg-fr.html"&gt;Transcription&lt;/a&gt;)&lt;/p&gt;
+	&lt;p&gt;Trouver un emploi (&lt;a href="http://www.servicecanada.gc.ca/fra/video/te.shtml"&gt;Transcription&lt;/a&gt;)&lt;/p&gt;
 &lt;/figcaption&gt;</code></pre>
 <pre><code>&lt;figcaption&gt;
 	&lt;details id="inline-captions"&gt;
@@ -175,8 +183,8 @@ Ajoutez l'élément <code>figcaption</code> à l'élément <code>figure</code> a
 <li>
 Ajoutez un ou plusieurs éléments <code>source</code> à l'élément <code>video</code> avec l'attribut <code>src</code> ayant comme valeur l'URL du fichier média et l'attribut <code>type</code> étant son type MIME.<br>
 <strong>Note :</strong> Si vous indiquez plusieurs sources média pour la vidéo, le lecteur jouera le premier média qui fonctionne (est disponible, compatible, etc.).
-<pre><code>&lt;source type="video/webm" src="https://video2.servicecanada.gc.ca/video/boew-wet/te-lj-fra.webm" /&gt;
-&lt;source type="video/mp4" src="https://video2.servicecanada.gc.ca/video/boew-wet/te-lj-fra.mp4" /&gt;</code></pre>
+<pre><code>&lt;source type="video/webm" src="http://video2.servicecanada.gc.ca/video/boew-wet/te-lj-fra.webm" /&gt;
+&lt;source type="video/mp4" src="http://video2.servicecanada.gc.ca/video/boew-wet/te-lj-fra.mp4" /&gt;</code></pre>
 </li>
 <li>Ajoutez l'élément <code>track</code> avec <code>kind="captions"</code> à l'élément <code>video</code> pour inclure le sous-titrage.
 <ol>
@@ -186,7 +194,7 @@ Ajoutez les attributs <code>srclang</code> et <code>label</code> à l'élément 
 </li>
 <li>Ajoutez les attributs <code>src</code> et <code>data-type</code> à l'élément <code>track</code> pour identifier la source du sous-titrage.
 <ul>
-<li><strong>Timed Text Markup Language :</strong> <code>data-type="application/ttml+xml"</code> et <code>src</code> est l'URL du fichier de sous-titrage de format <a rel="external" href="https://www.w3.org/TR/ttaf1-dfxp/">Timed Text Markup Language</a>.</li>
+<li><strong>Timed Text Markup Language :</strong> <code>data-type="application/ttml+xml"</code> et <code>src</code> est l'URL du fichier de sous-titrage de format <a rel="external" href="http://www.w3.org/TR/ttaf1-dfxp/">Timed Text Markup Language</a>.</li>
 <li><strong>Fichier de sous-titrage HTML :</strong> <code>data-type="text/html"</code> et <code>src</code> est l'URL du fichier de sous-titrage HTML.</li>
 <li><strong>Sous-titrage HTML en ligne :</strong> <code>data-type="text/html"</code> and <code>src</code> est l'URL du sous-titrage HTML en ligne (e.g., <code>src="#inline-captions"</code>).</li>
 </ul>
@@ -205,15 +213,15 @@ Ajoutez les attributs <code>srclang</code> et <code>label</code> à l'élément 
 </ol>
 <section>
 <h5>Code</h5>
-<pre><code>&lt;figure class="wb-mltmd" data-wb-mltmd='{"shareUrl": "https://wet-boew.github.io/v4.0-ci/demos/multimedia/multimedia-fr.html"}'&gt;
-	&lt;video poster="demo/video1-fr.jpg" title="Trouver un emploi"&gt;
-		&lt;source type="video/webm" src="https://video2.servicecanada.gc.ca/video/boew-wet/te-lj-fra.webm" /&gt;
-		&lt;source type="video/mp4" src="https://video2.servicecanada.gc.ca/video/boew-wet/te-lj-fra.mp4" /&gt;
+<pre><code>&lt;figure class="wb-mltmd" data-wb-mltmd='{"shareUrl": "http://youtu.be/p2-1ZIHu1W0"}'&gt;
+	&lt;video poster="http://www.servicecanada.gc.ca/fra/video/images/te-lj-fra.jpg" title="Trouver un emploi"&gt;
+		&lt;source type="video/webm" src="http://video2.servicecanada.gc.ca/video/boew-wet/te-lj-fra.webm" /&gt;
+		&lt;source type="video/mp4" src="http://video2.servicecanada.gc.ca/video/boew-wet/te-lj-fra.mp4" /&gt;
 		&lt;track src="cpts-lg-fr.html" kind="captions" data-type="text/html" srclang="fr" label="Français" /&gt;
 	&lt;/video&gt;
 	&lt;button class="btn btn-info cuepoint" data-cuepoint="75s"&gt;Marqueur temporel - 75s&lt;/button&gt;
 	&lt;figcaption&gt;
-		&lt;p&gt;Trouver un emploi (&lt;a href="cpts-lg-fr.html"&gt;Transcription&lt;/a&gt;)&lt;/p&gt;
+		&lt;p&gt;Trouver un emploi (&lt;a href="http://www.servicecanada.gc.ca/fra/video/te.shtml"&gt;Transcription&lt;/a&gt;)&lt;/p&gt;
 	&lt;/figcaption&gt;
 &lt;/figure&gt;</code></pre>
 </section>
@@ -223,7 +231,7 @@ Ajoutez les attributs <code>srclang</code> et <code>label</code> à l'élément 
 <ol>
 <li>Ajoutez l'attribut <code>title</code> à l'élément <code>video</code> avec la valeur étant le titre de la vidéo.</li>
 <li><p>Ajoutez un élément <code>source</code> à l'élément <code>video</code> avec l'attribut <code>type="video/youtube"</code> et l'attribut <code>src</code> étant l'URL de la vidéo.</p>
-<pre><code>&lt;source type="video/youtube" src="https://www.youtube.com/watch?v=9znKJqnFuuY" /&gt;</code></pre>
+<pre><code>&lt;source type="video/youtube" src="http://www.youtube.com/watch?v=9znKJqnFuuY" /&gt;</code></pre>
 <p>Ou</p>
 <pre><code>&lt;source type="video/youtube" src="https://youtu.be/9znKJqnFuuY" /&gt;</code></pre>
 </li>
@@ -233,7 +241,7 @@ Ajoutez les attributs <code>srclang</code> et <code>label</code> à l'élément 
 <h5>Code</h5>
 <pre><code>&lt;figure class="wb-mltmd"&gt;
 	&lt;video title="Suspect"&gt;
-		&lt;source type="video/youtube" src="https://www.youtube.com/watch?v=9znKJqnFuuY" /&gt;
+		&lt;source type="video/youtube" src="http://www.youtube.com/watch?v=9znKJqnFuuY" /&gt;
 	&lt;/video&gt;
 	&lt;figcaption&gt;
 		&lt;p&gt;Suspect&lt;/p&gt;
@@ -248,16 +256,16 @@ Ajoutez les attributs <code>srclang</code> et <code>label</code> à l'élément 
 <li>
 Ajoutez un ou plusieurs éléments <code>source</code> à l'élément <code>audio</code> avec l'attribut <code>src</code> avec la valeur étant l'URL du fichier média et l'attribut <code>type</code> étant le type MIME du fichier.<br>
 <strong>Note :</strong> Si vous indiquez plusieurs sources média pour l'audio, le lecteur jouera le premier fichier média qui fonctionne (est disponible, compatible, etc.).
-<pre><code>&lt;source src="https://www.archive.org/download/RideOfTheValkyries/ride_of_the_valkyries_2.mp3" type="audio/mp3" /&gt;
-&lt;source src="https://www.archive.org/download/RideOfTheValkyries/ride_of_the_valkyries_2.ogg" type="audio/ogg" /&gt;</code></pre>
+<pre><code>&lt;source src="http://www.archive.org/download/RideOfTheValkyries/ride_of_the_valkyries_2.mp3" type="audio/mp3" /&gt;
+&lt;source src="http://www.archive.org/download/RideOfTheValkyries/ride_of_the_valkyries_2.ogg" type="audio/ogg" /&gt;</code></pre>
 </li>
 </ol>
 <section>
 <h5>Code</h5>
 <pre><code>&lt;figure class="wb-mltmd"&gt;
 	&lt;audio title="Ride of the Valkyries"&gt;
-		&lt;source src="https://www.archive.org/download/RideOfTheValkyries/ride_of_the_valkyries_2.mp3" type="audio/mp3" /&gt;
-		&lt;source src="https://www.archive.org/download/RideOfTheValkyries/ride_of_the_valkyries_2.ogg" type="audio/ogg" /&gt;
+		&lt;source src="http://www.archive.org/download/RideOfTheValkyries/ride_of_the_valkyries_2.mp3" type="audio/mp3" /&gt;
+		&lt;source src="http://www.archive.org/download/RideOfTheValkyries/ride_of_the_valkyries_2.ogg" type="audio/ogg" /&gt;
 	&lt;/audio&gt;
 	&lt;figcaption&gt;
 		&lt;p&gt;Ride of the Valkyries&lt;/p&gt;
@@ -337,7 +345,7 @@ Ajoutez un ou plusieurs éléments <code>source</code> à l'élément <code>audi
 </div>
 <dl id="wb-dtmd">
 <dt>Date de modification&#160;:&#32;</dt>
-<dd><time property="dateModified">2018-04-18</time></dd>
+<dd><time property="dateModified">2014-08-04</time></dd>
 </dl>
 </main>
 <footer role="contentinfo" id="wb-info" class="visible-sm visible-md visible-lg wb-navcurr">
@@ -354,7 +362,7 @@ Ajoutez un ou plusieurs éléments <code>source</code> à l'élément <code>audi
 <h3>À propos</h3>
 <ul class="list-unstyled">
 <li><a href="../../../index-fr.html#apropos">À propos de la Boîte à outils de l’expérience Web</a></li>
-<li><a rel="external" href="https://www.tbs-sct.gc.ca/ws-nw/index-fra.asp">À propos des normes Web</a></li>
+<li><a rel="external" href="http://www.tbs-sct.gc.ca/ws-nw/index-fra.asp">À propos des normes Web</a></li>
 </ul>
 </section>
 <section class="col-sm-3">
@@ -369,11 +377,16 @@ Ajoutez un ou plusieurs éléments <code>source</code> à l'élément <code>audi
 <ul class="list-unstyled">
 <li><a rel="external" href="https://twitter.com/BoiteExpWeb">Twitter</a></li>
 </ul>
-</section>
-</nav>
+</section> </nav>
 </div>
 </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!--[if gte IE 9 | !IE ]><!-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="../../../wet-boew/js/wet-boew.min.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+		<script src="../../../wet-boew/js/ie8-wet-boew2.min.js"></script>
+		
+		<![endif]-->
 </body>
 </html>

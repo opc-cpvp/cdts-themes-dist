@@ -1,10 +1,10 @@
 /*
-* Web Experience Toolkit (WET) / Boîte à outils de l"expérience Web (BOEW)
-* wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
-*/
+ * Web Experience Toolkit (WET) / Boîte à outils de l"expérience Web (BOEW)
+ * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
+ */
 /*
 ----- Turkish dictionary (il8n) ---
-*/
+ */
 ( function( wb ) {
 "use strict";
 
@@ -54,7 +54,7 @@ wb.i18nDict = {
 	"prv-l": "Bir önceki (sol ok tuşu)",
 	first: "İlk",
 	last: "Son",
-	page: "Jump to: Page",
+	page: "Page",
 	"srch-menus": "Arama ve menüler",
 	email: "E-posta",
 	"menu-close": "Menüyü kapatmak",
@@ -107,7 +107,6 @@ wb.i18nDict = {
 	"frm-nosubmit": "Form gönderilemiyor, çünkü ",
 	"errs-fnd": " hatalar bulundu.",
 	"err-fnd": " hata bulundu.",
-	"err-correct": "(Correct and resubmit)",
 
 	/* Date picker */
 	"date-hide": "Takvimi gizle",
@@ -157,7 +156,6 @@ wb.i18nDict = {
 	/* Charts widget */
 	"tbl-txt": "Tablo",
 	"tbl-dtls": "Grafik. Detaylar takip eden tablodadır.",
-	"chrt-cmbslc": "Combined slice",
 
 	/* Session timeout */
 	"st-to-msg-bgn": "Oturumunuz #min# dk #sec# sn otomatik olarak sona erecek.",
@@ -198,10 +196,9 @@ wb.i18nDict = {
 	"geo-allyttl": "Talimatlar: Harita navigasyon",
 	"geo-tgllyr": "Katmanı ekran değişikliği",
 	"geo-hdnlyr": "Bu katman şu anda gizli olduğu.",
-	"geo-bmap-url": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT3978/MapServer/WMTS/",
-	"geo-bmap-matrix-set": "default028mm",
+	"geo-bmapurl": "@geo-bmapurl@",
 	"geo-bmapttl": "BaseMaps_CBMT3978",
-	"geo-bmapurltxt": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_TXT_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
+	"geo-bmapurltxt": "@geo-bmapurltxt@",
 	"geo-attrlnk": "//geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
 	"geo-attrttl": "GeoGratis - Kanada temel harita (İngilizce veya Fransızca sadece)",
 	"geo-sel": "Seçmek",
@@ -214,7 +211,6 @@ wb.i18nDict = {
 	"geo-aoi-south": "Güney",
 	"geo-aoi-west": "Batı",
 	"geo-aoi-instructions": "Harita üzerinde kutusu çizmek ya da aşağıdaki koordinatları girin ve \"Ekle\" düğmesine tıklayın.",
-	"geo-aoi-title": "Draw box on map or enter coordinates",
 	"geo-aoi-btndraw": "Çizmek",
 	"geo-aoi-btnclear": "Kaldırmak",
 	"geo-geoloc-btn": "Geçerli konuma yakınlaştırma",
@@ -242,16 +238,6 @@ wb.i18nDict = {
 } )( wb );
 
 wb.doc.one( "formLanguages.wb", function() {
-(function( factory ) {
-	if ( typeof define === "function" && define.amd ) {
-		define( ["jquery", "../jquery.validate"], factory );
-	} else if (typeof module === "object" && module.exports) {
-		module.exports = factory( require( "jquery" ) );
-	} else {
-		factory( jQuery );
-	}
-}(function( $ ) {
-
 /*
  * Translated default messages for the jQuery validation plugin.
  * Locale: TR (Turkish; Türkçe)
@@ -276,7 +262,6 @@ $.extend( $.validator.messages, {
 	min: $.validator.format( "Lütfen {0} değerine eşit ya da daha büyük bir değer giriniz." ),
 	require_from_group: "Lütfen bu alanların en az {0} tanesini doldurunuz."
 } );
-return $;
-}));
+
 
 });

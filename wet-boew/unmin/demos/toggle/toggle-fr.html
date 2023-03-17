@@ -1,5 +1,8 @@
 <!DOCTYPE html>
+<!--[if lt IE 9]><html class="no-js lt-ie9" lang="fr" dir="ltr"><![endif]-->
+<!--[if gt IE 8]><!-->
 <html class="no-js" lang="fr" dir="ltr">
+<!--<![endif]-->
 	<head>
 		<meta charset="utf-8" />
 		<!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
@@ -9,33 +12,33 @@
  - Boîte à outils de l'expérience Web
 </title>
 		<meta content="width=device-width, initial-scale=1" name="viewport" />
+		<!-- Meta data -->
 		<meta name="description" content="Plugiciel qui permet un lien à basculer des éléments entre les états activé et désactivé." />
-		
-		
-		
-		
-		
-		<link rel="alternate" hreflang="en" href="toggle-en.html" />
-		
+		<!-- Meta data-->
+		<!--[if gte IE 9 | !IE ]><!-->
 		<link href="../../../theme-wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon" />
 		<link rel="stylesheet" href="../../../theme-wet-boew/css/theme.css" />
+		<!--<![endif]-->
 		<link rel="stylesheet" href="demo/toggle.css" />
+		<!--[if lt IE 9]>
+		<link href="../../../theme-wet-boew/assets/favicon.ico" rel="shortcut icon" />
+		<link rel="stylesheet" href="../../../theme-wet-boew/css/ie8-theme.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+		<script src="../../../wet-boew/js/ie8-wet-boew.js"></script>
+		<![endif]-->
 		
 		<noscript><link rel="stylesheet" href="../../../wet-boew/css/noscript.css" /></noscript>
 	</head>
 	<body vocab="http://schema.org/" typeof="WebPage">
 		
-<nav>
-	<ul id="wb-tphp">
-		<li class="wb-slc">
-			<a class="wb-sl" href="#wb-cont">Passer au contenu principal</a>
-		</li>
-		<li class="wb-slc visible-sm visible-md visible-lg">
-			<a class="wb-sl" href="#wb-info">Passer à «&#160;À propos de ce site&#160;»</a>
-		</li>
-	</ul>
-</nav>
-
+<ul id="wb-tphp">
+	<li class="wb-slc">
+		<a class="wb-sl" href="#wb-cont">Passer au contenu principal</a>
+	</li>
+	<li class="wb-slc visible-sm visible-md visible-lg">
+		<a class="wb-sl" href="#wb-info">Passer à «&#160;À propos de ce site&#160;»</a>
+	</li>
+</ul>
 <header role="banner">
 	<div id="wb-bnr">
 		<div id="wb-bar">
@@ -63,7 +66,7 @@
 			<div class="row">
 				<div id="wb-sttl" class="col-md-8">
 					<a href="../../index-fr.html">
-						<img src="../../../theme-wet-boew/assets/logo.svg" alt="" />
+						<object type="image/svg+xml" tabindex="-1" data="../../../theme-wet-boew/assets/logo.svg"></object>
 						<span>Boîte à outils de l'expérience Web<span class="wb-inv">, </span><small>Projet à source ouverte collaboratif dirigé par le Gouvernement du Canada</small></span>
 					</a>
 				</div>
@@ -116,13 +119,13 @@
 
 	<main role="main" property="mainContentOfPage" class="container">
 		<h1 id="wb-cont" property="name">Basculer</h1>
+		
+		
 		<ul class="list-inline">
-				<li><a class="btn btn-primary" href="../../docs/ref/toggle/toggle-fr.html">Documentation</a></li>
+			<li><a class="btn btn-primary" href="../../docs/ref/toggle/toggle-fr.html">Documentation</a></li>
 			<li><a class="btn btn-primary" href="https://github.com/wet-boew/wet-boew/issues/new?title=Basculer:%20">Questions ou commentaires?</a></li>
 		</ul>
 		
-<span class="wb-prettify all-pre linenums"></span>
-
 <section>
 	<h2>Intention</h2>
 	<p>Plugiciel qui permet un lien à basculer des éléments entre les états activé et désactivé.</p>
@@ -221,7 +224,7 @@
 
 			<p>For example, the following element will always toggle on elements with the <code>.foo</code> CSS class that are contained in a parent with the <code>.bar</code> CSS class. In addition, the elements it controls will be toggled on when the page is printed.</p>
 
-			<pre><code>&lt;button type="button" class="wb-toggle" data-toggle='{"type": "on", "selector": ".foo", "parent": ".bar", "print": "on"}'&gt;Turn on&lt;/button&gt;</code></pre>
+			<pre class="lang-css"><code>&lt;button type="button" class="wb-toggle" data-toggle='{"type": "on", "selector": ".foo", "parent": ".bar", "print": "on"}'&gt;Turn on&lt;/button&gt;</code></pre>
 		</section>
 
 		<section>
@@ -351,12 +354,12 @@
 			<p>
 				Cette paramètre <code> group </code> restreint bascule groupées d'avoir un seul des éléments actifs à un moment un peu comme le comportement de case à cocher groupées.
 			</p>
-
+			
 			<div class="btn-group">
 				<button type="button" class="btn btn-default wb-toggle" data-toggle='{"selector": "#toggle1", "group": ".grouped", "type": "on" }'>Exemple 1</button>
 				<button type="button" class="btn btn-default wb-toggle" data-toggle='{"selector": "#toggle2", "group": ".grouped", "type": "on" }'>Exemple 2</button>
 				<button type="button" class="btn btn-default wb-toggle" data-toggle='{"selector": "#toggle3", "group": ".grouped", "type": "on" }'>Exemple 3</button>
-			</div>
+			</div>			
 
 			<div class="row">
 				<details id="toggle1" class="col-sm-4 grouped">
@@ -449,7 +452,7 @@
 					</table>
 				</details>
 			</div>
-
+			
 		</section>
 
 		<section>
@@ -557,7 +560,7 @@
 			</div>
 
 		</section>
-
+		
 		<section>
 			<h2 id="persist">Conserver l'état de bascule</h2>
 			<p>L'état de bascule de l'élément <code>details</code> ci-desous persistra tant que le fureteur (ou onglet) demeure ouvert.</p>
@@ -589,18 +592,18 @@
 						</tr>
 					</tbody>
 				</table>
-			</details>
-		</section>
+			</details>			
+		</section>		
 	</div>
 </div>
 
 		<dl id="wb-dtmd">
 			<dt>Date de modification&#160;:&#32;</dt>
-			<dd><time property="dateModified">2020-03-10</time></dd>
+			<dd><time property="dateModified">2015-04-22</time></dd>
 		</dl>
 	</main>
 
-	<footer role="contentinfo" id="wb-info"  class="visible-sm visible-md visible-lg wb-navcurr">
+	<footer role="contentinfo" id="wb-info" class="visible-sm visible-md visible-lg wb-navcurr">
 		<div class="container">
 			<nav role="navigation" class="row">
 				<h2>À propos de ce site</h2>
@@ -614,7 +617,7 @@
 					<h3>À propos</h3>
 					<ul class="list-unstyled">
 						<li><a href="../../index-fr.html#apropos">À propos de la Boîte à outils de l’expérience Web</a></li>
-						<li><a rel="external" href="https://www.tbs-sct.gc.ca/ws-nw/index-fra.asp">À propos des normes Web</a></li>
+						<li><a rel="external" href="http://www.tbs-sct.gc.ca/ws-nw/index-fra.asp">À propos des normes Web</a></li>
 					</ul>
 				</section>
 				<section class="col-sm-3">
@@ -629,15 +632,18 @@
 					<ul class="list-unstyled">
 						<li><a rel="external" href="https://twitter.com/BoiteExpWeb">Twitter</a></li>
 					</ul>
-				</section>
-			</nav>
+				</section>		</nav>
 		</div>
 	</footer>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+		<!--[if gte IE 9 | !IE ]><!-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
 		<script src="../../../wet-boew/js/wet-boew.js"></script>
+		<!--<![endif]-->
 		
+		<!--[if lt IE 9]>
+		<script src="../../../wet-boew/js/ie8-wet-boew2.js"></script>
 		
-		
+		<![endif]-->
 	</body>
 </html>

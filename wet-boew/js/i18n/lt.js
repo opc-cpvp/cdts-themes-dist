@@ -1,10 +1,10 @@
 /*
-* Web Experience Toolkit (WET) / Boîte à outils de l"expérience Web (BOEW)
-* wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
-*/
+ * Web Experience Toolkit (WET) / Boîte à outils de l"expérience Web (BOEW)
+ * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
+ */
 /*
 ----- Lithuanian dictionary (il8n) ---
-*/
+ */
 ( function( wb ) {
 "use strict";
 
@@ -54,7 +54,7 @@ wb.i18nDict = {
 	"prv-l": "Ankstenis (rodyklės dešinėn klavišu)",
 	first: "Pirmasis",
 	last: "Paskutinis",
-	page: "Jump to: Page",
+	page: "Page",
 	"srch-menus": "Ieškoti ir meniu",
 	email: "El. paštas",
 	"menu-close": "Uždaryti meniu",
@@ -107,7 +107,6 @@ wb.i18nDict = {
 	"frm-nosubmit": "Formos pateikti negalima, nes ",
 	"errs-fnd": " rastos klaidos.",
 	"err-fnd": " rasta klaida.",
-	"err-correct": "(Correct and resubmit)",
 
 	/* Date picker */
 	"date-hide": "Slėpti kalendorių",
@@ -157,7 +156,6 @@ wb.i18nDict = {
 	/* Charts widget */
 	"tbl-txt": "Lentelė",
 	"tbl-dtls": "Grafika. Daugiau detalių sekančioje lentelėje.",
-	"chrt-cmbslc": "Combined slice",
 
 	/* Session timeout */
 	"st-to-msg-bgn": "Jūsų sesija pasibaigs automatiškai #min# min #sec# sek.",
@@ -198,10 +196,9 @@ wb.i18nDict = {
 	"geo-allyttl": "Instrukcijos: Žemėlapis navigacijos",
 	"geo-tgllyr": "Perjungti sluoksnio rodymą",
 	"geo-hdnlyr": "Šis sluoksnis yra paslėptas.",
-	"geo-bmap-url": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT3978/MapServer/WMTS/",
-	"geo-bmap-matrix-set": "default028mm",
+	"geo-bmapurl": "@geo-bmapurl@",
 	"geo-bmapttl": "BaseMaps_CBMT3978",
-	"geo-bmapurltxt": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_TXT_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
+	"geo-bmapurltxt": "@geo-bmapurltxt@",
 	"geo-attrlnk": "//geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
 	"geo-attrttl": "GeoGratis - Kanada bazė žemėlapis (anglų arba prancūzų kalba)",
 	"geo-sel": "Pasirinkti",
@@ -214,7 +211,6 @@ wb.i18nDict = {
 	"geo-aoi-south": "Į pietus",
 	"geo-aoi-west": "Vakarai",
 	"geo-aoi-instructions": "Lygiosios langelį žemėlapyje arba įveskite koordinates žemiau ir spustelėkite mygtuką \"Pridėti\".",
-	"geo-aoi-title": "Draw box on map or enter coordinates",
 	"geo-aoi-btndraw": "Atkreipti",
 	"geo-aoi-btnclear": "Pašalinti",
 	"geo-geoloc-btn": "Padidinti dabartinę vietą",
@@ -242,16 +238,6 @@ wb.i18nDict = {
 } )( wb );
 
 wb.doc.one( "formLanguages.wb", function() {
-(function( factory ) {
-	if ( typeof define === "function" && define.amd ) {
-		define( ["jquery", "../jquery.validate"], factory );
-	} else if (typeof module === "object" && module.exports) {
-		module.exports = factory( require( "jquery" ) );
-	} else {
-		factory( jQuery );
-	}
-}(function( $ ) {
-
 /*
  * Translated default messages for the jQuery validation plugin.
  * Locale: LT (Lithuanian; lietuvių kalba)
@@ -275,7 +261,6 @@ $.extend( $.validator.messages, {
 	max: $.validator.format( "Prašau įvesti reikšmę mažesnę arba lygią {0}." ),
 	min: $.validator.format( "Prašau įvesti reikšmę didesnę arba lygią {0}." )
 } );
-return $;
-}));
+
 
 });

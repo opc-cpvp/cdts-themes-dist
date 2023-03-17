@@ -38,10 +38,12 @@ var componentName = "wb-tableparser",
 			colgroupFrame = [],
 			columnFrame = [],
 			uidElem = 0,
+			currentRowLevel = 0,
 			currentRowPos = 0,
 			spannedRow = [],
 			tableCellWidth = 0,
 			headerRowGroupCompleted = false,
+			currentTbodyID,
 			theadRowStack = [],
 			stackRowHeader = false,
 
@@ -305,7 +307,7 @@ var componentName = "wb-tableparser",
 				tmpStack = [], tmpStackCurr, tmpStackCell,
 				dataColgroup, dataColumns, colgroup, col,
 				hcolgroup, currColPos,
-				currColgroupStructure, bigTotalColgroupFound,
+				currColgroupStructure, colFrmId, bigTotalColgroupFound,
 				theadRSNext, theadRSNextCell, cell, gzCol, theadRS;
 
 			if ( groupZero.colgrouphead || rowgroupheadercalled ) {
@@ -601,6 +603,7 @@ var componentName = "wb-tableparser",
 					type: 2
 				};
 				currColgroupStructure = [];
+				colFrmId = 0;
 				bigTotalColgroupFound = false;
 
 				$.each( colgroupFrame, function() {
@@ -609,6 +612,8 @@ var componentName = "wb-tableparser",
 						cgrp,
 						parentHeader,
 						summaryAttached;
+
+					colFrmId += 1;
 
 					if ( bigTotalColgroupFound || groupZero.colgrp[ 0 ] ) {
 						$obj.trigger( {
@@ -1555,6 +1560,7 @@ var componentName = "wb-tableparser",
 						// Remove any rowgroup header found.
 						rowgroupHeaderRowStack = [];
 
+						currentTbodyID += 1;
 						finalizeRowGroup();
 
 						currentRowGroupElement = undefined;
@@ -1587,6 +1593,7 @@ var componentName = "wb-tableparser",
 						// Remove any rowgroup header found.
 						rowgroupHeaderRowStack = [];
 
+						currentTbodyID += 1;
 						finalizeRowGroup();
 
 						currentRowGroupElement = undefined;
@@ -1882,6 +1889,7 @@ var componentName = "wb-tableparser",
 					}
 				}
 			}
+			currentRowLevel += 1;
 
 			// Add the row to the groupZero
 			if ( !groupZero.row ) {
@@ -2184,6 +2192,7 @@ var componentName = "wb-tableparser",
 				spannedRow = []; /* Cleanup of any spanned row */
 				rowgroupHeaderRowStack = []; /* Remove any rowgroup header found. */
 
+				currentTbodyID += 1;
 			} else if ( nodeName === "tr" ) {
 
 				// This are suppose to be a simple table

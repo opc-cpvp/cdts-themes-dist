@@ -1,5 +1,6 @@
-<!DOCTYPE html>
+<!DOCTYPE html><!--[if lt IE 9]><html class="no-js lt-ie9" lang="en" dir="ltr"><![endif]--><!--[if gt IE 8]><!-->
 <html class="no-js" lang="en" dir="ltr">
+<!--<![endif]-->
 <head>
 <meta charset="utf-8">
 <!-- Web Experience Toolkit (WET) / Boîte à outils de l'expérience Web (BOEW)
@@ -7,14 +8,22 @@
 <title>Filing a bug or an issue - Documentation - Web Experience Toolkit
 </title>
 <meta content="width=device-width,initial-scale=1" name="viewport">
+<!-- Meta data -->
 <meta name="description" content="How to file a bug or an issue">
-<link rel="alternate" hreflang="fr" href="bugs-fr.html">
+<!-- Meta data-->
+<!--[if gte IE 9 | !IE ]><!-->
 <link href="../theme-wet-boew/assets/favicon.ico" rel="icon" type="image/x-icon">
 <link rel="stylesheet" href="../theme-wet-boew/css/theme.min.css">
+<!--<![endif]-->
+<!--[if lt IE 9]>
+		<link href="../theme-wet-boew/assets/favicon.ico" rel="shortcut icon" />
+		<link rel="stylesheet" href="../theme-wet-boew/css/ie8-theme.min.css" />
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="../wet-boew/js/ie8-wet-boew.min.js"></script>
+		<![endif]-->
 <noscript><link rel="stylesheet" href="../wet-boew/css/noscript.min.css" /></noscript>
 </head>
 <body vocab="http://schema.org/" typeof="WebPage">
-<nav>
 <ul id="wb-tphp">
 <li class="wb-slc">
 <a class="wb-sl" href="#wb-cont">Skip to main content</a>
@@ -23,7 +32,6 @@
 <a class="wb-sl" href="#wb-info">Skip to "About this site"</a>
 </li>
 </ul>
-</nav>
 <header role="banner">
 <div id="wb-bnr">
 <div id="wb-bar">
@@ -50,7 +58,7 @@
 <div class="row">
 <div id="wb-sttl" class="col-md-8">
 <a href="../index-en.html">
-<img src="../theme-wet-boew/assets/logo.svg" alt="">
+<object type="image/svg+xml" tabindex="-1" data="../theme-wet-boew/assets/logo.svg"></object>
 <span>Web Experience Toolkit<span class="wb-inv">, </span><small>Collaborative open source project led by the Government of Canada</small></span>
 </a>
 </div>
@@ -101,7 +109,7 @@
 <h1 id="wb-cont" property="name">Filing a bug or an issue</h1>
 <p>Before <a href="https://github.com/wet-boew/wet-boew/issues/new">creating an issue</a>:</p>
 <ul>
-<li>Is your question specific to WET-BOEW or just a general coding question? You might find general solutions to HTML, CSS, and JavaScript questions on <a href="https://stackoverflow.com">StackOverflow</a>.</li>
+<li>Is your question specific to WET-BOEW or just a general coding question? You might find general solutions to HTML, CSS, and JavaScript questions on <a href="http://stackoverflow.com">StackOverflow</a>.</li>
 <li><a href="https://github.com/wet-boew/wet-boew/issues">Have you searched the existing issues</a> to see if someone's already filed the same thing? You can use the search box at the top of the page or filter issues by the categories on the left.</li>
 <li>What version of WET are you using (v3.1.1, v4.0.0, etc)? If you're not using the latest stable version, does using the latest version resolve the issue?</li>
 <li>Was the issue encountered in a WET variant (Drupal, PHP, .Net, etc.) or in the core framework? If it applies to the core project, <a href="https://github.com/wet-boew/wet-boew/issues/new">create an issue in the WET-BOEW repository</a>.</li>
@@ -130,7 +138,7 @@
 <h3>About</h3>
 <ul class="list-unstyled">
 <li><a href="../index-en.html#about">About the Web Experience Toolkit</a></li>
-<li><a rel="external" href="https://www.tbs-sct.gc.ca/ws-nw/index-eng.asp">About the Web Standards</a></li>
+<li><a rel="external" href="http://www.tbs-sct.gc.ca/ws-nw/index-eng.asp">About the Web Standards</a></li>
 </ul>
 </section>
 <section class="col-sm-3">
@@ -145,11 +153,16 @@
 <ul class="list-unstyled">
 <li><a rel="external" href="https://twitter.com/WebExpToolkit">Twitter</a></li>
 </ul>
-</section>
-</nav>
+</section> </nav>
 </div>
 </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<!--[if gte IE 9 | !IE ]><!-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 <script src="../wet-boew/js/wet-boew.min.js"></script>
+<!--<![endif]-->
+<!--[if lt IE 9]>
+		<script src="../wet-boew/js/ie8-wet-boew2.min.js"></script>
+		
+		<![endif]-->
 </body>
 </html>

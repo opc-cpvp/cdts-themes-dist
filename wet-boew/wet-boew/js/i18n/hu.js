@@ -1,10 +1,10 @@
 /*
-* Web Experience Toolkit (WET) / Boîte à outils de l"expérience Web (BOEW)
-* wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
-*/
+ * Web Experience Toolkit (WET) / Boîte à outils de l"expérience Web (BOEW)
+ * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
+ */
 /*
 ----- Hungarian dictionary (il8n) ---
-*/
+ */
 ( function( wb ) {
 "use strict";
 
@@ -54,7 +54,7 @@ wb.i18nDict = {
 	"prv-l": "Előző (bal nyíl gomb)",
 	first: "Első",
 	last: "Utolsó",
-	page: "Jump to: Page",
+	page: "Page",
 	"srch-menus": "Keresés és menük",
 	email: "Email",
 	"menu-close": "Zárja be a menüt",
@@ -107,7 +107,6 @@ wb.i18nDict = {
 	"frm-nosubmit": "Az adatokat nem lehet elküldeni mert ",
 	"errs-fnd": " hibák léptek fel.",
 	"err-fnd": " hiba lépett fel.",
-	"err-correct": "(Correct and resubmit)",
 
 	/* Date picker */
 	"date-hide": "A naptár elrejtése",
@@ -157,7 +156,6 @@ wb.i18nDict = {
 	/* Charts widget */
 	"tbl-txt": "Táblázat",
 	"tbl-dtls": "Részletek a következő táblázatban.",
-	"chrt-cmbslc": "Combined slice",
 
 	/* Session timeout */
 	"st-to-msg-bgn": "A munkamenet lejár automatikusan #min# perc #sec# másodperc.",
@@ -198,10 +196,9 @@ wb.i18nDict = {
 	"geo-allyttl": "Utasítás: Térkép navigáció",
 	"geo-tgllyr": "Váltás a megjelenítési réteg",
 	"geo-hdnlyr": "Ez a réteg jelenleg rejtve.",
-	"geo-bmap-url": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT3978/MapServer/WMTS/",
-	"geo-bmap-matrix-set": "default028mm",
+	"geo-bmapurl": "@geo-bmapurl@",
 	"geo-bmapttl": "BaseMaps_CBMT3978",
-	"geo-bmapurltxt": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_TXT_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
+	"geo-bmapurltxt": "@geo-bmapurltxt@",
 	"geo-attrlnk": "//geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
 	"geo-attrttl": "GeoGratis - Kanada alaptérkép (angol vagy francia nyelven esetén)",
 	"geo-sel": "Választ",
@@ -214,7 +211,6 @@ wb.i18nDict = {
 	"geo-aoi-south": "Dél",
 	"geo-aoi-west": "Nyugat",
 	"geo-aoi-instructions": "Döntetlen box a térképen vagy adja meg a koordinátákat, majd kattintson a \"Hozzáadás\" gombra.",
-	"geo-aoi-title": "Draw box on map or enter coordinates",
 	"geo-aoi-btndraw": "Rajzol",
 	"geo-aoi-btnclear": "Eltávolít",
 	"geo-geoloc-btn": "Nagyítás az aktuális helyre",
@@ -242,16 +238,6 @@ wb.i18nDict = {
 } )( wb );
 
 wb.doc.one( "formLanguages.wb", function() {
-(function( factory ) {
-	if ( typeof define === "function" && define.amd ) {
-		define( ["jquery", "../jquery.validate"], factory );
-	} else if (typeof module === "object" && module.exports) {
-		module.exports = factory( require( "jquery" ) );
-	} else {
-		factory( jQuery );
-	}
-}(function( $ ) {
-
 /*
  * Translated default messages for the jQuery validation plugin.
  * Locale: HU (Hungarian; Magyar)
@@ -272,10 +258,8 @@ $.extend( $.validator.messages, {
 	min: $.validator.format( "Nem lehet kisebb, mint {0}." ),
 	creditcard: "Érvényes hitelkártyaszámnak kell lennie.",
 	remote: "Kérem javítsa ki ezt a mezőt.",
-	dateISO: "Kérem írjon be egy érvényes dátumot (ISO).",
-	step: $.validator.format( "A {0} egyik többszörösét adja meg." )
+	dateISO: "Kérem írjon be egy érvényes dátumot (ISO)."
 } );
-return $;
-}));
+
 
 });

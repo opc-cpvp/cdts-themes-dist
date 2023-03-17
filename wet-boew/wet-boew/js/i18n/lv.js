@@ -1,10 +1,10 @@
 /*
-* Web Experience Toolkit (WET) / Boîte à outils de l"expérience Web (BOEW)
-* wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
-*/
+ * Web Experience Toolkit (WET) / Boîte à outils de l"expérience Web (BOEW)
+ * wet-boew.github.io/wet-boew/License-en.html / wet-boew.github.io/wet-boew/Licence-fr.html
+ */
 /*
 ----- Latvian dictionary (il8n) ---
-*/
+ */
 ( function( wb ) {
 "use strict";
 
@@ -54,7 +54,7 @@ wb.i18nDict = {
 	"prv-l": "Lepriekšējais (pa kreisi bulta taustiņu)",
 	first: "Pirmā",
 	last: "Pēdējā",
-	page: "Jump to: Page",
+	page: "Page",
 	"srch-menus": "Meklēšanas un ēdienkartes",
 	email: "e-pasts",
 	"menu-close": "Aizveriet izvēlni",
@@ -107,7 +107,6 @@ wb.i18nDict = {
 	"frm-nosubmit": "Formu nav iespējams iesniegt, jo ",
 	"errs-fnd": " tika atrastas kļūdas.",
 	"err-fnd": " tika atrasta kļūda.",
-	"err-correct": "(Correct and resubmit)",
 
 	/* Date picker */
 	"date-hide": "Slēpt kalendāru",
@@ -157,7 +156,6 @@ wb.i18nDict = {
 	/* Charts widget */
 	"tbl-txt": "Tabula",
 	"tbl-dtls": "Grafiks. Detaļas tabulā.",
-	"chrt-cmbslc": "Combined slice",
 
 	/* Session timeout */
 	"st-to-msg-bgn": "Jūsu sesija beigsies automātiski #min# min sekundē #sec#.",
@@ -198,10 +196,9 @@ wb.i18nDict = {
 	"geo-allyttl": "Instrukcijas: Karte navigācija",
 	"geo-tgllyr": "Pārslēgt displeja slāņa",
 	"geo-hdnlyr": "Šis slānis pašlaik paslēpta.",
-	"geo-bmap-url": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT3978/MapServer/WMTS/",
-	"geo-bmap-matrix-set": "default028mm",
+	"geo-bmapurl": "@geo-bmapurl@",
 	"geo-bmapttl": "BaseMaps_CBMT3978",
-	"geo-bmapurltxt": "//geoappext.nrcan.gc.ca/arcgis/rest/services/BaseMaps/CBMT_TXT_3978/MapServer/WMTS/tile/1.0.0/BaseMaps_CBMT3978/{Style}/{TileMatrixSet}/{TileMatrix}/{TileRow}/{TileCol}.jpg",
+	"geo-bmapurltxt": "@geo-bmapurltxt@",
 	"geo-attrlnk": "//geogratis.gc.ca/geogratis/CBM_CBC?lang=en",
 	"geo-attrttl": "GeoGratis - Kanāda bāze karte (angļu vai franču valodā)",
 	"geo-sel": "Atlasīt",
@@ -214,7 +211,6 @@ wb.i18nDict = {
 	"geo-aoi-south": "Dienvidu",
 	"geo-aoi-west": "Rietumi",
 	"geo-aoi-instructions": "Zīmēt rūtiņu uz kartes vai ievadīt koordinātas zemāk un noklikšķiniet uz pogas \"Pievienot\".",
-	"geo-aoi-title": "Draw box on map or enter coordinates",
 	"geo-aoi-btndraw": "Izdarīt",
 	"geo-aoi-btnclear": "Noņemt",
 	"geo-geoloc-btn": "Zoom uz pašreizējo atrašanās vietu",
@@ -242,16 +238,6 @@ wb.i18nDict = {
 } )( wb );
 
 wb.doc.one( "formLanguages.wb", function() {
-(function( factory ) {
-	if ( typeof define === "function" && define.amd ) {
-		define( ["jquery", "../jquery.validate"], factory );
-	} else if (typeof module === "object" && module.exports) {
-		module.exports = factory( require( "jquery" ) );
-	} else {
-		factory( jQuery );
-	}
-}(function( $ ) {
-
 /*
  * Translated default messages for the jQuery validation plugin.
  * Locale: LV (Latvian; latviešu valoda)
@@ -275,7 +261,6 @@ $.extend( $.validator.messages, {
 	max: $.validator.format( "Lūdzu, ievadiet skaitli, kurš ir mazāks vai vienāds ar {0}." ),
 	min: $.validator.format( "Lūdzu, ievadiet skaitli, kurš ir lielāks vai vienāds ar {0}." )
 } );
-return $;
-}));
+
 
 });
