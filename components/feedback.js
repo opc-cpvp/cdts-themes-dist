@@ -8333,7 +8333,7 @@ const kp = `@import"https://www.priv.gc.ca/wet/gcweb-opc/css/theme.min.css";@imp
       ])
     ]));
   }
-}, R_ = /* @__PURE__ */ wr(C_, [["styles", [l_]]]), S_ = "Est-ce que cette information vous a \xE9t\xE9 utile?", w_ = "Signaler un probl\xE8me ou une erreur sur cette page", F_ = "Veuillez s\xE9lectionner une option", k_ = "Oui", P_ = "Non", M_ = "Pourquoi", D_ = "Veuillez pr\xE9ciser (maximum de 750 caract\xE8res) :", x_ = "Veuillez pr\xE9ciser (maximum of 750 characters) :", $_ = "obligatoire", V_ = "Veuillez cocher toutes les r\xE9ponses pertinentes", U_ = "S\xE9lectionner une option", j_ = "S\xE9lectionner les r\xE9ponses pertinentes", H_ = {
+}, R_ = /* @__PURE__ */ wr(C_, [["styles", [l_]]]), S_ = "Est-ce que cette information vous a \xE9t\xE9 utile?", w_ = "Signaler un probl\xE8me ou une erreur sur cette page", F_ = "Veuillez s\xE9lectionner une option", k_ = "Oui", P_ = "Non", M_ = "Pourquoi", D_ = "Veuillez pr\xE9ciser (maximum de 750 caract\xE8res) :", x_ = "Veuillez pr\xE9ciser (maximum de 750 caract\xE8res) :", $_ = "obligatoire", V_ = "Veuillez cocher toutes les r\xE9ponses pertinentes", U_ = "S\xE9lectionner une option", j_ = "S\xE9lectionner les r\xE9ponses pertinentes", H_ = {
   note: "Remarque",
   noPersonalInfo: "N'inscrivez aucun renseignement personnel",
   personalInfoItems: "comme votre nom, num\xE9ro d'assurances sociale (NAS), votre adresse au domicile ou au travail, ou encore les num\xE9ros de cas ou de dossiers",
@@ -8361,7 +8361,7 @@ const kp = `@import"https://www.priv.gc.ca/wet/gcweb-opc/css/theme.min.css";@imp
   brokenLinks: "Il y a des hyperliens bris\xE9s.",
   spellingOrGrammarMistakes: "Il y a des erreurs d'orthographe ou de grammaire.",
   infoWrongOrOutdated: "L'information est erron\xE9e ou n'est plus \xE0 jour.",
-  other: "Autre",
+  other: "Autre.",
   submit: "Soumettre"
 }, Y_ = {
   colon: " :"
@@ -8412,7 +8412,7 @@ const kp = `@import"https://www.priv.gc.ca/wet/gcweb-opc/css/theme.min.css";@imp
   brokenLinks: "There are broken links.",
   spellingOrGrammarMistakes: "The page has spelling or grammar mistakes.",
   infoWrongOrOutdated: "The information is wrong or outdated.",
-  other: "Other",
+  other: "Other.",
   submit: "Submit"
 }, dg = {
   colon: ":"
