@@ -1,0 +1,1 @@
+See https://github.com/opc-cpvp/opc-intranet/blob/main/LICENSE
