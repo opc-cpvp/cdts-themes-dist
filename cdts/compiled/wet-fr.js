@@ -163,7 +163,7 @@ wet.builder.footer = function(opt_data, opt_ignored) {
       var linkListLen322 = linkList322.length;
       for (var linkIndex322 = 0; linkIndex322 < linkListLen322; linkIndex322++) {
         var linkData322 = linkList322[linkIndex322];
-        output += (linkIndex322 == 0) ? '<li><a href="' + soy.$$escapeHtml(linkData322.href) + '">Contact us</a></li>' : '';
+        output += (linkIndex322 == 0) ? '<li><a href="' + soy.$$escapeHtml(linkData322.href) + '">>Contactez-nous</a></li>' : '';
       }
       output += '</ul>';
     } else {
