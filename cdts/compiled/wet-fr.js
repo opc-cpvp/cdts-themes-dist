@@ -1,7 +1,7 @@
 /*!
  * Centrally Deployed Templates Solution (CDTS) / Solution de gabarits à déploiement centralisé (SGDC)
  * github.com/opc-cpvp/cdts-sgdc/blob/master/LICENSE
- * v1.0.0 - 2023-12-31
+ * v1.0.0 - 2024-01-03
  *
  */// This file was automatically generated from wet-fr.soy.
 // Please don't edit this file by hand.
@@ -240,7 +240,7 @@ applicationPage.appTop = function(opt_data, opt_ignored) {
     for (var itemIndex38 = 0; itemIndex38 < itemListLen38; itemIndex38++) {
       var itemData38 = itemList38[itemIndex38];
       if (itemIndex38 == 0) {
-        output += '<section id="wb-srch" class="text-right visible-md visible-lg"><h2>Recherche' + ((itemData38.placeholder != null) ? ' ' + soy.$$escapeHtml(itemData38.placeholder) : '') + '</h2><form action="' + soy.$$escapeHtml(itemData38.action) + '" method="' + soy.$$escapeHtml(itemData38.method) + '" name="cse-search-box" role="search" class="form-inline"><div class="form-group"><label for="' + ((itemData38.id != null) ? soy.$$escapeHtml(itemData38.id) : 'wb-srch-q') + '" class="wb-inv">Rechercher' + ((itemData38.placeholder != null) ? ' dans ' + soy.$$escapeHtml(itemData38.placeholder) : '') + '</label><input id="' + ((itemData38.id != null) ? soy.$$escapeHtml(itemData38.id) : 'wb-srch-q') + '" class="wb-srch-q form-control" name="q" type="search" value="" size="34" maxlength="170" placeholder="Rechercher' + ((itemData38.placeholder != null) ? ' dans ' + soy.$$escapeHtml(itemData38.placeholder) : '') + '">';
+        output += '<section id="wb-srch" class="text-right visible-md visible-lg"><h2>Recherche' + ((itemData38.placeholder != null) ? ' ' + soy.$$escapeHtml(itemData38.placeholder) : '') + '</h2><form action="' + soy.$$escapeHtml(itemData38.action) + '" method="' + soy.$$escapeHtml(itemData38.method) + '" name="cse-search-box" role="search" class="form-inline"><div class="form-group"><label for="' + ((itemData38.id != null) ? soy.$$escapeHtml(itemData38.id) : 'wb-srch-q') + '" class="wb-inv">Rechercher' + ((itemData38.placeholder != null) ? ' dans ' + soy.$$escapeHtml(itemData38.placeholder) : '') + '</label><input id="' + ((itemData38.id != null) ? soy.$$escapeHtml(itemData38.id) : 'wb-srch-q') + '" class="wb-srch-q form-control" name="q" type="search" value="" size="27" maxlength="170" placeholder="Rechercher' + ((itemData38.placeholder != null) ? ' dans ' + soy.$$escapeHtml(itemData38.placeholder) : '') + '">';
         if (itemData38.hiddenInput != null) {
           var inputList75 = itemData38.hiddenInput;
           var inputListLen75 = inputList75.length;
